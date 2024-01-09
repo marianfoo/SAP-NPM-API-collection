@@ -31,7 +31,7 @@ jobs:
       run: npm cache clean --force
 
     - name: Install dependencies
-      run: pnpm install -f --shamefully-hoist
+      run: pnpm install -f --shamefully-hoist --ignore-scripts
 
     - name: Run npm start
       run: npm start
