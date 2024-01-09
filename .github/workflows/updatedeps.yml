@@ -38,9 +38,13 @@ jobs:
     - name: Execute build script
       run: sh build.sh
 
+    - name: Generate RSS
+      run: node create_rss.js
+
     - name: Git add specific files
       run: |
         git add apis/* package.json new-package.json packages.txt
+        git add docs/rss.xml
 
     - name: Git commit
       run: |

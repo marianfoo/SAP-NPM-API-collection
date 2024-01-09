@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[API Updates]]></title>
+        <description><![CDATA[List of recent updates to APIs]]></description>
+        <link>http://example.com</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Tue, 09 Jan 2024 19:30:56 GMT</lastBuildDate>
+        <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Tue, 09 Jan 2024 19:30:49 GMT</pubDate>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[@sap/approuter - Recent Update]]></title>
+            <description><![CDATA[&#x3C;p&#x3E;-- a/apis/approuter/CHANGELOG.md
+++ b/apis/approuter/CHANGELOG.md&#x3C;/p&#x3E;
+&#x3C;h2&#x3E;16.0.1 - 2024-01-05&#x3C;/h2&#x3E;
+&#x3C;h3&#x3E;Updated dependencies&#x3C;/h3&#x3E;
+&#x3C;ul&#x3E;
+&#x3C;li&#x3E;deps: axios@1.6.4&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+]]></description>
+            <link>http://example.com/approuter/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/approuter/CHANGELOG.md</guid>
+            <pubDate>Tue, 09 Jan 2024 19:30:49 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
