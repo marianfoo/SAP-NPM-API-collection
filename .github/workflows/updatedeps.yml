@@ -23,7 +23,7 @@ jobs:
       run: npm start
 
     - name: Execute build script
-      run: sh build
+      run: sh build.sh
 
     - name: Git add specific files
       run: |
