@@ -19,11 +19,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    # npm install -g npm@latest
+    - name: Update npm
+      run: npm install -g npm@latest
+
+    # use pnpm
+    - name: Install pnpm
+      run: npm install -g pnpm
+
     - name: Clear npm cache
       run: npm cache clean --force
 
     - name: Install dependencies
-      run: npm install -f
+      run: pnpm install -f --shamefully-hoist
 
     - name: Run npm start
       run: npm start
