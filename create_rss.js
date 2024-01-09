@@ -61,8 +61,8 @@ function getChangelogDiff(path) {
                              .filter(line => line.startsWith('-') || line.startsWith('+'))
                              .map(line => line.substring(1).trim()) // Remove '-' or '+' and trim whitespace
                              .join('\n');
-    // Convert Markdown to HTML and encode it
-    return he.encode(marked(filteredDiff));
+    // Convert Markdown to HTML (without additional encoding)
+    return marked(filteredDiff);
   } catch (error) {
     console.error(`Error getting changelog diff for ${path}:`, error.message);
     return '';
