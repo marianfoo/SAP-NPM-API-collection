@@ -1,55 +1,60 @@
-const search = require("libnpmsearch");
-const fs = require("fs");
+const fs = require('fs');
+
+const searchNpmPackages = async (query, from, limit) => {
+  const response = await fetch(
+    `https://registry.npmjs.org/-/v1/search?text=${query}&size=${limit}&from=${from}`
+  );
+  if (!response.ok) {
+    throw new Error(`Error: ${response.status}`);
+  }
+  return response.json();
+};
 
 (async () => {
-  var packageDotJson = "package.json";
-  var packagesTxt = "";
+  var packageDotJson = 'package.json';
+  var packagesTxt = '';
   let from = 0;
   let limit = 50;
   let total = 0;
-  let packagesSearchResult = [];
   let packages = {};
-  do {
-    packagesSearchResult = await search("@sap", { from: from, limit: limit });
+  let hasMore = true;
+
+  while (hasMore) {
+    const searchResult = await searchNpmPackages('@sap', from, limit);
+    const packagesSearchResult = searchResult.objects;
     total += packagesSearchResult.length;
-    for (let i in packagesSearchResult) {
-      var package = packagesSearchResult[i];
-      if (
-        // No matching version found for mta-lib@0.0.1
-        package.name !== "@sap/wing-service-binding" &&
-        // Verification failed while extracting @sap/textbundle@2.0.6
-        package.name !== "@sap/textbundle" &&
-        // Verification failed while extracting @sap/logging@3.0.0:
-        package.name !== "@sap/logging"
-      ) {
-      }
+    packagesSearchResult.forEach((packageObj) => {
+      var package = packageObj.package;
       packages[package.name] = package.version;
-    }
-    from = from + limit;
-  } while (packagesSearchResult.length > 0);
+    });
+    from += limit;
+    hasMore = packagesSearchResult.length > 0;
+  }
   console.log(`Found ${total} package(s)`);
-  // console.log(packages);
+
   const ordered = {};
   Object.keys(packages)
     .sort()
     .forEach(function (key) {
       ordered[key] = packages[key];
-      packagesTxt += key + "\n";
+      packagesTxt += key + '\n';
     });
+
   fs.readFile(packageDotJson, function (err, packageData) {
+    if (err) throw err;
     var packageJson = JSON.parse(packageData);
     packageJson.dependencies = ordered;
     fs.writeFile(
-      "new-" + packageDotJson,
-      JSON.stringify(packageJson),
+      'new-' + packageDotJson,
+      JSON.stringify(packageJson, null, 2),
       function (err) {
         if (err) throw err;
-        console.log("The dependencies where updated");
+        console.log('The dependencies were updated');
       }
     );
-    fs.writeFile("packages.txt", packagesTxt, function (err) {
+    fs.writeFile('packages.txt', packagesTxt, function (err) {
       if (err) throw err;
-      console.log("The file packages.txt was updated");
+      console.log('The file packages.txt was updated');
     });
   });
 })();

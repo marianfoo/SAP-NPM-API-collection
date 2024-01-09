@@ -1,15 +1,8 @@
 npm config rm @sap:registry
-# rm -rf node_modules 
-# mkdir node_modules
-npm install
-cp package.json package-original.json
-cp new-package.json package.json
 node update-package-json.js
-jq '.' new-package.json > package.json
-cp package.json new-package.json
-# npm install
+cp new-package.json package.json
 # Reduce list of packages to update by using diff on package.json
-git diff package.json | grep + | grep "@sap" | sed 's/[^"]*"\([^"]*\).*/\1/' > packages.txt
+git diff HEAD -- package.json | grep '^+\s*"' | cut -d '"' -f 2 > packages.txt
 
 while read package; do
   ./npm_download.sh $package
@@ -19,5 +12,3 @@ while read package; do
   cp node_modules/$package/LICENS* apis$packageNoPrefix
   cp -r node_modules/$package/doc apis$packageNoPrefix/doc
 done <packages.txt
-#mkdocs build -f mkdocs.yml
-cp package-original.json package.json
