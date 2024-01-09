@@ -1,6 +1,9 @@
 name: Node Workflow
 
-on: [push, pull_request]
+on: 
+    workflow_dispatch:
+    schedule:
+      - cron: '0 3 * * *'
 
 jobs:
   build:
