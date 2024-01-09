@@ -1,0 +1,71 @@
+{
+  "name": "@sap/generator-add-hdb-module",
+  "displayName": "SAP HANA Database Module",
+  "version": "1.10.1",
+  "description": "A database module contains design-time database artifacts. On deployment, a database module is assigned an HDI container to which the corresponding run-time database objects are deployed.",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "main": "generators/app/index.js",
+  "files": [
+    "generators",
+    "yeoman.png",
+    "features.json",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "npm-shrinkwrap.json",
+    "README.md"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "hana-tooling"
+  ],
+  "dependencies": {
+    "@sap-devx/inquirer-gui-folder-browser-plugin": "3.0.1",
+    "@sap-devx/yeoman-ui-types": "1.13.0",
+    "@sap/bas-sdk": "3.7.0",
+    "@sap/cf-tools": "3.2.0",
+    "@sap/xs-tools": "1.1.0",
+    "@sap/generator-base-mta-module": "1.3.7",
+    "@sap/hana-tooling-feature-toggles": "1.3.0",
+    "@sap/mta-lib": "1.7.4",
+    "command-exists": "1.2.9",
+    "md5": "2.3.0",
+    "properties-reader": "2.2.0",
+    "rimraf": "5.0.1",
+    "uuid": "9.0.0",
+    "yeoman-generator": "5.9.0"
+  },
+  "generator-filter": {
+    "types": [
+      "mta.module"
+    ]
+  },
+  "commands": [
+    {
+      "command": "sapbas.addHbdModuleGenerator",
+      "title": "Create SAP HANA Database Module Project From Template",
+      "category": "SAP Business Application Studio"
+    }
+  ],
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          "@babel/preset-env"
+        ]
+      }
+    }
+  },
+  "overrides": {
+    "@sap/bas-sdk": {
+      "axios": "1.5.1"
+    }
+  },
+  "bundledDependencies": [
+    "@sap/xs-tools"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "author": "Portal Team",
+  "dependencies": {
+    "@sap/logging": "6.2.0",
+    "@sap/site-content-deployer": "1.9.x",
+    "commander": "10.0.0",
+    "connect": "3.7.0",
+    "serve-static": "1.15.0"
+  },
+  "description": "Static file server for applications with deploy capabilities",
+  "devDependencies": {
+    "eslint": "8.33.0",
+    "typescript": "4.5.4",
+    "@typescript-eslint/eslint-plugin": "5.42.1",
+    "@typescript-eslint/parser": "5.42.1",
+    "filter-node-package": "^3.1.0"
+  },
+  "files": [
+    "lib",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^14 || ^16 || ^18"
+  },
+  "license": "SEE LICENSE IN LICENSE file",
+  "main": "index.js",
+  "name": "@sap/site-app-server",
+  "scripts": {
+    "lint": "eslint -c .eslintrc.js -f jslint-xml lib/ index.js > jshint.xml || true",
+    "prepareRelease": "clean-packages && npm prune --production",
+    "start": "node --harmony index.js",
+    "test": "echo \"Test not exist for this module.\" "
+  },
+  "version": "1.9.15"
+}

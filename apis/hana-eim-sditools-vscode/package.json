@@ -1,0 +1,26 @@
+{
+  "name": "@sap/hana-eim-sditools-vscode",
+  "displayName": "SAP HANA EIM SDI Tools for App Studio",
+  "description": "SAP HANA EIM Smart Data Integration Tools VS Code extension includes editors - Flowgraph, Replication Task and File Format",
+  "version": "1.1.2",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "enterprise-information-management",
+    "smart-data-integration-tools"
+  ],
+  "files": [
+    "*.vsix",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "README.md",
+    "hana-eim-sdi-1.1.2.vsix",
+    "hana-eim-sdi-1.1.2-theia.vsix"
+  ]
+}

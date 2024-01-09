@@ -1,0 +1,46 @@
+{
+  "name": "@sap/wing-run-config-types",
+  "displayName": "wing-run-config-types",
+  "version": "4.2.0",
+  "description": "Common types definiton for vscode run configuration extension",
+  "license": "See LICENSE.txt",
+  "author": "SAP SE",
+  "publisher": "SAP",
+  "main": "out/src/types.js",
+  "types": "out/src/types.d.ts",
+  "files": [
+    "out/src/**/*.js",
+    "out/src/**/*.d.ts"
+  ],
+  "scripts": {
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx --cache",
+    "pretest": "npm run compile",
+    "test": "nyc mocha -p tsconfig.json --opts ./mocha.opts",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/lodash": "4.14.134",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^12.6.8",
+    "@types/sinon": "^7.0.13",
+    "@types/vscode": "^1.36.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "lodash": "4.17.21",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "prettier": "^2.0.5",
+    "sinon": "^7.3.2",
+    "source-map-support": "^0.5.12",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.9.7"
+  },
+  "engines": {
+    "vscode": "^1.36.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@sap/artifact-management-types",
+  "version": "1.29.0",
+  "description": "Type signatures for artifact management",
+  "types": "./src/index.d.ts",
+  "main": "./src/index.d.ts",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "modify-types-import": "gulp --gulpfile ../../gulpfile.js modifyTypesImport",
+    "pack": "npm run modify-types-import && npm pack"
+  },
+  "dependencies": {
+    "@sap/artifact-management-base-types": "1.29.0"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2"
+  },
+  "keywords": [
+    "artifact-management-types",
+    "project-api-types"
+  ],
+  "author": "",
+  "license": "ISC"
+}

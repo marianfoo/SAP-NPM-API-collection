@@ -1,0 +1,42 @@
+{
+  "name": "@sap/hdi-dynamic-deploy",
+  "description": "HDI dynamic content deployment",
+  "version": "2.7.1",
+  "license": "See LICENSE file",
+  "repository": {},
+  "main": "server.js",
+  "dependencies": {
+    "@sap/audit-logging": "5.8.2",
+    "@sap/hdi-deploy": "4.9.0",
+    "@sap/xsenv": "3.4.0",
+    "body-parser": "1.19.2",
+    "cookie-signature": "1.1.0",
+    "express": "4.17.3",
+    "express-basic-auth": "1.2.1",
+    "uuid": "7.0.3"
+  },
+  "engines": {
+    "node": "^16.0.0 || ^18.0.0 || ^20.0.0"
+  },
+  "files": [
+    "package.json",
+    "lib",
+    "auditlogging.js",
+    "logger.js",
+    "parameter_parser.js",
+    "index.js",
+    "server.js",
+    "ServerWrap.js",
+    "node_modules",
+    "deployment_manager.js",
+    "npm-shrinkwrap.json",
+    "README.md",
+    "CHANGELOG.md",
+    "io.js",
+    "LICENSE"
+  ],
+  "scripts": {
+    "backup-shrinkwrap": "cp npm-shrinkwrap.json backup-npm-shrinkwrap.json",
+    "restore-shrinkwrap": "mv backup-npm-shrinkwrap.json npm-shrinkwrap.json"
+  }
+}

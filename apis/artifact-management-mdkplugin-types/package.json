@@ -1,0 +1,18 @@
+{
+  "name": "@sap/artifact-management-mdkplugin-types",
+  "version": "1.29.0",
+  "description": "Type signatures for artifact management",
+  "types": "./src/index.d.ts",
+  "main": "./src/index.d.ts",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "pack": "npm pack"
+  },
+  "keywords": [
+    "artifact-management-types",
+    "artifact-management-mdkplugin-types",
+    "project-api-types"
+  ],
+  "author": "",
+  "license": "ISC"
+}

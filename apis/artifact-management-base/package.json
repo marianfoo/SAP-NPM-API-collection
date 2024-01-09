@@ -1,0 +1,69 @@
+{
+  "name": "@sap/artifact-management-base",
+  "version": "1.29.0",
+  "main": "dist/src/index.js",
+  "types": "dist/types/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "npm run compile && npm run copy-templates && npm run copy-types",
+    "test": "npm run lint && npm run test-unit",
+    "test-unit": "bash ../../bin/run_unit_tests.sh",
+    "clean": "rm -rf ./dist ./node_modules ./build ./out && rm -rf tsconfig.tsbuildinfo",
+    "circular-deps": "./node_modules/madge/bin/cli.js --warning --circular --extensions ts src/.",
+    "compile": "tsc -p tsconfig.json",
+    "copy-templates": "gulp --gulpfile ./gulpfile.js copyTemplates",
+    "copy-types": "gulp --gulpfile ./gulpfile.js copyTypes && bash ../../bin/update_types_version.sh",
+    "lint": "eslint 'src/**/*.ts?(x)' --quiet",
+    "lint-fix": "eslint 'src/**/*.ts?(x)' --quiet --fix",
+    "premake-module": "bash ../../bin/clean_node_packages.sh",
+    "make-module": "gulp --gulpfile ./gulpfile.js makeNodeModule",
+    "postmake-module": "bash ../../bin/post_build_check.sh",
+    "create-packages": "bash ../../bin/create_node_module.sh"
+  },
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "1.0.1",
+    "@types/ejs": "3.0.5",
+    "@types/glob": "7.1.3",
+    "@types/js-yaml": "3.12.5",
+    "@types/lodash": "4.14.170",
+    "@types/mocha": "8.0.4",
+    "@types/node": "14.14.6",
+    "@types/sinon": "9.0.10",
+    "@types/vscode": "1.52.0",
+    "@typescript-eslint/eslint-plugin": "4.21.0",
+    "@typescript-eslint/parser": "4.21.0",
+    "@vscode-logging/types": "0.1.3",
+    "eslint": "7.23.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "gulp": "4.0.2",
+    "gulp-json-editor": "2.5.6",
+    "madge": "5.0.1",
+    "mocha": "^9.2.2",
+    "mochawesome": "^7.1.3",
+    "node-loader": "^1.0.1",
+    "nyc": "15.1.0",
+    "prettier": "2.2.1",
+    "sinon": "9.2.2",
+    "ts-loader": "^9.2.4",
+    "ts-node": "9.1.0",
+    "typescript": "4.1.6"
+  },
+  "dependencies": {
+    "ejs": "3.1.8",
+    "fast-glob": "3.2.7",
+    "ignore": "5.1.9",
+    "js-yaml": "4.1.0",
+    "lodash": "4.17.21",
+    "vscode-languageserver-types": "3.16.0",
+    "winston": "3.3.3",
+    "winston-daily-rotate-file": "4.5.5",
+    "winston-transport": "4.5.0"
+  },
+  "engines": {
+    "node": ">=14.14.0"
+  }
+}

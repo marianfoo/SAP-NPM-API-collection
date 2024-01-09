@@ -1,0 +1,17 @@
+{
+	"name": "@sap/open.fe",
+	"version": "1.120.0",
+	"description": "SAP open.fe Library containing packages sap.fe.template, sap.fe.macros, sap.fe.core, sap.fe.navigation",
+	"keywords": [
+		"sapui5",
+		"ui5"
+	],
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"author": "SAP SE (https://www.sap.com)",
+	"files": [
+		"*.*",
+		"!*.tgz",
+		"packages/**",
+		"src/**"
+	]
+}

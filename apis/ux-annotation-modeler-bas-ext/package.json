@@ -1,0 +1,35 @@
+{
+  "name": "@sap/ux-annotation-modeler-bas-ext",
+  "displayName": "SAP Fiori Tools - XML Annotation Language Server",
+  "description": "Allows you to access resources that help to define annotations in the code editor thus improving the application development by reducing effort and ensuring code consistency. The following is a subset of features that are part of this extension: code completion, micro-snippets, diagnostics, and internationalization support.",
+  "publisher": "SAPSE",
+  "license": "SEE LICENSE IN LICENSE",
+  "version": "1.12.1",
+  "main": "index.js",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "SAP",
+    "SAP Fiori Elements",
+    "SAP Business Application Studio"
+  ],
+  "private": false,
+  "bugs": {
+    "url": "https://ask.sapfioritools.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "private"
+  },
+  "engines": {
+    "vscode": "^1.73.1"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "*.vsix",
+    "CHANGELOG.md"
+  ]
+}

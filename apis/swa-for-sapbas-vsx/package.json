@@ -1,0 +1,33 @@
+{
+  "name": "@sap/swa-for-sapbas-vsx",
+  "version": "1.2.18",
+  "author": "SAP SE",
+  "description": "Javascript module for SWA tracking to be consumed by VsCode extensions",
+  "main": "src/index.js",
+  "license": "SEE LICENSE IN LICENSE",
+  "typings": "./api.d.ts",
+  "scripts": {
+    "lint": "eslint src/*.js test/*.js",
+    "test": "nyc --reporter=html mocha -r esm",
+    "cover:report": "nyc report --reporter=lcov --reporter=text",
+    "set-version": "node ./scripts/setVersion.js",
+    "validate-version": "node ./scripts/validateVersion.js",
+    "ci": "npm install && npm run test && npm run lint && npm run validate-version && npm run cover:report"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "mocha": "^7.2.0",
+    "prettier": "^2.0.5",
+    "eslint-plugin-import": "2.22.1",
+    "eslint": "6.8.0",
+    "nyc": "^15.1.0",
+    "sinon": "^10.0.0"
+  },
+  "dependencies": {
+    "esm": "3.2.25",
+    "lodash": "4.17.21",
+    "matomo-tracker": "2.2.4",
+    "semver": "7.5.2"
+  }
+}

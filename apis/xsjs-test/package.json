@@ -1,0 +1,38 @@
+{
+  "name": "@sap/xsjs-test",
+  "description": "A Node.js shim for XSEngine tests",
+  "version": "3.2.2",
+  "homepage": "https://cap.cloud.sap/",
+  "keywords": [
+    "CAP",
+    "CDS"
+  ],
+  "author": "SAP SE (https://www.sap.com)",
+  "license": "See LICENSE file",
+  "main": "./lib",
+  "bin": {
+    "xstest": "./bin/xstest"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "xsjs",
+    "package.json",
+    "main.js",
+    "npm-shrinkwrap.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@sap/fibers": "5.0.0-0",
+    "@sap/hdbext": "7.2.0",
+    "istanbul": "0.4.5",
+    "jasmine-console-reporter": "2.0.1",
+    "jasmine-core": "2.5.2",
+    "lodash": "4.17.21"
+  }
+}

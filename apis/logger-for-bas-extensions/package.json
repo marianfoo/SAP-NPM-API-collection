@@ -1,0 +1,42 @@
+{
+  "name": "@sap/logger-for-bas-extensions",
+  "description": "Logger Library For Business Application Studio Extensions",
+  "version": "1.1.0",
+  "author": "SAP",
+  "license": "SAP",
+  "main": "dist/src/logger.js",
+  "typings": "./api.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "api.d.ts"
+  ],
+  "dependencies": {
+    "js-yaml": "^3.14.0",
+    "lodash": "^4.17.20",
+    "logform": "^2.2.0",
+    "winston": "^3.3.3",
+    "fs-extra": "9.0.0",
+    "@sap/swa-for-sapbas-vsx": "^1.1.12"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "9.0.1",
+    "@types/js-yaml": "3.12.5",
+    "@types/lodash": "4.14.165",
+    "@types/sinon": "9.0.9",
+    "sinon": "7.5.0",
+    "sinon-chai": "3.3.0",
+    "filenamify": "^4.2.0"
+  },
+  "scripts": {
+    "ci": "npm-run-all clean compile coverage",
+    "ci:artifacts_only": "npm-run-all clean compile coverage",
+    "clean": "rimraf ./coverage ./nyc_output ./dist",
+    "compile": "tsc -p .",
+    "test": "mocha -t=0",
+    "coverage": "nyc mocha"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

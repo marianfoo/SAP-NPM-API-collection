@@ -1,0 +1,31 @@
+{
+  "name": "@sap/create-hana-database-artifact",
+  "displayName": "Design-time Artifacts Creator for SAP HANA",
+  "description": "Create new SAP HANA database design-time artifacts",
+  "version": "1.10.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "categories": [
+    "Other"
+  ],
+  "files": [
+    "*.vsix",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "features.json",
+    "README.md",
+    "create-hana-database-artifact-1.10.0.vsix"
+  ],
+  "dependencies": {
+    "@sap/hana-client": "2.12.22",
+    "@sap/hana-tooling-feature-toggles": "1.0.1",
+    "@sap-devx/guided-development-types": "0.0.14",
+    "@sap/swa-for-sapbas-vsx": "1.2.15",
+    "@sap/mta-lib": "1.7.4",
+    "datauri": "4.1.0",
+    "dotenv": "13.0.1",
+    "uuid": "8.3.2",
+    "@sap/artifact-management": "1.11.0",
+    "ajv": "8.11.0"
+  }
+}

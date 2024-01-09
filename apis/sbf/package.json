@@ -1,0 +1,90 @@
+{
+  "name": "@sap/sbf",
+  "description": "A Node.js framework for creating CloudFoundry service broker applications",
+  "version": "6.6.5",
+  "repository": {},
+  "license": "SEE LICENSE IN LICENSE file",
+  "main": "sbf.js",
+  "bin": {
+    "gen-catalog-ids": "gen-catalog-ids.js",
+    "hash-broker-password": "hash-broker-password.js",
+    "start-broker": "sbf.js"
+  },
+  "dependencies": {
+    "@sap/audit-logging": "5.8.3",
+    "@sap/logging": "6.2.0",
+    "@sap/sbss": "6.0.0",
+    "@sap/xsenv": "4.0.0",
+    "ajv": "8.11.0",
+    "ajv-formats": "2.1.1",
+    "ajv-keywords": "5.1.0",
+    "async": "3.2.4",
+    "axios": "1.6.0",
+    "axios-mock-adapter": "1.21.1",
+    "basic-auth": "2.0.1",
+    "express": "4.18.2",
+    "form-data": "4.0.0",
+    "http-errors": "1.8.1",
+    "lodash": "4.17.21",
+    "qs": "6.10.3",
+    "semver": "7.5.2",
+    "uuid": "9.0.0",
+    "verror": "1.10.1"
+  },
+  "devDependencies": {
+    "@sap/hdbext": "7.7.2",
+    "chai": "4.3.6",
+    "eslint": "8.48.0",
+    "eslint-html-reporter": "0.7.4",
+    "eslint-plugin-jasmine": "4.1.3",
+    "hdb": "0.19.5",
+    "jwt-decode": "3.1.2",
+    "markdown-toc": "1.2.0",
+    "mocha": "9.1.1",
+    "nock": "13.2.9",
+    "nyc": "15.1.0",
+    "proxyquire": "2.1.3",
+    "request": "2.88.2",
+    "rimraf": "3.0.2",
+    "shelljs": "0.8.5",
+    "sinon": "4.2.2",
+    "sonarqube-scanner": "2.8.2",
+    "supertest": "6.3.1"
+  },
+  "engines": {
+    "node": "^16.0.0 || ^18.0.0 || ^20.0.0"
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "gen-catalog-ids.js",
+    "hash-broker-password.js",
+    "README.md",
+    "sbf.js",
+    "migration.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepare_build_for_mend": "npm install --registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-milestones-npm --proxy=null --@sap:registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-milestones-npm/ --remove-dev --force --omit=dev",
+    "get": "npm install --registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-milestones-npm --proxy=null --@sap:registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-milestones-npm/",
+    "start": "node sbf.js",
+    "test": "nyc mocha 'test/**/*.js' --exit",
+    "itest": "mocha itest/itest.js",
+    "perf_test": "mocha itest/perf_tests",
+    "osb-checker": "node osb-checker-test/run.js",
+    "new_lint": "npx eslint -c .eslintrc.json -f stylish --ignore-path .gitignore . > eslint.xml",
+    "lint": "eslint -f stylish --ignore-path .gitignore .",
+    "toc": "markdown-toc -i README.md",
+    "prepareRelease": "npm shrinkwrap && clean-packages -i && npm prune --production && npm shrinkwrap --production"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ]
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": ""
+}

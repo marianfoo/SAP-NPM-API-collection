@@ -1,0 +1,60 @@
+{
+  "name": "@sap/dwf-deploy",
+  "description": "SAP HANA Data Warehousing Foundation - Deploy",
+  "version": "2.6.6",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {},
+  "main": "main.js",
+  "dependencies": {
+    "@sap/xsenv": "3.1.1",
+    "ajv": "6.12.6",
+    "async": "3.2.0",
+    "request": "2.88.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "filter-node-package": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "istanbul-combine": "^0.3.0",
+    "mocha": "^9.0.2",
+    "mocha-junit-reporter": "^2.0.0",
+    "mocha-multi-reporters": "^1.1.5",
+    "nock": "^13.0.6",
+    "shelljs": "^0.8.0",
+    "should": "^13.2.3",
+    "sinon": "^11.1.1",
+    "standard": "^16.0.0"
+  },
+  "engines": {
+    "node": "^12.0.0 || ^14.0.0"
+  },
+  "files": [
+    "package.json",
+    "LICENSE",
+    "lib",
+    "main.js",
+    "node_modules",
+    "npm-shrinkwrap.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "start": "node main.js",
+    "start-dbg": "node --inspect-brk main.js",
+    "start-coverage": "node_modules/.bin/istanbul cover main.js --",
+    "lint": "standard",
+    "test": "node test/index.js",
+    "test-dbg": "node --inspect-brk test/index.js",
+    "test-coverage": "node_modules/.bin/istanbul cover test/index.js --",
+    "test-mocha-dbg": "mocha --inspect-brk",
+    "prepare-release": "npm shrinkwrap && clean-packages -i && npm prune"
+  },
+  "keywords": [
+    "sap",
+    "hana",
+    "database",
+    "in-memory",
+    "dwf",
+    "deploy"
+  ]
+}

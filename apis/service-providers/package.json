@@ -1,0 +1,84 @@
+{
+  "name": "@sap/service-providers",
+  "displayName": "service-providers",
+  "version": "0.3.12",
+  "description": "SAP library for service providers",
+  "author": "SAP SE",
+  "publisher": "SAP",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "main": "out/src/index.js",
+  "types": "out/src/index.d.ts",
+  "files": [
+    "out/src/**/*.js",
+    "out/src/**/*.d.ts",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "tsc -p ./",
+    "format:fix": "prettier --write --ignore-path .gitignore \"**/*.@(ts|js|json|md)\"",
+    "format:validate": "prettier --check --ignore-path .gitignore \"**/*.@(ts|js|json|md)\"",
+    "lint": "eslint . --ext .ts,.tsx --cache --max-warnings=0",
+    "lint:fix": "eslint . --ext .ts,.tsx --cache --fix",
+    "pretest": "npm run compile",
+    "test": "nyc mocha -p tsconfig.json --opts ./mocha.opts",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "@sap/cds": "3.34.3",
+    "@log4js-node/log4js-api": "1.0.2",
+    "fast-xml-parser": "3.16.0",
+    "fs-extra": "7.0.1",
+    "lodash": "4.17.16",
+    "log4js": "6.1.0",
+    "request": "2.88.0",
+    "vkbeautify": "0.99.3"
+  },
+  "devDependencies": {
+    "@sap/consume-services-types": "0.3.11",
+    "@types/chai": "^4.1.7",
+    "@types/fs-extra": "^5.0.5",
+    "@types/lodash": "^4.14.134",
+    "@types/mocha": "5.2.6",
+    "@types/nock": "^10.0.3",
+    "@types/node": "^12.0.8",
+    "@types/sinon": "^7.0.13",
+    "@types/request": "2.48.1",
+    "@types/vkbeautify": "^0.99.2",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "chai": "4.2.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "mocha": "6.1.4",
+    "nock": "10.0.6",
+    "nyc": "14.1.1",
+    "prettier": "^2.0.5",
+    "sinon": "7.3.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.9.7"
+  },
+  "prettier": {
+    "endOfLine": "lf"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "eslint --fix --max-warnings=0"
+    ],
+    "*.{js,ts,md,json}": [
+      "prettier --write"
+    ]
+  }
+}

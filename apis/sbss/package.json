@@ -1,0 +1,52 @@
+{
+  "name": "@sap/sbss",
+  "version": "6.1.0",
+  "description": "Node.js client library for SBSS",
+  "license": "SEE LICENSE IN LICENSE file",
+  "main": "lib/",
+  "dependencies": {
+    "debug": "4.3.3",
+    "lodash": "4.17.21",
+    "pg": "8.5.1",
+    "verror": "1.10.0"
+  },
+  "peerDependencies": {
+    "@sap/hdbext": "^7.6.0"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "3.2.2",
+    "filter-node-package": "3.2.0",
+    "c8": "7.11.0",
+    "mocha": "7.1.1",
+    "node-build": "^2.0.1",
+    "node-fetch": "^2.6.1",
+    "node-style": "^2.0.0",
+    "proxyquire": "1.7.10",
+    "shelljs": "0.8.5",
+    "sinon": "7.5.0"
+  },
+  "engines": {
+    "node": "^12 || ^14 || ^16 || ^18 || ^20"
+  },
+  "files": [
+    "lib",
+    "npm-shrinkwrap.json",
+    "README.md",
+    "CHANGELOG.md",
+    "migration.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "eslint -f stylish --ignore-path .gitignore .",
+    "prepareRelease": "npm shrinkwrap && clean-packages -i",
+    "test": "node build/test",
+    "itest": "mocha itest/itest.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "sbss"
+  ]
+}

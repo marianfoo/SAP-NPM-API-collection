@@ -1,0 +1,35 @@
+{
+  "name": "@sap/ux-help-bas-ext",
+  "displayName": "SAP Fiori Tools - Guided Development",
+  "description": "Allows you to access how-to guides and tutorials to implement SAP Fiori elements features using a guided approach.",
+  "publisher": "SAPSE",
+  "license": "SEE LICENSE IN LICENSE",
+  "version": "1.12.1",
+  "main": "index.js",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "SAP",
+    "SAP Fiori Elements",
+    "SAP Business Application Studio"
+  ],
+  "private": false,
+  "bugs": {
+    "url": "https://ask.sapfioritools.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "private"
+  },
+  "engines": {
+    "vscode": "^1.73.1"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "*.vsix",
+    "CHANGELOG.md"
+  ]
+}

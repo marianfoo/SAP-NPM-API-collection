@@ -1,0 +1,29 @@
+{
+  "name": "@sap/xs-tools",
+  "displayName": "XS Tools API",
+  "version": "1.2.0",
+  "description": "XS Tools API",
+  "publisher": "SAPSE",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "./out/src/index.js",
+  "types": "./out/src/index.d.ts",
+  "keywords": [
+    "hana-tooling"
+  ],
+  "author": "SAP SE",
+  "files": [
+    "out",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "features.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "axios": "1.6.2",
+    "comment-json": "4.2.3",
+    "dotenv": "16.3.1",
+    "lodash": "4.17.21",
+    "properties-to-json": "0.2.1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@sap/ux-service-modeler-bas-ext",
+  "displayName": "SAP Fiori Tools - Service Modeler",
+  "description": "Allows you to visualize OData service and its associated annotations",
+  "publisher": "SAPSE",
+  "license": "SEE LICENSE IN LICENSE",
+  "version": "1.12.1",
+  "main": "index.js",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "SAP",
+    "SAP Fiori Elements",
+    "SAP Business Application Studio"
+  ],
+  "private": false,
+  "bugs": {
+    "url": "https://ask.sapfioritools.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "private"
+  },
+  "engines": {
+    "vscode": "^1.73.1"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "*.vsix",
+    "CHANGELOG.md"
+  ]
+}

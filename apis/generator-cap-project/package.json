@@ -1,0 +1,37 @@
+{
+  "name": "@sap/generator-cap-project",
+  "displayName": "CAP Project",
+  "version": "1.7.7",
+  "description": "Creates a new SAP Cloud Application Programming Model project.",
+  "homepage": "https://cap.cloud.sap/",
+  "keywords": [
+    "CAP",
+    "CDS",
+    "SAP",
+    "generate",
+    "generator",
+    "yeoman-generator"
+  ],
+  "author": "SAP SE (https://www.sap.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "generator-filter": {
+    "category": "sap.cap",
+    "type": "project"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "generators/app/index.js",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "yeoman.png"
+  ],
+  "main": "generators/app/index.js",
+  "dependencies": {
+    "@sap-devx/yeoman-ui-types": "1.13.0",
+    "@vscode-logging/logger": "1.2.3",
+    "yeoman-generator": "5.10.0"
+  }
+}

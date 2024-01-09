@@ -1,0 +1,58 @@
+{
+  "name": "@sap/hana-xs-tools",
+  "displayName": "SAP HANA XS Advanced Tools",
+  "description": "Allows you to perform operations for the SAP HANA XS Advanced runtime",
+  "version": "1.1.0",
+  "publisher": "SAPSE",
+  "license": "SEE LICENSE IN LICENSE",
+  "categories": [
+    "Other"
+  ],
+  "dependencies": {
+    "comment-json": "4.2.3",
+    "lodash": "4.17.21",
+    "@sap-devx/webview-rpc": "0.4.1",
+    "@sap/hana-tooling-feature-toggles": "1.3.0",
+    "@vscode-logging/wrapper": "1.0.2",
+    "properties-reader": "2.2.0",
+    "@mdi/js": "6.7.96",
+    "@sap-devx/inquirer-gui": "3.0.2",
+    "@vscode/webview-ui-toolkit": "1.2.2",
+    "v-tooltip": "2.1.3",
+    "vue": "2.7.14",
+    "vue-mdijs": "0.4.3",
+    "vue-select": "3.20.2"
+  },
+  "files": [
+    "*.vsix",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "features.json",
+    "README.md",
+    "hana-xs-tools-1.1.0.vsix"
+  ],
+  "prettier": {
+    "endOfLine": "lf"
+  },
+  "lint-staged": {
+    "*.{js,ts,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "overrides": {
+    "@sap/bas-sdk": {
+      "minimatch": "3.1.2"
+    }
+  }
+}

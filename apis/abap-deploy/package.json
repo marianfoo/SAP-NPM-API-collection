@@ -1,0 +1,102 @@
+{
+  "name": "@sap/abap-deploy",
+  "description": "Deploy Fiori App to ABAP System",
+  "version": "0.10.27",
+  "author": "SAP",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "main": "lib/api.js",
+  "bin": {
+    "abap-deploy": "lib/commands/abap-deploy.js"
+  },
+  "types": "api.d.ts",
+  "scripts": {
+    "version:suggest": "conventional-recommended-bump -preset=\"angular\"",
+    "ci": "npm-run-all type-check format:validate coverage:*",
+    "format:fix": "prettier --write --ignore-path .prettierignore \"**/*.@(ts|js|json|md|yml)\"",
+    "format:validate": "prettier --check --ignore-path .prettierignore \"**/*.@(ts|js|json|md|yml)\"",
+    "test": "mocha \"./test/**/*spec.js\" \"./test/**/index.js\"",
+    "lint": "npm run ci",
+    "coverage:run": "shx rm -rf reports/.nyc_output && nyc --no-clean mocha \"./test/**/*spec.js\" \"./test/**/index.js\" ",
+    "type-check": "tsc api.d.ts"
+  },
+  "dependencies": {
+    "@sap/swa-for-sapbas-vsx": "1.2.7",
+    "axios": "0.21.1",
+    "chalk": "3.0.0",
+    "cosmiconfig": "6.0.0",
+    "fast-safe-stringify": "2.0.7",
+    "fs-extra": "8.1.0",
+    "lodash": "4.17.21",
+    "moment-timezone": "0.5.27",
+    "ora": "4.0.3",
+    "prompts": "^2.3.0",
+    "triple-beam": "1.3.0",
+    "winston": "3.3.3",
+    "xml2js": "0.4.22",
+    "yargs": "17.0.0-candidate.7",
+    "zip-a-folder": "0.0.9"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "1.17.0",
+    "@types/fs-extra": "8.0.1",
+    "@types/lodash": "4.14.146",
+    "@types/yargs": "13.0.3",
+    "npm-run-all": "4.1.5",
+    "typescript": "3.7.2",
+    "chai": "4.2.0",
+    "mocha": "6.2.2",
+    "nyc": "15.0.0",
+    "prettier": "1.19.1",
+    "lint-staged": "9.4.2",
+    "husky": "3.0.9",
+    "conventional-recommended-bump": "6.0.4",
+    "conventional-changelog-cli": "2.0.27",
+    "cz-conventional-changelog": "3.0.2",
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
+    "shx": "0.3.2",
+    "sinon": "7.3.2"
+  },
+  "files": [
+    "lib/",
+    "README.md",
+    "LICENSE.txt"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,json,md,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {},
+  "mocha": {
+    "recursive": true,
+    "reporter": "spec",
+    "ui": "bdd"
+  },
+  "nyc": {
+    "include": [
+      "lib/**/*.js"
+    ],
+    "reporter": [
+      "text",
+      "lcov"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

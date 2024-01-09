@@ -1,0 +1,51 @@
+{
+  "name": "@sap/generator-hdb-project",
+  "displayName": "SAP HANA Database Project",
+  "version": "1.10.1",
+  "description": "Creates a new SAP HANA database project",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://help.sap.com/viewer/c2b99f19e9264c4d9ae9221b22f6f589/",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "main": "generators/app/index.js",
+  "files": [
+    "generators",
+    "yeoman.png",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "features.json",
+    "npm-shrinkwrap.json",
+    "README.MD"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "hana-tooling"
+  ],
+  "dependencies": {
+    "yeoman-generator": "5.9.0",
+    "@sap-devx/yeoman-ui-types": "1.12.1",
+    "@sap/generator-add-hdb-module": "1.10.1"
+  },
+  "generator-filter": {
+    "types": [
+      "project",
+      "hana"
+    ]
+  },
+  "commands": [
+    {
+      "command": "sapbas.addHbdProjectGenerator",
+      "title": "Create SAP HANA Database Project Project From Template",
+      "category": "SAP Business Application Studio"
+    }
+  ],
+  "overrides": {
+    "@sap/generator-add-hdb-module": {
+      "@sap/bas-sdk": {
+        "axios": "1.5.1"
+      }
+    }
+  }
+}

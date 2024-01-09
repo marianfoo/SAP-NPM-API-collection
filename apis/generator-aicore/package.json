@@ -1,0 +1,77 @@
+{
+  "name": "@sap/generator-aicore",
+  "displayName": "AI Core",
+  "version": "2.3.8",
+  "description": "AI Core Application Generator with Yeoman Genrator AI@SAP",
+  "keywords": [
+    "yeoman-generator",
+    "AI Core",
+    "Artificial Intelligence",
+    "Machine Learning"
+  ],
+  "homepage": "https://help.sap.com/docs/sap-ai-core/sap-ai-core-toolkit/sap-ai-core-toolkit?locale=en-US&version=CLOUD",
+  "files": [
+    "generators/**/*",
+    "src/**/*",
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "icon": "generators/app/templates/aicore.png",
+  "main": "generators/app/index.js",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "scripts": {
+    "clean": "rimraf -rf ./generators",
+    "build": "npm install && npm run clean && tsc --project ./ && npm run copydeps && npm pack",
+    "watch": "npm run watch-tsc --silent & npm run watch-deps --silent",
+    "prepublishOnly": "npm run build",
+    "test-compile": "tsc -p ./",
+    "test-watch": "tsc -watch -p ./",
+    "pretest": "yarn run test-compile && yarn run lint",
+    "copydeps": "copyfiles --up 1 \"src/app/templates/**\" generators/"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "@sap-devx/yeoman-ui-types": "^1.12.1",
+    "i18next": "^23.2.11",
+    "mkdirp": "^3.0.1",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6",
+    "yeoman-generator": "^5.9.0"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.17.3",
+    "@sap/cf-tools": "^2.0.1",
+    "@sap/ux-specification": "^1.90.12",
+    "@sap/wing-service-explorer": "^1.7.2",
+    "@types/glob": "^7.2.0",
+    "@types/mkdirp": "^1.0.2",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.2",
+    "@types/yeoman-generator": "^5.2.7",
+    "@types/yosay": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "chalk": "^4.1.2",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "glob": "^7.2.0",
+    "inquirer": "^8.2.0",
+    "path": "^0.12.7",
+    "rimraf": "^3.0.2",
+    "tsc-watch": "^4.5.0",
+    "tslib": "^2.3.1",
+    "yaml": "^1.10.2",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-environment": "^3.6.0",
+    "yeoman-test": "^6.2.0",
+    "yosay": "^2.0.2"
+  },
+  "author": "SAP",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP-samples/ai-core-samples.git"
+  }
+}

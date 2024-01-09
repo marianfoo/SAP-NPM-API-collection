@@ -1,0 +1,57 @@
+{
+  "name": "@sap/dwf-dlm-backend",
+  "description": "SAP HANA Data Warehousing Foundation - DLM - Backend",
+  "version": "2.5.8",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "@sap/dwf-core": "2.2.7",
+    "ajv": "6.12.6"
+  },
+  "devDependencies": {
+    "@sap/mock-data": "1.0.0",
+    "@sap/node-hdb-mock": "1.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.22.0",
+    "filter-node-package": "2.2.0",
+    "grunt": "^1.3.0",
+    "grunt-jasmine-node-coverage": "2.0.1",
+    "jasmine": "^3.7.0",
+    "jasmine-core": "^3.7.1",
+    "jasmine-reporters": "^2.3.2"
+  },
+  "engines": {
+    "node": "^10.0.0 || ^12.0.0"
+  },
+  "files": [
+    "package.json",
+    "src",
+    "main.js",
+    "node_modules",
+    "npm-shrinkwrap.json",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "start": "node main.js",
+    "start-dbg": "node --debug-brk main.js",
+    "test": "node node_modules/@sap/mock-data/src/test/jasmine.js default_timeout_interval 30",
+    "test-dbg": "node --debug-brk node_modules/@sap/mock-data/src/test/jasmine.js default_timeout_interval 120",
+    "lint": "eslint .",
+    "grunt": "grunt --gruntfile Gruntfile.js",
+    "prepare-release": "npm shrinkwrap && clean-packages -i && npm prune"
+  },
+  "keywords": [
+    "sap",
+    "hana",
+    "database",
+    "in-memory",
+    "dwf",
+    "dlm",
+    "backend"
+  ]
+}

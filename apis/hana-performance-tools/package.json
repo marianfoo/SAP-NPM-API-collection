@@ -1,0 +1,64 @@
+{
+  "name": "@sap/hana-performance-tools",
+  "displayName": "hana-performance-tools",
+  "description": "SAP HANA SQL Analyzer for Visual Studio Code",
+  "version": "1.3.18",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@typescript-eslint/eslint-plugin": "5.12.0",
+    "@typescript-eslint/parser": "5.12.0",
+    "eslint": "8.9.0",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-output": "3.0.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.27.1",
+    "eslint-plugin-sonarjs": "0.12.0",
+    "fork-ts-checker-webpack-plugin": "7.1.1",
+    "grunt": "1.3.0",
+    "grunt-cli": "1.3.2",
+    "grunt-env": "1.0.1",
+    "husky": "4.2.5",
+    "lint-staged": "9.2.5",
+    "onchange": "7.0.2",
+    "prettier": "1.19.1",
+    "shx": "0.3.3",
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "postinstall": "grunt setVersion && npm run bootstrap",
+    "bootstrap": "cd packages/vscode && npm install",
+    "package": "cd packages/vscode && npm run package && shx mv *.vsix ../../",
+    "build": "cd packages/vscode && npm run build",
+    "watch": "cd packages/vscode && npm run watch",
+    "format": "prettier --write packages/vscode/src/**/*.{ts,tsx}",
+    "format-watch": "onchange --await-write-finish 1000 \"**/*.{ts,tsx}\" -- prettier --write {{changed}}",
+    "componenttest": "cd packages/vscode && npm run testAll:coverage",
+    "checkcoverage": "cd packages/vscode && npm run checkcoverage",
+    "eslint": "eslint packages/vscode/src/**/*.ts --quiet --fix",
+    "checkstyle": "eslint-output --ext packages/vscode/src/**/*.{ts,tsx} --quiet .",
+    "sonar": "npm run checkstyle ; docker run --rm  -e SONAR_HOST_URL=\"https://sonar.tools.sap\"  -e SONAR_LOGIN=\"${SONARQUBE_TOKEN}\" -v \"${PWD}:${PWD}\" public.int.repositories.cloud.sap/com.sap.prd.sonar/sonar-scanner-cache:4.6-sap-03 -Dsonar.projectBaseDir=\"${PWD}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache --fix"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "diff-match-patch": "^1.0.5"
+  }
+}

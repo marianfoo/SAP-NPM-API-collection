@@ -1,0 +1,20 @@
+{
+  "name": "@sap/hana-tooling-feature-toggles",
+  "displayName": "SAP HANA tooling feature toggles",
+  "version": "1.3.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "hana-tooling"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "npm-shrinkwrap.json",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "README.md"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "author": "SAP Portal Team",
+  "dependencies": {
+    "@sap/xsenv": "4.1.0",
+    "archiver": "6.0.1",
+    "async": "3.2.5",
+    "glob": "10.3.10",
+    "axios": "1.6.1"
+  },
+  "description": "SAP site deployer for independent mta",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "8.33.0",
+    "typescript": "4.5.4",
+    "@typescript-eslint/eslint-plugin": "5.42.1",
+    "@typescript-eslint/parser": "5.42.1",
+    "filter-node-package": "^3.1.0",
+    "mocha": "^10.1.0",
+    "mochawesome": "^7.1.3",
+    "sinon": "^15.0.1"
+  },
+  "engines": {
+    "node": "^14 || ^16 || ^18"
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "README.md",
+    "deploy.js",
+    "index.js",
+    "LICENSE"
+  ],
+  "license": "SEE LICENSE IN LICENSE file",
+  "name": "@sap/site-content-deployer",
+  "scripts": {
+    "lint": "eslint -c .eslintrc.js -f jslint-xml lib/ deploy.js > jshint.xml || true",
+    "minification": "echo 'no minification defined'",
+    "prepareRelease": "clean-packages && npm prune --production",
+    "start": "node --harmony deploy.js",
+    "test": "mocha --recursive --reporter mochawesome"
+  },
+  "version": "1.9.21"
+}

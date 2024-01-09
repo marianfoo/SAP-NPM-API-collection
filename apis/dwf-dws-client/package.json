@@ -1,0 +1,70 @@
+{
+  "name": "@sap/dwf-dws-client",
+  "version": "2.6.8",
+  "description": "client to consume data warehouse services",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@sap/dwf-ndso-backend": "2.3.3",
+    "@sap/hana-client": "2.7.26",
+    "@sap/hdbext": "7.1.3",
+    "@sap/logging": "6.0.3",
+    "@sap/textbundle": "2.2.1",
+    "@sap/xsenv": "1.2.9",
+    "@sap/xssec": "2.2.5",
+    "async": "2.6.1",
+    "death": "1.1.0",
+    "express": "4.16.4",
+    "request": "2.88.0"
+  },
+  "devDependencies": {
+    "body-parser": "1.17.2",
+    "filter-node-package": "2.2.0",
+    "jsdoc": "3.4.2",
+    "randomstring": "1.1.5",
+    "command-line-args": "4.0.2",
+    "standard": "^11.0.1",
+    "istanbul": "^0.4.5",
+    "passport": "0.3.2",
+    "mocha": "^3.5.0",
+    "mocha-junit-reporter": "^1.13.0",
+    "mocha-multi-reporters": "^1.1.5",
+    "should": "^12.0.0",
+    "request-stats": "3.0.0",
+    "@sap/dwf-build-helper": "1.0.15",
+    "@sap/dwf-api-wrappers": "1.5.0"
+  },
+  "engines": {
+    "node": "^12.0.0 || ^14.0.0"
+  },
+  "files": [
+    "flowGraph",
+    "helpers",
+    "taskChain",
+    "hanaNative",
+    "index.js",
+    "i18n",
+    "README.md",
+    "LICENSE",
+    "npm-shrinkwrap.json"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "lint": "standard",
+    "bh:validate": "build-helper",
+    "bh:shrinkwrap": "build-helper --shrinkwrap-create",
+    "test": "node tests/index.js",
+    "test:coverage": "node_modules/.bin/istanbul cover tests/index.js",
+    "doc": "jsdoc -c config.json -d doc -r .",
+    "prepare-release": "rm helpers/README.md && clean-packages && npm prune --production && ls -Al"
+  },
+  "standard": {
+    "envs": [
+      "es6",
+      "node"
+    ]
+  }
+}

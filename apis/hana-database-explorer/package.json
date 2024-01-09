@@ -1,0 +1,42 @@
+{
+  "name": "@sap/hana-database-explorer",
+  "displayName": "SAP HANA Database Explorer",
+  "description": "SAP HANA Database Explorer for Visual Studio Code package",
+  "version": "1.20.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "hana-tooling"
+  ],
+  "files": [
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "features.json",
+    "README.md",
+    "hana-database-explorer-1.20.0-bas.vsix"
+  ],
+  "dependencies": {
+    "@sap/bas-sdk": "3.7.2",
+    "@sap/cf-tools": "3.2.0",
+    "@sap/hana-client": "2.18.24",
+    "@sap/swa-for-sapbas-vsx": "1.2.18",
+    "@sap_oss/node-socketio-stream": "1.0.5",
+    "@vscode-logging/wrapper": "1.0.2",
+    "command-exists": "1.2.9",
+    "hdb": "0.19.5",
+    "https-proxy-agent": "7.0.0",
+    "json-2-csv": "4.1.0",
+    "node-fetch": "2.6.11",
+    "semver": "7.5.4",
+    "uuid": "9.0.0",
+    "which": "4.0.0"
+  },
+  "overrides": {
+    "@sap/bas-sdk": {
+      "axios": "1.6.2"
+    }
+  }
+}

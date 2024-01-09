@@ -1,0 +1,84 @@
+{
+  "name": "@sap/wing-service-explorer",
+  "version": "1.8.0",
+  "description": "Provide the ability to explore SAP services",
+  "license": "See LICENSE.txt",
+  "author": "SAP SE",
+  "keywords": [],
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "format:fix": "prettier --write --ignore-path .gitignore \"**/*.@(ts|js|json|md)\"",
+    "format:validate": "prettier --check --ignore-path .gitignore \"**/*.@(ts|js|json|md)\"",
+    "install-dev-dependencies": "npm install --only=dev --ignore-scripts",
+    "lint": "eslint . --ext .ts,.tsx --cache --max-warnings=0",
+    "postbuild": "node copy-files.js",
+    "pretest": "npm run build",
+    "test": "nyc mocha -p tsconfig.json --opts ./mocha.opts",
+    "watch": "tsc -p . --watch"
+  },
+  "dependencies": {
+    "lodash": "4.17.21",
+    "axios": "^0.21.1",
+    "vkbeautify": "0.99.3",
+    "xml2js": "0.5.0",
+    "fs-extra": "7.0.1",
+    "@vscode-logging/types": "~0.1.1",
+    "fast-xml-parser": "4.2.4"
+  },
+  "devDependencies": {
+    "@sap/consume-services-types": "0.3.11",
+    "@types/chai": "^4.1.7",
+    "@types/fs-extra": "^8.0.0",
+    "@types/lodash": "4.14.154",
+    "@types/mocha": "5.2.6",
+    "@types/mock-fs": "^3.6.30",
+    "@types/nock": "^10.0.3",
+    "@types/node": "^12.0.8",
+    "@types/sinon": "^7.0.13",
+    "@types/vkbeautify": "^0.99.2",
+    "@types/xml2js": "^0.4.4",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "chai": "4.2.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "mocha": "6.1.4",
+    "mock-fs": "4.10.1",
+    "nock": "10.0.6",
+    "nyc": "14.1.1",
+    "prettier": "^2.0.5",
+    "sinon": "7.3.2",
+    "typescript": "^3.9.7",
+    "ts-node": "^8.3.0",
+    "axios-mock-adapter": "1.21.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "printWidth": 100
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "eslint --fix --max-warnings=0"
+    ],
+    "*.{js,ts,md,json}": [
+      "prettier --write"
+    ]
+  }
+}

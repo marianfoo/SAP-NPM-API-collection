@@ -1,0 +1,79 @@
+{
+  "name": "@sap/hana-project-explorer",
+  "displayName": "SAP HANA Project Explorer",
+  "description": "Allows you to deploy SAP HANA database modules and artifacts and manage database connections",
+  "version": "1.19.0",
+  "publisher": "SAPSE",
+  "license": "SEE LICENSE IN LICENSE",
+  "categories": [
+    "Other"
+  ],
+  "dependencies": {
+    "@sap/artifact-management": "1.28.0",
+    "@sap/artifact-management-base": "1.28.0",
+    "@sap-devx/guided-development-types": "0.0.15",
+    "datauri": "4.1.0",
+    "@sap/cf-tools": "3.2.0",
+    "@sap/mta-lib": "1.7.4",
+    "@sap/swa-for-sapbas-vsx": "1.2.18",
+    "@vscode-logging/wrapper": "1.0.2",
+    "dotenv": "16.3.1",
+    "dotenv-expand": "10.0.0",
+    "fs-extra": "11.1.1",
+    "klaw": "4.1.0",
+    "lodash": "4.17.21",
+    "glob": "10.3.3",
+    "minimatch": "9.0.0",
+    "stream-to-array": "2.3.0",
+    "through2": "4.0.2",
+    "tmp-promise": "3.0.3",
+    "uuid": "9.0.0",
+    "@sap/bas-sdk": "3.7.2",
+    "@sap/hana-client": "2.18.24",
+    "parse-gitignore": "1.0.1",
+    "@sap-theming/theming-base-content": "11.1.29",
+    "@sap/hdi": "4.5.2",
+    "archiver": "6.0.1",
+    "command-exists": "1.2.9",
+    "md5": "2.3.0",
+    "node-stream-zip": "1.15.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rimraf": "5.0.0",
+    "semver": "7.5.4",
+    "xml-js": "1.6.11",
+    "fbemitter": "3.0.0",
+    "allotment": "1.19.3"
+  },
+  "files": [
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "features.json",
+    "README.md",
+    "hana-project-explorer-1.19.0-bas.vsix"
+  ],
+  "prettier": {
+    "endOfLine": "lf"
+  },
+  "lint-staged": {
+    "*.{js,ts,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "overrides": {
+    "@sap/bas-sdk": {
+      "axios": "1.6.2"
+    }
+  }
+}

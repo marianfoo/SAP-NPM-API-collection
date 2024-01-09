@@ -1,0 +1,221 @@
+{
+	"name": "@sap/adp-ve-bas-ext",
+	"displayName": "SAPUI5 Visual Editor",
+	"description": "Add changes to SAPUI5 Adaptation Project",
+	"repository": "plana/adaptation-project",
+	"version": "1.1.51",
+	"publisher": "SAP",
+	"scripts": {
+		"vscode:prepublish": "npm run build",
+		"build": "tsc -p .",
+		"lint": "eslint src --ext ts",
+		"lint:report": "eslint src -f json -o ../../reports/eslintResults/adp-visual-editor-bas-ext.json",
+		"lint:fix": "eslint src --ext ts --fix",
+		"watch": "tsc -watch -p .",
+		"test": "mocha 'test/**/*.test.ts'",
+		"test:report": "mocha 'test/**/*.test.ts' -R mocha-junit-reporter --reporter-options mochaFile=../../reports/testResults/adp-visual-editor-bas-ext.xml",
+		"coverage": "nyc npm test",
+		"format": "prettier --write 'src/**/*.ts' 'test/**/*.ts' '*.json'",
+		"clean": "rm -rf uiadaptation && rm -rf watt/client/* && rm -rf watt/client/*",
+		"clone": "git clone -b bas_master https://github.wdf.sap.corp/DevX/uiadaptation.git",
+		"compile": "(cd uiadaptation/client/ && npm install --unsafe-perm=true && npm run bundle)",
+		"move": "cp -a uiadaptation/client/dist/. watt/client",
+		"move:vsix": "cp -a *.vsix ../adp-bas-extension",
+		"package": "vsce package --yarn",
+		"run:publish": "./scripts/prepublishOnly.sh",
+		"run:afterPackageProduction": "bash ./scripts/afterPackageProduction.sh",
+		"all": "npm run clean && npm run clone && npm run compile && npm run move && npm run run:publish",
+		"all:production": "npm run all && npm run run:afterPackageProduction"
+	},
+	"files": [
+		"*.vsix"
+	],
+	"engines": {
+		"vscode": "^1.73.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"extensionDependencies": [
+		"SAP.vscode-watt-framework-extension",
+		"sapos.yeoman-ui"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "watt.openVisualEditor",
+				"title": "Open SAPUI5 Visual Editor",
+				"category": "Adaptation Project"
+			},
+			{
+				"command": "watt.openPreview",
+				"title": "Open Preview",
+				"category": "Adaptation Project"
+			},
+			{
+				"command": "adp.openDeploymentWizard",
+				"title": "Open Deployment Wizard",
+				"category": "Adaptation Project"
+			},
+			{
+				"command": "adp.replaceODataService",
+				"title": "Replace OData Service",
+				"category": "Adaptation Project"
+			},
+			{
+				"command": "adp.addAnnotationFile",
+				"title": "Add Local Annotation File",
+				"category": "Adaptation Project"
+			},
+			{
+				"command": "adp.addODataServiceAndModel",
+				"title": "Add OData Service And SAPUI5 Model",
+				"category": "Adaptation Project"
+			},
+			{
+				"command": "adp.addSAPUI5ComponentUsages",
+				"title": "Add SAPUI5 Component Usages",
+				"category": "Adaptation Project"
+			},
+			{
+				"command": "adp.openCreateAdpProjectWizard",
+				"title": "Create",
+				"category": "Adaptation Project"
+			}
+		],
+		"menus": {
+			"adp.project": [
+				{
+					"command": "watt.openVisualEditor",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "1_adp_preview_group"
+				},
+				{
+					"command": "watt.openPreview",
+					"when": "resource in sap.adp.contextMenu.projectRoots ||  resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "1_adp_preview_group"
+				},
+				{
+					"command": "adp.openDeploymentWizard",
+					"when": "resource in sap.adp.contextMenu.projectRoots ||  resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "2_adp_deploy_group"
+				},
+				{
+					"command": "adp.replaceODataService",
+					"when": "resource in sap.adp.contextMenu.projectRoots ||  resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "3_adp_manifest_change_group"
+				},
+				{
+					"command": "adp.addAnnotationFile",
+					"when": "resource in sap.adp.contextMenu.projectRoots ||  resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "3_adp_manifest_change_group"
+				},
+				{
+					"command": "adp.addODataServiceAndModel",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.appRoots || resource in sap.adp.contextMenu.webappRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "3_adp_manifest_change_group"
+				},
+				{
+					"command": "adp.addSAPUI5ComponentUsages",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.appRoots || resource in sap.adp.contextMenu.webappRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "3_adp_manifest_change_group"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "watt.openVisualEditor",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.appRoots || resource in sap.adp.contextMenu.webappRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "navigation"
+				},
+				{
+					"submenu": "adp.project",
+					"group": "0_adp_submenu_group"
+				}
+			]
+		},
+		"submenus": [
+			{
+				"id": "adp.project",
+				"label": "Adaptation Project"
+			}
+		],
+		"languages": [
+			{
+				"id": "json",
+				"extensions": [
+					".appdescr_variant",
+					".change",
+					".variant",
+					".ctrl_variant",
+					".ctrl_variant_change",
+					".ctrl_variant_management_change"
+				]
+			}
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{ts,json}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"dependencies": {
+		 
+		"@sap/approuter": "14.4.2",
+		"@sap/cf-tools": "0.8.1",
+		"@sap/adp-cf": "1.1.51",
+		"@sap/adp-abap": "1.1.51",
+		"@sap/adp-common": "1.1.51",
+		"axios": "1.4.0",
+		"js-yaml": "4.1.0",
+		"fs-extra": "9.0.0"
+	},
+	"devDependencies": {
+		"@istanbuljs/nyc-config-typescript": "0.1.3",
+		"@sapux/vsce": "1.77.0",
+		"@types/chai": "4.3.4",
+		"@types/chai-as-promised": "7.1.4",
+		"@types/fs-extra": "9.0.0",
+		"@types/glob": "7.1.3",
+		"@types/mocha": "10.0.1",
+		"@types/node": "14.17.9",
+		"@types/proxyquire": "1.3.28",
+		"@types/rimraf": "3.0.0",
+		"@types/sinon": "9.0.4",
+		"@types/sinon-chai": "3.2.5",
+		"@types/vscode": "1.44.0",
+		"@typescript-eslint/eslint-plugin": "2.34.0",
+		"@typescript-eslint/parser": "2.34.0",
+		"chai": "4.3.7",
+		"chai-as-promised": "7.1.1",
+		"chai-exclude": "2.0.2",
+		"eslint": "7.32.0",
+		"eslint-config-prettier": "7.2.0",
+		"eslint-plugin-no-loops": "0.3.0",
+		"eslint-plugin-prettier": "3.3.1",
+		"glob": "7.1.6",
+		"husky": "4.3.8",
+		"lint-staged": "11.2.6",
+		"mocha": "10.1.0",
+		"mocha-junit-reporter": "2.2.0",
+		"nyc": "15.1.0",
+		"prettier": "2.2.1",
+		"proxyquire": "2.1.3",
+		"rimraf": "3.0.2",
+		"sinon": "15.0.0",
+		"sinon-chai": "3.7.0",
+		"ts-mocha": "10.0.0",
+		"ts-node": "10.9.1",
+		"tslint": "5.16.0",
+		"typescript": "4.7.4"
+	}
+}

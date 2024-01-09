@@ -1,0 +1,32 @@
+{
+  "name": "@sap/generator-cds",
+  "version": "2.18.5",
+  "description": "Project generator for cds projects",
+  "homepage": "https://cap.cloud.sap/",
+  "author": "SAP SE (https://www.sap.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "files": [
+    "lib",
+    "bin",
+    "LICENSE",
+    "npm-shrinkwrap.json",
+    "CHANGELOG.md"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "CAP",
+    "CDS",
+    "SAP"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "cds-gen": "./bin/cds-gen.js"
+  },
+  "dependencies": {
+    "minimist": "1.2.8",
+    "xml2js": "0.6.2",
+    "yaml": "2.3.4"
+  }
+}

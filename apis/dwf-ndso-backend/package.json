@@ -1,0 +1,55 @@
+{
+  "name": "@sap/dwf-ndso-backend",
+  "version": "2.3.3",
+  "description": "Service backend of the Native DataStore Object",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ajv": "6.12.3",
+    "@sap/textbundle": "4.0.0"
+  },
+  "devDependencies": {
+    "@sap/dwf-api-wrappers": "1.5.0",
+    "@sap/dwf-build-helper": "1.0.15",
+    "filter-node-package": "2.2.0",
+    "istanbul": "^0.4.5",
+    "jsdoc-to-markdown": "^4.0.1",
+    "minimist": "^1.2.0",
+    "mocha": "^3.5.0",
+    "mocha-junit-reporter": "^1.13.0",
+    "mocha-multi-reporters": "^1.1.5",
+    "ps-tree": "^1.1.0",
+    "request": "^2.83.0",
+    "rewire": "^3.0.2",
+    "should": "^12.0.0",
+    "sinon": "^6.1.3",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": "^10.0.0 || ^12.0.0"
+  },
+  "files": [
+    "lib",
+    "npm-shrinkwrap.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "standard",
+    "bh:validate": "build-helper",
+    "bh:shrinkwrap": "build-helper --shrinkwrap-create",
+    "test": "node test/index.js",
+    "test:coverage": "node_modules/.bin/istanbul cover test/index.js --",
+    "test:task": "node test/singleTask.js",
+    "doc": "jsdoc2md -c docs/conf.json --partial docs/scope.hbs -t docs/jsdoc2md.hbs lib/tasks/*.js lib/smokeTest/index.js > README.md",
+    "prepare-release": "clean-packages && npm prune --production && ls -Al"
+  },
+  "standard": {
+    "envs": [
+      "es6",
+      "node"
+    ]
+  }
+}

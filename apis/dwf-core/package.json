@@ -1,0 +1,49 @@
+{
+  "name": "@sap/dwf-core",
+  "description": "DWF-Core",
+  "license": "SEE LICENSE IN LICENSE",
+  "version": "2.2.7",
+  "repository": {
+    "type": "git"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "async": "3.2.0",
+    "express": "4.16.2",
+    "qs": "6.5.1",
+    "ajv": "6.12.3",
+    "@sap/textbundle": "2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.0",
+    "grunt": "^1.0.1",
+    "grunt-jasmine-node-coverage": "^1.1.1",
+    "jasmine": "^2.4.1",
+    "rewire": "^2.5.2",
+    "filter-node-package": "2.1.1"
+  },
+  "engines": {
+    "node": "^10.0.0 || ^12.0.0"
+  },
+  "files": [
+    "i18n",
+    "param",
+    "protocol",
+    "routes",
+    "utils",
+    "README.md",
+    "LICENSE",
+    "main.js"
+  ],
+  "scripts": {
+    "start": "node main.js",
+    "start_dbg": "node --debug-brk main.js",
+    "test": "node test/jasmine/jasmine.js",
+    "test_dbg": "node --debug-brk test/jasmine/jasmine.js",
+    "jasmine": "jasmine JASMINE_CONFIG_PATH=test/jasmine/jasmine.json",
+    "lint": "node_modules/.bin/eslint .",
+    "grunt": "grunt --gruntfile Gruntfile.js",
+    "postshrinkwrap": "node cleanshrinkwrap.js",
+    "prepare_release": "clean-packages && npm prune --production && ls -Al"
+  }
+}

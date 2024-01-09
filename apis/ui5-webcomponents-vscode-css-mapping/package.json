@@ -1,0 +1,25 @@
+{
+  "name": "@sap/ui5-webcomponents-vscode-css-mapping",
+  "displayName": "UI5 WebComponents VSCode CSS Mapping",
+  "version": "1.0.1",
+  "description": "The CSS Mapping of UI5 WebComponents to VSCode",
+  "categories": [
+    "Other"
+  ],
+  "license": "See LICENSE",
+  "publisher": "",
+  "scripts": {
+    "dist": "npm run compile",
+    "fill-fallback": "node scripts/fill-fallback",
+    "precompile": "npm run fill-fallback",
+    "compile": "sass src:dist --no-source-map",
+    "prepack": "npm run dist",
+    "install:examples": "node ./scripts/install-package.js && cd examples/webview-consumer && npm i",
+    "build:examples": "cd examples/webview-consumer && npm run build",
+    "prepareRelease": "npm i; npm run dist && npm pack"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}
