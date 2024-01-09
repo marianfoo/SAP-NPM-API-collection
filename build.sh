@@ -19,6 +19,11 @@ while read package; do
       continue
     fi
 
+    if ! cp node_modules/$package/package.json "apis$packageNoPrefix"; then
+      echo "Error copying LICENSE for $package"
+      continue
+    fi
+
     if ! cp -r node_modules/$package/doc "apis$packageNoPrefix/doc"; then
       echo "Error copying documentation for $package"
     fi
