@@ -52,8 +52,27 @@ function filterOldItems(feed) {
   return feed;
 }
 
+// Function to get the current and previous versions from package.json
+function getPackageVersions(path) {
+  let currentVersion, previousVersion;
+  try {
+    // Get current version
+    const packageJson = JSON.parse(fs.readFileSync(`${path}/package.json`, 'utf8'));
+    currentVersion = packageJson.version;
+
+    // Get previous version from the last commit
+    const previousPackageJson = execSync(`git show HEAD~1:${path}/package.json`).toString();
+    previousVersion = JSON.parse(previousPackageJson).version;
+  } catch (error) {
+    console.error(`Error getting package versions for ${path}:`, error.message);
+    currentVersion = 'Unknown';
+    previousVersion = 'Unknown';
+  }
+  return { currentVersion, previousVersion };
+}
+
 // Function to get and clean git diff of the CHANGELOG.md file
-function getChangelogDiff(path) {
+function getChangelogDiff(path, currentVersion, previousVersion) {
   try {
     const diff = execSync(`git diff HEAD~1 -- ${path}`).toString();
     // Filter out only additions and deletions
@@ -62,7 +81,13 @@ function getChangelogDiff(path) {
                              .map(line => line.substring(1).trim()) // Remove '-' or '+' and trim whitespace
                              .join('\n');
     // Convert Markdown to HTML (without additional encoding)
-    return marked(filteredDiff);
+  let htmlDiff = marked(filteredDiff);
+
+  // Add version update line if versions are known
+  if (currentVersion !== 'Unknown' && previousVersion !== 'Unknown' && currentVersion !== previousVersion) {
+    htmlDiff = `Updated from version ${previousVersion} to version ${currentVersion}\n\n` + htmlDiff;
+  }
+  return htmlDiff;
   } catch (error) {
     console.error(`Error getting changelog diff for ${path}:`, error.message);
     return '';
@@ -112,7 +137,8 @@ async function generateRSSFeed(apisFolderPath, docsFolderPath) {
       const changelogPath = `${packagePath}/CHANGELOG.md`;
 
       if (fs.existsSync(changelogPath)) {
-        const diff = getChangelogDiff(changelogPath);
+        const { currentVersion, previousVersion } = getPackageVersions(packagePath);
+        const diff = getChangelogDiff(changelogPath, currentVersion, previousVersion);
         if (diff) {
           const packageName = getPackageName(packagePath);
           feed.item({
