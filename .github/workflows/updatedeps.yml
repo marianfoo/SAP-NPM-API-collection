@@ -1,4 +1,4 @@
-name: Node Workflow
+name: Update packages and RSS feed
 
 on: 
     workflow_dispatch:
@@ -11,7 +11,9 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2  # Fetch the last two commits
 
     - name: Use Node.js 18.x
       uses: actions/setup-node@v3
