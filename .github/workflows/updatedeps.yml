@@ -1,0 +1,58 @@
+name: Update packages and RSS feed
+
+on: 
+    workflow_dispatch:
+    schedule:
+      - cron: '0 3 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2  # Fetch the last two commits
+
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+
+    # npm install -g npm@latest
+    - name: Update npm
+      run: npm install -g npm@latest
+
+    # use pnpm
+    - name: Install pnpm
+      run: npm install -g pnpm
+
+    - name: Clear npm cache
+      run: npm cache clean --force
+
+    - name: Install dependencies
+      run: pnpm install -f --shamefully-hoist --ignore-scripts
+
+    - name: Execute build script
+      run: sh build_rss.sh
+
+    - name: Generate RSS
+      run: node create_rss.js
+
+    - name: Git add specific files
+      run: |
+        git add apis/* package.json new-package.json packages.txt
+        git add docs/rss.xml
+
+    - name: Git commit
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git commit -m "chore: updated packages" || echo "No changes to commit"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true

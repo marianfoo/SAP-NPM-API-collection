@@ -22,6 +22,12 @@
     "url": "https://github.com/gregorwolf/SAP-NPM-API-collection/issues"
   },
   "homepage": "https://github.com/gregorwolf/SAP-NPM-API-collection",
+  "devDependencies": {
+    "rss": "1.2.2",
+    "marked": "11.1.1",
+    "xml2js": "0.6.2",
+    "he": "1.2.0"
+  },
   "dependencies": {
     "@sap/abap-deploy": "0.10.27",
     "@sap/apihub-enterprise-service-provider": "0.0.10",
