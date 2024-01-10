@@ -1,6 +1,6 @@
 {
   "name": "@sap/artifact-management-mdkplugin",
-  "version": "1.29.0",
+  "version": "1.30.0",
   "main": "dist/src/index.js",
   "types": "dist/types/src/index.d.ts",
   "files": [
@@ -25,7 +25,7 @@
     "create-packages": "bash ../../bin/create_node_module.sh"
   },
   "dependencies": {
-    "@sap/artifact-management-base": "1.29.0"
+    "@sap/artifact-management-base": "1.30.0"
   },
   "devDependencies": {
     "@types/node": "14.14.6",
