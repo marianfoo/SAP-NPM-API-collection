@@ -1,11 +1,3 @@
-rss
-@sap/artifact-management
-@sap/artifact-management-base
-@sap/artifact-management-base-types
-@sap/artifact-management-fioriplugin
-@sap/artifact-management-fioriplugin-types
-@sap/artifact-management-hanaplugin
-@sap/artifact-management-mdkplugin
-@sap/artifact-management-mdkplugin-types
-@sap/artifact-management-types
-@sap/cds-dk
+@sap/approuter
+@sap/instance-manager
+@sap/sbf

@@ -1,7 +1,7 @@
 {
   "name": "@sap/sbf",
   "description": "A Node.js framework for creating CloudFoundry service broker applications",
-  "version": "6.6.5",
+  "version": "6.6.6",
   "repository": {},
   "license": "SEE LICENSE IN LICENSE file",
   "main": "sbf.js",
@@ -19,7 +19,7 @@
     "ajv-formats": "2.1.1",
     "ajv-keywords": "5.1.0",
     "async": "3.2.4",
-    "axios": "1.6.0",
+    "axios": "1.6.5",
     "axios-mock-adapter": "1.21.1",
     "basic-auth": "2.0.1",
     "express": "4.18.2",
