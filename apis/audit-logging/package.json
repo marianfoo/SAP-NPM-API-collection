@@ -1,7 +1,7 @@
 {
   "name": "@sap/audit-logging",
   "description": "Provides audit logging functionalities for Node.js applications",
-  "version": "5.8.3",
+  "version": "5.8.4",
   "license": "SEE LICENSE IN LICENSE file",
   "main": "index.js",
   "repository": {},
@@ -30,6 +30,7 @@
     "@sap/xssec": "^3.6.1",
     "debug": "4.3.4",
     "fetch-retry": "4.1.0",
+    "lodash": "4.17.21",
     "node-cache": "5.1.2",
     "node-fetch": "2.7.0"
   },
@@ -40,7 +41,6 @@
     "chai": "4.2.0",
     "eslint": "3.2.2",
     "filter-node-package": "3.2.0",
-    "lodash": "4.17.21",
     "markdown-toc": "^1.1.0",
     "mocha": "7.1.1",
     "node-build": "^2.0.1",

@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 11 Jan 2024 03:05:57 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 12 Jan 2024 03:06:09 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 11 Jan 2024 03:05:53 GMT</pubDate>
+        <pubDate>Fri, 12 Jan 2024 03:06:05 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -55,7 +55,7 @@
 </ul>
 ]]></description>
             <link>http://example.com/approuter/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/approuter/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/approuter/CHANGELOG.md</guid>
             <pubDate>Thu, 11 Jan 2024 03:05:53 GMT</pubDate>
         </item>
         <item>
@@ -64,7 +64,7 @@
 
 ]]></description>
             <link>http://example.com/artifact-management/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/artifact-management/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/artifact-management/CHANGELOG.md</guid>
             <pubDate>Thu, 11 Jan 2024 03:05:53 GMT</pubDate>
         </item>
         <item>
@@ -73,7 +73,7 @@
 
 ]]></description>
             <link>http://example.com/artifact-management-base/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/artifact-management-base/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/artifact-management-base/CHANGELOG.md</guid>
             <pubDate>Thu, 11 Jan 2024 03:05:53 GMT</pubDate>
         </item>
         <item>
@@ -89,7 +89,7 @@
 </ul>
 ]]></description>
             <link>http://example.com/instance-manager/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/instance-manager/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/instance-manager/CHANGELOG.md</guid>
             <pubDate>Thu, 11 Jan 2024 03:05:56 GMT</pubDate>
         </item>
         <item>
@@ -106,8 +106,75 @@
 </ul>
 ]]></description>
             <link>http://example.com/sbf/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/sbf/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/sbf/CHANGELOG.md</guid>
             <pubDate>Thu, 11 Jan 2024 03:05:56 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/approuter - Recent Update]]></title>
+            <description><![CDATA[Updated from version 16.0.1 to version 16.0.2
+
+<p>-- a/apis/approuter/CHANGELOG.md
+++ b/apis/approuter/CHANGELOG.md</p>
+<h2>16.0.2 - 2024-01-11</h2>
+<h3>Updated dependencies</h3>
+<ul>
+<li>deps: axios@1.6.5</li>
+<li>deps: @sap/xssec@3.6.1</li>
+<li>deps: @sap/audit-logging@5.8.3</li>
+</ul>
+]]></description>
+            <link>http://example.com/approuter/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/approuter/CHANGELOG.md</guid>
+            <pubDate>Fri, 12 Jan 2024 03:06:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/audit-logging - Recent Update]]></title>
+            <description><![CDATA[Updated from version 5.8.3 to version 5.8.4
+
+<p>-- a/apis/audit-logging/CHANGELOG.md
+++ b/apis/audit-logging/CHANGELOG.md</p>
+<h2>5.8.4 - 2024-01-02</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Fix BaseMessage property</li>
+</ul>
+]]></description>
+            <link>http://example.com/audit-logging/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/audit-logging/CHANGELOG.md</guid>
+            <pubDate>Fri, 12 Jan 2024 03:06:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/instance-manager - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.2.0 to version 4.3.0
+
+<p>-- a/apis/instance-manager/CHANGELOG.md
+++ b/apis/instance-manager/CHANGELOG.md</p>
+<h2>4.3.0 - 2024-01-10</h2>
+<h3>Updated</h3>
+<ul>
+<li>Updated <em>xssec</em> to 3.6.1</li>
+</ul>
+]]></description>
+            <link>http://example.com/instance-manager/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/instance-manager/CHANGELOG.md</guid>
+            <pubDate>Fri, 12 Jan 2024 03:06:08 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/sbf - Recent Update]]></title>
+            <description><![CDATA[Updated from version 6.6.5 to version 6.6.6
+
+<p>-- a/apis/sbf/CHANGELOG.md
+++ b/apis/sbf/CHANGELOG.md
+<a name="6.6.6"></a></p>
+<h2>6.6.6 - 2024-01-08</h2>
+<h3>Updated</h3>
+<ul>
+<li>Updated axios to v1.6.5.</li>
+</ul>
+]]></description>
+            <link>http://example.com/sbf/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/sbf/CHANGELOG.md</guid>
+            <pubDate>Fri, 12 Jan 2024 03:06:09 GMT</pubDate>
         </item>
     </channel>
 </rss>

@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 5.8.4 - 2024-01-02
+
+### Fixed
+- Fix BaseMessage property
+
 ## 5.8.3 - 2024-01-02
 
 ### Updated
