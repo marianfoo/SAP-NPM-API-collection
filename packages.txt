@@ -1,3 +1,0 @@
-@sap/audit-logging
-@sap/node-jwt
-@sap/node-vsi
