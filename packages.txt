@@ -1,1 +1,1 @@
-@sap/hdi-deploy
+@sap/hdi-dynamic-deploy

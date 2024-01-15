@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 15 Jan 2024 12:03:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Jan 2024 14:02:43 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 15 Jan 2024 12:03:23 GMT</pubDate>
+        <pubDate>Mon, 15 Jan 2024 14:02:38 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -190,8 +190,43 @@
 </ul>
 ]]></description>
             <link>http://example.com/hdi-deploy/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/hdi-deploy/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/hdi-deploy/CHANGELOG.md</guid>
             <pubDate>Mon, 15 Jan 2024 12:03:27 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/hdi-deploy - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.9.1 to version 4.9.2
+
+<p>-- a/apis/hdi-deploy/CHANGELOG.md
+++ b/apis/hdi-deploy/CHANGELOG.md</p>
+<h2>4.9.2</h2>
+<p>Fixes:</p>
+<ul>
+<li>use @sap/hana-client@2.19.21</li>
+<li>use @sap/xsenv@4.2.0</li>
+</ul>
+]]></description>
+            <link>http://example.com/hdi-deploy/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/hdi-deploy/CHANGELOG.md</guid>
+            <pubDate>Mon, 15 Jan 2024 14:02:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/hdi-dynamic-deploy - Recent Update]]></title>
+            <description><![CDATA[Updated from version 2.7.1 to version 2.7.2
+
+<p>-- a/apis/hdi-dynamic-deploy/CHANGELOG.md
+++ b/apis/hdi-dynamic-deploy/CHANGELOG.md</p>
+<h1>2.7.2</h1>
+<p>Features</p>
+<ul>
+<li>use @sap/xsenv@4.2.0</li>
+<li>use @sap/hdi-deploy@4.9.2</li>
+<li>use @sap/audit-logging@5.8.3</li>
+</ul>
+]]></description>
+            <link>http://example.com/hdi-dynamic-deploy/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/hdi-dynamic-deploy/CHANGELOG.md</guid>
+            <pubDate>Mon, 15 Jan 2024 14:02:42 GMT</pubDate>
         </item>
     </channel>
 </rss>
