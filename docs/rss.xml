@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 15 Jan 2024 16:02:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Jan 2024 18:02:47 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 15 Jan 2024 16:02:44 GMT</pubDate>
+        <pubDate>Mon, 15 Jan 2024 18:02:43 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -243,8 +243,30 @@
 </ul>
 ]]></description>
             <link>http://example.com/hdi-dynamic-deploy/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/hdi-dynamic-deploy/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/hdi-dynamic-deploy/CHANGELOG.md</guid>
             <pubDate>Mon, 15 Jan 2024 16:02:48 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/html5-app-deployer - Recent Update]]></title>
+            <description><![CDATA[Updated from version 5.0.2 to version 6.0.0
+
+<p>-- a/apis/html5-app-deployer/CHANGELOG.md
+++ b/apis/html5-app-deployer/CHANGELOG.md</p>
+<h2>6.0.0 - 2024-01-15</h2>
+<h3>Updated dependencies</h3>
+<ul>
+<li>deps: xsenv@4.2.0</li>
+<li>deps: cf-nodejs-logging-support@7.2.1</li>
+</ul>
+<h3>Added</h3>
+<ul>
+<li>nodejs version ^12.0.0 support removed</li>
+<li>nodejs version ^20.0.0 support added</li>
+</ul>
+]]></description>
+            <link>http://example.com/html5-app-deployer/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/html5-app-deployer/CHANGELOG.md</guid>
+            <pubDate>Mon, 15 Jan 2024 18:02:46 GMT</pubDate>
         </item>
     </channel>
 </rss>
