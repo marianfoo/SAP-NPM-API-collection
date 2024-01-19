@@ -4,7 +4,7 @@
   "description": "Allows you to visualize OData service and its associated annotations",
   "publisher": "SAPSE",
   "license": "SEE LICENSE IN LICENSE",
-  "version": "1.12.1",
+  "version": "1.12.2",
   "main": "index.js",
   "categories": [
     "Programming Languages"
