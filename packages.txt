@@ -1,1 +1,1 @@
-@sap/sbss
+@sap/vscode-cds
