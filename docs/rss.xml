@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 19 Jan 2024 06:02:53 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jan 2024 08:03:08 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 19 Jan 2024 06:02:49 GMT</pubDate>
+        <pubDate>Fri, 19 Jan 2024 08:03:04 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -289,6 +289,135 @@
             <link>http://example.com/html5-app-deployer/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/html5-app-deployer/CHANGELOG.md</guid>
             <pubDate>Mon, 15 Jan 2024 20:02:56 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-mtxs - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.14.2 to version 1.14.3
+
+<p>-- a/apis/cds-mtxs/CHANGELOG.md
+++ b/apis/cds-mtxs/CHANGELOG.md</p>
+<h2>Version 1.14.3 - 2024-01-18</h2>
+<h3>Fixed</h3>
+<ul>
+<li>i18n translations missing in some Java setups are now correctly resolved.</li>
+<li>CSNs loaded in a worker thread are correctly linked. In earlier versions, this could lead to a stack overflow in projects having <code>cds.requires.db.schema_evolution: false</code> and cyclic actions such as this:</li>
+</ul>
+<pre><code class="language-cds">entity C_Books as projection on Books { * } actions {
+action returnSelf() returns C_Books;
+}
+</code></pre>
+<ul>
+<li>Sync upgrades for <code>tenants = *</code> with <code>clusterSize &gt; 1</code> are working correctly.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><p>The temporary workaround for <code>cds.env.requires.[&#39;cds.xt.ModelProvideService&#39;].loadSync = true</code> is removed. This setting won&#39;t have an effect for future versions.</p>
+</li>
+<li><p>More resilient retry handling for &#39;authentication failed&#39; errors in HANA deployments.</p>
+</li>
+<li><p>More resilient retry handling for &#39;authentication failed&#39; errors in SAP HANA deployments.</p>
+</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds-mtxs/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-mtxs/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 08:03:04 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cli-core - Recent Update]]></title>
+            <description><![CDATA[Updated from version 2023.25.0 to version 2024.2.0
+
+<p>-- a/apis/cli-core/CHANGELOG.md
+++ b/apis/cli-core/CHANGELOG.md</p>
+<h2>2024.2.0</h2>
+<h3>Changed</h3>
+<ul>
+<li>The required version of <code>npm</code> changes from <code>^9</code> to <code>^10</code>.</li>
+</ul>
+<h2>2024.1.0</h2>
+<h3>Fixed</h3>
+<ul>
+<li>The <code>--browser</code> option introduced with version <code>2023.25.0</code> did not apply the default correctly in case the option <code>--browser</code> was not explicitly specified.</li>
+</ul>
+]]></description>
+            <link>http://example.com/cli-core/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cli-core/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 08:03:04 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/datasphere-cli - Recent Update]]></title>
+            <description><![CDATA[Updated from version 2023.25.0 to version 2024.2.0
+
+<p>-- a/apis/datasphere-cli/CHANGELOG.md
+++ b/apis/datasphere-cli/CHANGELOG.md</p>
+<h2>2024.2.0</h2>
+<h3>Fixed</h3>
+<ul>
+<li>The <code>--browser</code> option introduced with version <code>2024.1.0</code> did not apply the default correctly in case the option <code>--browser</code> was not explicitly specified.</li>
+</ul>
+<h2>2024.1.0</h2>
+<h3>Added</h3>
+<ul>
+<li><p>A check for the correct node version environment when using the CLI. In case the node version does not satisfy the minimum node version required by the CLI to function correctly, a warning is printed to the console.</p>
+</li>
+<li><p>When printing the help information for the <code>login</code> command, the list of options now includes the login-specific options such as <code>--authorization-url</code> and <code>--token-url</code>. Previously the help showed the following options:</p>
+</li>
+</ul>
+<pre><code class="language-bash">&lt;CLI&gt; login --help
+Usage: &lt;CLI&gt; login [options]
+log in to your account using interactive OAuth authentication
+Options:
+-H, --host &lt;host&gt;  specifies the url where the tenant is hosted (optional)
+-h, --help         display help for command
+</code></pre>
+<p>With this version, the help looks like this:</p>
+<pre><code class="language-bash">&lt;CLI&gt; login --help
+Usage: &lt;CLI&gt; login [options]
+log in to your account using interactive OAuth authentication
+Options:
+-H, --host &lt;host&gt;              specifies the url where the tenant is hosted (optional)
+-A, --authorization-url &lt;url&gt;  authorization url for interactive oauth session authentication (optional)
+-t, --token-url &lt;url&gt;          token url for interactive oauth session authentication (optional)
+-c, --client-id &lt;id&gt;           client id for interactive oauth session authentication (optional)
+-C, --client-secret &lt;secret&gt;   client secret for interactive oauth session authentication (optional)
+-a, --access-token &lt;token&gt;     access token for interactive oauth session authentication (optional)
+-b, --code &lt;code&gt;              code for oauth token retrieval (optional)
+-r, --refresh-token &lt;token&gt;    refresh token for interactive oauth session authentication (optional)
+-s, --secrets-file &lt;file&gt;      path to secrets file (optional)
+-h, --help                     display help for command
+Only command-specific options are listed here. To learn more about available generic options, visit https://tinyurl.com/yck8vv4w
+</code></pre>
+<ul>
+<li>Added the option <code>--browser &lt;browser&gt;</code> to the login command. Users can now choose explicitly which browser to open when logging in to a tenant. By default the system&#39;s default browser is used.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>The HTTPS proxy support introduced with <code>2023.24.0</code> did not respect the underlying <code>axios</code> module configuration need to disable the native proxy handling by passing <code>proxy: false</code> to the request configuration.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Previously, when running the <code>logout</code> command but no secrets existed anymore, the command would fail with exit code 1 and an error message. Now, when running the <code>logout</code> command but there are no secrets to logout from, the command fails silently.</li>
+</ul>
+]]></description>
+            <link>http://example.com/datasphere-cli/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/datasphere-cli/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 08:03:07 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/generator-cap-project - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.7.7 to version 1.7.8
+
+<p>-- a/apis/generator-cap-project/CHANGELOG.md
+++ b/apis/generator-cap-project/CHANGELOG.md</p>
+<h2>[1.7.8] - 2023-12-13</h2>
+<h3>Fixed</h3>
+<ul>
+<li>safeguard <code>env.error</code> method</li>
+</ul>
+]]></description>
+            <link>http://example.com/generator-cap-project/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/generator-cap-project/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 08:03:07 GMT</pubDate>
         </item>
     </channel>
 </rss>

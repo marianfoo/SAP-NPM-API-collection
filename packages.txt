@@ -1,0 +1,4 @@
+@sap/cds-mtxs
+@sap/cli-core
+@sap/datasphere-cli
+@sap/generator-cap-project
