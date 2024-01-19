@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 19 Jan 2024 16:02:49 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Jan 2024 18:03:02 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 19 Jan 2024 16:02:45 GMT</pubDate>
+        <pubDate>Fri, 19 Jan 2024 18:02:57 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -635,7 +635,7 @@ Only command-specific options are listed here. To learn more about available gen
 </ul>
 ]]></description>
             <link>http://example.com/generator-fiori/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/generator-fiori/CHANGELOG.md</guid>
             <pubDate>Fri, 19 Jan 2024 16:02:48 GMT</pubDate>
         </item>
         <item>
@@ -652,7 +652,7 @@ Only command-specific options are listed here. To learn more about available gen
 </ul>
 ]]></description>
             <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 19 Jan 2024 16:02:49 GMT</pubDate>
         </item>
         <item>
@@ -692,7 +692,7 @@ Only command-specific options are listed here. To learn more about available gen
 </ul>
 ]]></description>
             <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 19 Jan 2024 16:02:49 GMT</pubDate>
         </item>
         <item>
@@ -709,7 +709,7 @@ Only command-specific options are listed here. To learn more about available gen
 </ul>
 ]]></description>
             <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
             <pubDate>Fri, 19 Jan 2024 16:02:49 GMT</pubDate>
         </item>
         <item>
@@ -741,7 +741,7 @@ Only command-specific options are listed here. To learn more about available gen
 </ul>
 ]]></description>
             <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 19 Jan 2024 16:02:49 GMT</pubDate>
         </item>
         <item>
@@ -762,7 +762,7 @@ Only command-specific options are listed here. To learn more about available gen
 </ul>
 ]]></description>
             <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 19 Jan 2024 16:02:49 GMT</pubDate>
         </item>
         <item>
@@ -778,8 +778,175 @@ Only command-specific options are listed here. To learn more about available gen
 </ul>
 ]]></description>
             <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
             <pubDate>Fri, 19 Jan 2024 16:02:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/generator-fiori - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.1 to version 1.12.2
+
+<p>-- a/apis/generator-fiori/CHANGELOG.md
+++ b/apis/generator-fiori/CHANGELOG.md</p>
+<h2>[1.12.2] - 2024-01-17</h2>
+<h3>Added</h3>
+<ul>
+<li>Added a warning message when choosing a service from an ABAP catalog during generation that was not intended for use with SAP Fiori UI development.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Removed the deprecated freestyle SAPUI5 templates from the SAP Fiori generator.  Customers are encouraged to use the Custom Page template with flexible programming model support or the Basic freestyle SAPUI5 template.  Please note that existing SAP Fiori projects generated with the deprecated templates do not need to be migrated</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where the URL displayed after successful ABAP deployment may not detail the correct endpoint URL if the destination references an internal host.  In such a situation, the user will now be warned that they will need to manually replace the host</li>
+</ul>
+]]></description>
+            <link>http://example.com/generator-fiori/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 18:03:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-annotation-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.1 to version 1.12.2
+
+<p>-- a/apis/ux-annotation-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-annotation-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.2] - 2024-01-10</h2>
+<h3>Added</h3>
+<ul>
+<li>Enhanced code completion to restrict the suggestions for annotation terms, complex types and properties to more meaningful based on <code>Validation.ApplicableTerms</code> set in OData vocabulary definitions .</li>
+<li>Enhanced validation to display warning if the usage of annotation terms, complex types and properties is restricted in OData vocabulary definitions with <code>Validation.ApplicableTerms</code></li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 18:03:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-application-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.1 to version 1.12.2
+
+<p>-- a/apis/ux-application-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-application-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.2] - 2024-01-10</h2>
+<h3>Added</h3>
+<ul>
+<li>Added support for adaptation projects in VS Code [experimental]</li>
+<li>Added icons to the folders of the information panel</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Changed the severity indicator of available node module updates in the status section of the Application Information Page from &quot;warning&quot; to &quot;info&quot;</li>
+<li>Changed the icon of the status section header in the Application Information Page to show the aggregated state of the status checks</li>
+<li>Enhanced how manifest changes are written to keep existing formatting whenever possible</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><p>Fixed an issue with wrong schemas being generated for applications with similar names in multi-app projects</p>
+</li>
+<li><p>Fixed an issue with the schema of an application not always being re-generated in case a tool action triggers the creation of an annotation file</p>
+</li>
+<li><p>Fixed an issue where deleting a custom table view was not possible in a CAP application when no <code>lineitem</code> annotation was defined</p>
+</li>
+<li><p>Fixed an issue with non-filterable properties showing up in the drop-down lists for filters</p>
+</li>
+<li><p>Fixed an issue with drag &amp; drop placeholders not showing correctly if the Page Editor toolbar wraps to multiple lines</p>
+</li>
+<li><p>Migration of a Fiori applications without a <code>package.json</code> or <code>pom.xml</code> (requires a <code>neo-app.json</code> file)</p>
+</li>
+<li><p>Migration of An SAP Fiori applications without a <code>package.json</code> or <code>pom.xml</code> (requires a <code>neo-app.json</code> file)</p>
+</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 18:03:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-cds-odata-language-server-extension - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.0 to version 1.12.2
+
+<p>-- a/apis/ux-cds-odata-language-server-extension/CHANGELOG.md
+++ b/apis/ux-cds-odata-language-server-extension/CHANGELOG.md</p>
+<h2>[1.12.2] - 2024-01-10</h2>
+<h3>Added</h3>
+<ul>
+<li>Enhanced code completion to restrict the suggestions for annotation terms, complex types and properties to more meaningful based on <code>Validation.ApplicableTerms</code> set in OData vocabulary definitions .</li>
+<li>Enhanced validation to display warning if the usage of annotation terms, complex types and properties is restricted in OData vocabulary definitions with <code>Validation.ApplicableTerms</code>.</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 18:03:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-help-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.1 to version 1.12.2
+
+<p>-- a/apis/ux-help-bas-ext/CHANGELOG.md
+++ b/apis/ux-help-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.1] - 2023-01-10</h2>
+<h3>Added</h3>
+<ul>
+<li>Added an inline warning for duplicate function import validation to the <em>Add an Action Button</em> guide</li>
+<li>Added functionality that allows the update of existing annotations in the <em>Configure multiple views for tables</em> guide by selecting an existing qualifier</li>
+<li>Updated code snippets for Overview Page guides based on the installed <em>specification</em> version</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Removed unsupported chart types from the ABAP CDS variant of the <em>Add a micro chart column to a table</em> guide</li>
+<li>Changed the minimum SAPUI5 version for the ABAP CDS variant of the <em>Add a smart chart facet to an object page</em> guide to 1.71.2</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where an extra empty line was added to annotation code snippets</li>
+<li>Fixed an issue where values were not taken over from previous steps in the <em>Add a micro chart column to table</em> and <em>Add a key performance indicator (KPI) tag to a page</em> guides</li>
+<li>Fixed an issue where the <code>Entity Set</code> parameter was disabled in the <em>Add a key performance Indicator tag to a page</em> guide</li>
+<li>Fixed an issue where an incorrect inline error message was shown even when the selected entity was correct in the <em>Add a micro chart column to table</em> guide</li>
+<li>Fixed an issue where the chart type was not updated in the code snippet in the <em>Add an interactive chart</em> guide</li>
+<li>Fixed minor UX issues (missing icons and highlighting) in <em>Configure multiple views for tables</em> and <em>Add a micro chart column to table</em> guides</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 18:03:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-service-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.1 to version 1.12.2
+
+<p>-- a/apis/ux-service-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-service-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.2] - 2024-01-10</h2>
+<h3>Added</h3>
+<ul>
+<li>Added the ability to filter and only view the metadata targets that have annotations</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue with the <code>Create</code> and <code>Cancel</code> buttons not being accessible in Annotation File Manager if the window is too small</li>
+<li>Fixed an issue where the &#39;up&#39; navigation was enabled for the first active file in the Annotation File Manager</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 18:03:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-ui5-tooling - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.1 to version 1.12.2
+
+<p>-- a/apis/ux-ui5-tooling/CHANGELOG.md
+++ b/apis/ux-ui5-tooling/CHANGELOG.md</p>
+<h2>[1.12.2] - 2024-01-10</h2>
+<h3>Added</h3>
+<ul>
+<li>Added support for previewing adaptation projects</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <pubDate>Fri, 19 Jan 2024 18:03:02 GMT</pubDate>
         </item>
     </channel>
 </rss>
