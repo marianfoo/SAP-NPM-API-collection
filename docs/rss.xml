@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 21 Jan 2024 08:04:12 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Jan 2024 10:02:34 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 21 Jan 2024 08:04:08 GMT</pubDate>
+        <pubDate>Sun, 21 Jan 2024 10:02:29 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -947,6 +947,23 @@ Only command-specific options are listed here. To learn more about available gen
             <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
             <pubDate>Fri, 19 Jan 2024 18:03:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/sbf - Recent Update]]></title>
+            <description><![CDATA[Updated from version 6.6.6 to version 6.6.7
+
+<p>-- a/apis/sbf/CHANGELOG.md
+++ b/apis/sbf/CHANGELOG.md
+<a name="6.6.7"></a></p>
+<h2>6.6.7 - 2024-01-21</h2>
+<h3>Updated</h3>
+<ul>
+<li>Updated dependencies to support node20.</li>
+</ul>
+]]></description>
+            <link>http://example.com/sbf/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/sbf/CHANGELOG.md</guid>
+            <pubDate>Sun, 21 Jan 2024 10:02:33 GMT</pubDate>
         </item>
     </channel>
 </rss>

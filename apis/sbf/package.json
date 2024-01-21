@@ -1,7 +1,7 @@
 {
   "name": "@sap/sbf",
   "description": "A Node.js framework for creating CloudFoundry service broker applications",
-  "version": "6.6.6",
+  "version": "6.6.7",
   "repository": {},
   "license": "SEE LICENSE IN LICENSE file",
   "main": "sbf.js",
@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@sap/audit-logging": "5.8.3",
-    "@sap/logging": "6.2.0",
-    "@sap/sbss": "6.0.0",
-    "@sap/xsenv": "4.0.0",
+    "@sap/logging": "7.1.0",
+    "@sap/sbss": "6.2.0",
+    "@sap/xsenv": "4.1.0",
     "ajv": "8.11.0",
     "ajv-formats": "2.1.1",
     "ajv-keywords": "5.1.0",
@@ -32,7 +32,7 @@
     "verror": "1.10.1"
   },
   "devDependencies": {
-    "@sap/hdbext": "7.7.2",
+    "@sap/hdbext": "8.0.2",
     "chai": "4.3.6",
     "eslint": "8.48.0",
     "eslint-html-reporter": "0.7.4",
