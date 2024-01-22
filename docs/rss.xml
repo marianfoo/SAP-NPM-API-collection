@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 22 Jan 2024 06:03:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jan 2024 08:03:01 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 22 Jan 2024 06:03:05 GMT</pubDate>
+        <pubDate>Mon, 22 Jan 2024 08:02:57 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
