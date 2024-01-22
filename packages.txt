@@ -1,2 +1,0 @@
-@sap/bas-sdk
-@sap/service-provider-apis
