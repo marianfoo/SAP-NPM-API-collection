@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 23 Jan 2024 14:02:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Jan 2024 16:02:49 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 23 Jan 2024 14:02:36 GMT</pubDate>
+        <pubDate>Tue, 23 Jan 2024 16:02:45 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -1063,6 +1063,19 @@ Only command-specific options are listed here. To learn more about available gen
             <link>http://example.com/cds/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/cds/CHANGELOG.md</guid>
             <pubDate>Tue, 23 Jan 2024 12:03:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Unknown - Recent Update]]></title>
+            <description><![CDATA[<p>-- a/apis/ams/CHANGELOG.md
+++ b/apis/ams/CHANGELOG.md</p>
+<h2>1.14.1 - 2024-01-23</h2>
+<ul>
+<li>[CAP] fix IAS app_tid and scim_id access for @sap/cds 7.5.2 as the information has been removed from user.attr</li>
+</ul>
+]]></description>
+            <link>http://example.com/ams/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ams/CHANGELOG.md</guid>
+            <pubDate>Tue, 23 Jan 2024 16:02:45 GMT</pubDate>
         </item>
     </channel>
 </rss>

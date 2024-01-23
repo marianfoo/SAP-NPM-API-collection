@@ -35,7 +35,7 @@
     "@sap/adp-cli": "1.1.51",
     "@sap/adp-common": "1.1.51",
     "@sap/adp-ve-bas-ext": "1.1.51",
-    "@sap/ams": "1.14.0",
+    "@sap/ams": "1.14.1",
     "@sap/ams-dev": "0.8.0",
     "@sap/apihub-enterprise-service-provider": "0.4.2",
     "@sap/apihub-service-provider": "1.9.3",
