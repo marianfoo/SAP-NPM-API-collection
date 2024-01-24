@@ -3,7 +3,7 @@
 	"displayName": "SAPUI5 Visual Editor",
 	"description": "Add changes to SAPUI5 Adaptation Project",
 	"repository": "plana/adaptation-project",
-	"version": "1.1.51",
+	"version": "1.1.52",
 	"publisher": "SAP",
 	"scripts": {
 		"vscode:prepublish": "npm run build",
@@ -85,6 +85,11 @@
 				"command": "adp.openCreateAdpProjectWizard",
 				"title": "Create",
 				"category": "Adaptation Project"
+			},
+			{
+				"command": "adp.addChangeInBound",
+				"title": "Change Inbound",
+				"category": "Adaptation Project"
 			}
 		],
 		"menus": {
@@ -96,39 +101,44 @@
 				},
 				{
 					"command": "watt.openPreview",
-					"when": "resource in sap.adp.contextMenu.projectRoots ||  resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
 					"group": "1_adp_preview_group"
 				},
 				{
 					"command": "adp.openDeploymentWizard",
-					"when": "resource in sap.adp.contextMenu.projectRoots ||  resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
 					"group": "2_adp_deploy_group"
 				},
 				{
 					"command": "adp.replaceODataService",
-					"when": "resource in sap.adp.contextMenu.projectRoots ||  resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
 					"group": "3_adp_manifest_change_group"
 				},
 				{
 					"command": "adp.addAnnotationFile",
-					"when": "resource in sap.adp.contextMenu.projectRoots ||  resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
 					"group": "3_adp_manifest_change_group"
 				},
 				{
 					"command": "adp.addODataServiceAndModel",
-					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.appRoots || resource in sap.adp.contextMenu.webappRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
 					"group": "3_adp_manifest_change_group"
 				},
 				{
 					"command": "adp.addSAPUI5ComponentUsages",
-					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.appRoots || resource in sap.adp.contextMenu.webappRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"group": "3_adp_manifest_change_group"
+				},
+				{
+					"command": "adp.addChangeInBound",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
 					"group": "3_adp_manifest_change_group"
 				}
 			],
 			"explorer/context": [
 				{
 					"command": "watt.openVisualEditor",
-					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.appRoots || resource in sap.adp.contextMenu.webappRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
+					"when": "resource in sap.adp.contextMenu.projectRoots || resource in sap.adp.contextMenu.subWebappRoots || resource in sap.adp.contextMenu.manifestAppDescRoots",
 					"group": "navigation"
 				},
 				{
@@ -172,11 +182,13 @@
 		 
 		"@sap/approuter": "14.4.2",
 		"@sap/cf-tools": "0.8.1",
-		"@sap/adp-cf": "1.1.51",
-		"@sap/adp-abap": "1.1.51",
-		"@sap/adp-common": "1.1.51",
-		"axios": "1.4.0",
+		"@sap/adp-cf": "1.1.52",
+		"@sap/adp-abap": "1.1.52",
+		"@sap/adp-common": "1.1.52",
+		"axios": "1.6.3",
 		"js-yaml": "4.1.0",
+		"findit2": "2.2.3",
+		"find-up": "4.1.0",
 		"fs-extra": "9.0.0"
 	},
 	"devDependencies": {
