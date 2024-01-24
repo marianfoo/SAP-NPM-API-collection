@@ -1,3 +1,7 @@
+## 0.8.1 - 2024-01-23
+
+- [CAP] necessary adjustments for mocked auth support under @sap/ams 1.14.1 and later
+
 ## 0.8.0 - 2023-12-21
 
 - [CAP] integrate AMS DCL generation into the 'cds build' command
