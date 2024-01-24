@@ -1,1 +1,3 @@
-@sap/hdbext
+@sap/adp-abap
+@sap/adp-cf
+@sap/adp-common
