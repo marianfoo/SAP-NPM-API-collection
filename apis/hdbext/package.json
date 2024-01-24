@@ -1,6 +1,6 @@
 {
   "name": "@sap/hdbext",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "description": "Hana-client extension library and utility functions for using SAP HANA in node.js",
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE file",
@@ -34,7 +34,7 @@
   ],
   "dependencies": {
     "@sap/e2e-trace": "^4.1.0",
-    "@sap/hana-client": "2.18.27",
+    "@sap/hana-client": "2.19.21",
     "accept-language": "2.0.16",
     "async": "3.2.2",
     "debug": "4.3.1",
