@@ -1,2 +1,2 @@
-@sap/adp-cli
-@sap/adp-ve-bas-ext
+@sap/cds-mtxs
+@sap/ux-specification

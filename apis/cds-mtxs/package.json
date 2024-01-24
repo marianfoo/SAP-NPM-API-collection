@@ -1,6 +1,6 @@
 {
   "name": "@sap/cds-mtxs",
-  "version": "1.14.3",
+  "version": "1.14.4",
   "description": "SAP Cloud Application Programming Model - Multitenancy library",
   "homepage": "https://cap.cloud.sap/",
   "keywords": [
