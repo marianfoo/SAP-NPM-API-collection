@@ -1,2 +1,0 @@
-@sap/webide-hdi-base-feature-vscode
-@sap/webide-hdi-feature-vscode

@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 25 Jan 2024 16:02:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Jan 2024 18:03:01 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 25 Jan 2024 16:02:40 GMT</pubDate>
+        <pubDate>Thu, 25 Jan 2024 18:02:57 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -1308,7 +1308,7 @@ The assignment of settings to the specific card types has been revised and adjus
 </ul>
 ]]></description>
             <link>http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</guid>
             <pubDate>Thu, 25 Jan 2024 16:02:44 GMT</pubDate>
         </item>
         <item>
@@ -1350,8 +1350,69 @@ The assignment of settings to the specific card types has been revised and adjus
 </ul>
 ]]></description>
             <link>http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
             <pubDate>Thu, 25 Jan 2024 16:02:44 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/webide-hdi-base-feature-vscode - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.26.0 to version 1.26.1
+
+<p>-- a/apis/webide-hdi-base-feature-vscode/CHANGELOG.md
+++ b/apis/webide-hdi-base-feature-vscode/CHANGELOG.md</p>
+<h2>1.26.1</h2>
+<h3>Fixes</h3>
+<ul>
+<li>Synonym name is not added in the hdbsynonym file if generate hdbsynonymconfig is checked during synonym</li>
+<li>HTTP request url is truncated when search string contains at least one &#39;#&#39;</li>
+<li>hdbgrants file that is generated during the Add Data Source dialog using an HDI-service does not reference via the service key</li>
+<li>In Add Data Source dialog when generating hdbgrants file: value help for roles uses application user instead of hdi-service user even in HDI service context</li>
+</ul>
+]]></description>
+            <link>http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</guid>
+            <pubDate>Thu, 25 Jan 2024 18:03:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/webide-hdi-feature-vscode - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.28.0 to version 1.28.1
+
+<p>-- a/apis/webide-hdi-feature-vscode/CHANGELOG.md
+++ b/apis/webide-hdi-feature-vscode/CHANGELOG.md</p>
+<h2>1.28.1</h2>
+<h3>Fixes</h3>
+<ul>
+<li>Cleaned up refactoring dialog</li>
+<li>The check impact operation of hangs when propagating renaming a calculation view</li>
+<li>Disable &quot;where used outside of the calculation view&quot; when multiple parameters are selected</li>
+<li>Switch the positions of the rename icon with the generate label icon.</li>
+<li>The message strip for the system time is too wide</li>
+<li>Remove TEXT and VARBINARY from list of input parameter data types</li>
+<li>For some data sources the option &quot;Replace With Node&quot; is not visible in the mapping pane, and it is always not visible in the join definition</li>
+<li>The dialog does not appear when clicking &quot;Replace With Node&quot; option in the mapping pane</li>
+<li>Refactor dialog doesn&#39;t show impacted input parameter in external hdi container</li>
+<li>Renaming a column without recursive refactoring leads to inconsistent state</li>
+<li>Output column name may contain colons</li>
+<li>The editor could generate many popup html element when click validation info button for UDFs</li>
+<li>Prevent mapping of columns of type VECTOR or BLOB in an aggregation or star-join</li>
+<li>Option &quot;Evaluate Early&quot; should only be shown when connected to a HANA Cloud database</li>
+<li>Check calc view name across schema when renaming calc view</li>
+<li>Fixed more situations where a context menu may display out of bounds of the window</li>
+<li>Disable scale for String data type</li>
+<li>Fix texts in column name unique dialog</li>
+<li>Unclear hint for label generation failure when CF token is expired</li>
+<li>Info for generate currency column should be improved in non-semantic nodes</li>
+<li>Duplicate entries for Timestamp datatype in input parameter datatypes list of Calculation view</li>
+<li>Renaming parameter does not correctly adjust filter expression</li>
+<li>The Duplicate icon button should be disable when there is no data for Restrictions</li>
+<li>Replace node breaks join</li>
+<li>Joins on constants in non-equi-joins do not write operator information to XML</li>
+<li>Add Data Source dialog of star-join nodes shows also synonyms that point to non-calculation views</li>
+<li>Propagate Adding fail for the Star Join node</li>
+</ul>
+]]></description>
+            <link>http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
+            <pubDate>Thu, 25 Jan 2024 18:03:01 GMT</pubDate>
         </item>
     </channel>
 </rss>
