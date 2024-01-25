@@ -2,7 +2,7 @@
   "name": "@sap/webide-hdi-base-feature-vscode",
   "displayName": "SAP HANA Calculation View Editor Base",
   "description": "SAP HANA Calculation view editor base extension including base services used by the SAP HANA calculation view editor",
-  "version": "1.26.0",
+  "version": "1.26.1",
   "license": "SEE LICENSE IN LICENSE",
   "categories": [
     "Other"
@@ -21,6 +21,6 @@
     "CHANGELOG.md",
     "features.json",
     "README.md",
-    "webide-hdi-base-feature-vscode-1.26.0.vsix"
+    "webide-hdi-base-feature-vscode-1.26.1.vsix"
   ]
 }

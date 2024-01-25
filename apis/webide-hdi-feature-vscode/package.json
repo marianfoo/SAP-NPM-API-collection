@@ -2,7 +2,7 @@
   "name": "@sap/webide-hdi-feature-vscode",
   "displayName": "SAP HANA Calculation View Editor",
   "description": "SAP HANA Calculation view editor extension including the SAP HANA calculation view editor, the synonym editor, and the analytical privilege editor",
-  "version": "1.28.0",
+  "version": "1.28.1",
   "license": "SEE LICENSE IN LICENSE",
   "categories": [
     "Other"
@@ -17,6 +17,6 @@
     "CHANGELOG.md",
     "features.json",
     "README.md",
-    "webide-hdi-feature-vscode-1.28.0.vsix"
+    "webide-hdi-feature-vscode-1.28.1.vsix"
   ]
 }
