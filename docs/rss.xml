@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 29 Jan 2024 12:02:49 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Jan 2024 14:02:48 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 29 Jan 2024 12:02:45 GMT</pubDate>
+        <pubDate>Mon, 29 Jan 2024 14:02:43 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -1413,6 +1413,25 @@ The assignment of settings to the specific card types has been revised and adjus
             <link>http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
             <pubDate>Thu, 25 Jan 2024 18:03:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Unknown - Recent Update]]></title>
+            <description><![CDATA[<p>-- a/apis/ams-dev/CHANGELOG.md
+++ b/apis/ams-dev/CHANGELOG.md</p>
+<h2>0.8.1 - 2024-01-23</h2>
+<h2>0.8.2 - 2024-01-26</h2>
+<ul>
+<li>[CAP] fix plugin quitting early when production profile is active to allow the AMS BuildTask to run during <code>cds build --production</code></li>
+<li>[CAP] bugfix OPA not getting started when ams.autoCompile config flag is set to <em>false</em></li>
+</ul>
+<h2>0.8.1 - 2024-01-24</h2>
+<ul>
+<li>[CAP] role names are now quoted in the generated base policies to support special characters like <code>.</code> inside role names</li>
+</ul>
+]]></description>
+            <link>http://example.com/ams-dev/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ams-dev/CHANGELOG.md</guid>
+            <pubDate>Mon, 29 Jan 2024 14:02:43 GMT</pubDate>
         </item>
     </channel>
 </rss>
