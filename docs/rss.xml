@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 30 Jan 2024 12:02:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Jan 2024 14:02:35 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 30 Jan 2024 12:02:51 GMT</pubDate>
+        <pubDate>Tue, 30 Jan 2024 14:02:31 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -1483,6 +1483,86 @@ The assignment of settings to the specific card types has been revised and adjus
             <link>http://example.com/generator-cds/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/generator-cds/CHANGELOG.md</guid>
             <pubDate>Mon, 29 Jan 2024 18:02:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-compiler - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.5.0 to version 4.6.0
+
+<p>-- a/apis/cds-compiler/CHANGELOG.md
+++ b/apis/cds-compiler/CHANGELOG.md</p>
+<h2>Version 4.6.0 - 2024-01-26</h2>
+<h3>Added</h3>
+<ul>
+<li>compiler: Events can now be projections on other structured events and types.</li>
+<li>to.cdl: <code>parseCdl</code> and <code>gensrc</code> style CSN (a.k.a. <code>inferred</code> and <code>xtended</code>) is now supported as input.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Update OData vocabularies: &#39;Aggregation&#39;, &#39;Validation&#39;</li>
+<li>to.sql/hdi/hdbcds: Removed warnings for number and type of keys in draft-enabled entities.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>compiler:</li>
+</ul>
+<ul>
+<li>ON-conditions of associations with filters in calculated elements were incorrectly rewritten when included
+in other entities, and the filter was applied twice in some scenarios.</li>
+<li>redirecting an association with filter did not rewrite paths relative to the redirection target.</li>
+<li>Unknown type references with an explicit named type argument such as <code>Unknown(length: 10)</code> crashed.</li>
+</ul>
+<ul>
+<li>to.edm(x):</li>
+</ul>
+<ul>
+<li><code>@Core.IsURL</code> is not rendered in combination with <code>@Core.MediaType</code> (V4 only).</li>
+<li>No &#39;odata-navigation&#39; warning for association targets annotated with <code>@cds.autoexpose: false</code>.</li>
+<li>No empty annotation in API, when a non-existent base annotation is annotated
+(eg. <code>@Common.Label.@Core.Description</code> without <code>@Common.Label</code>).</li>
+<li>Don&#39;t crash if value for <code>$Type</code> is not a string.</li>
+<li>Generated foreign keys of type <code>cds.UUID</code> that are also primary key are not annotated with
+<code>@Core.ComputedDefaultValue</code>. This is a follow up correction to 4.5.0</li>
+</ul>
+<ul>
+<li>parser: <code>annotate</code> can now annotate entity parameters, elements and bound actions in one statement.</li>
+<li>compiler: A single <code>annotate</code> statement can now be used to annotate parameters, elements and
+bound actions in one statement.</li>
+<li>compiler/parser</li>
+</ul>
+<ul>
+<li>Annotations can have any expressions as value, like <code>@Anno: ( ref + 1 )</code>.
+References are checked to be valid element references,
+inherited values might become invalid due to element renaming.
+This feature is still experimental, and
+might not be supported by all backends or runtimes at the moment.</li>
+<li>A single <code>annotate</code> statement can now be used to annotate parameters, elements and
+bound actions in one statement.</li>
+</ul>
+<ul>
+<li>Fix false positives of cyclic dependencies for calculated elements.</li>
+<li>Fix cardinality on source associations when publishing them with a filter (+ different cardinality)</li>
+</ul>
+<ul>
+<li>Fix false positives of cyclic dependencies for calculated elements.</li>
+<li>Fix cardinality on source associations when publishing them with a filter (+ different cardinality)</li>
+</ul>
+<ul>
+<li>More numbers that would lose relevant digits due to precision loss are</li>
+</ul>
+<ul>
+<li>More numbers that would lose relevant digits due to precision loss are</li>
+</ul>
+<ul>
+<li>Nested table expressions and queries in the FROM clause (with surrounding parentheses)</li>
+</ul>
+<ul>
+<li>Nested table expressions and queries in the FROM clause (with surrounding parentheses)</li>
+<li>Bare <code>$projection</code> are rejected. Use <code>$self</code> instead.</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds-compiler/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-compiler/CHANGELOG.md</guid>
+            <pubDate>Tue, 30 Jan 2024 14:02:32 GMT</pubDate>
         </item>
     </channel>
 </rss>

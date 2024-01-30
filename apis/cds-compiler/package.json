@@ -1,6 +1,6 @@
 {
   "name": "@sap/cds-compiler",
-  "version": "4.5.0",
+  "version": "4.6.0",
   "description": "CDS (Core Data Services) compiler and backends",
   "homepage": "https://cap.cloud.sap/",
   "author": "SAP SE (https://www.sap.com)",
@@ -27,7 +27,7 @@
     "deployGitDiffs": "CDS_COMPILER_DEPLOY_HANA=1 mocha --reporter-option maxDiffSize=0 test3/test.deploy.git-diffs.js",
     "gentest3": "cross-env MAKEREFS=${MAKEREFS:-'true'} mocha --reporter-option maxDiffSize=0 test3/testRefFiles.js",
     "coverage": "cross-env nyc mocha --reporter-option maxDiffSize=0 test/ test3/testRefFiles.js && nyc report --reporter=lcov",
-    "coverage:piper": "cross-env nyc mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./coverage/TEST-results.xml --reporter-option maxDiffSize=0 --timeout 10000 test/ test3/ && nyc report --reporter=cobertura && nyc report --reporter=lcov",
+    "coverage:piper": "cross-env nyc mocha --reporter test/TestMochaReporter.js --reporter-options mochaFile=./coverage/TEST-results.xml --reporter-option maxDiffSize=0 --timeout 10000 test/ test3/ && nyc report --reporter=cobertura && nyc report --reporter=lcov",
     "lint": "eslint bin/ benchmark/ lib/ test/ test3/ scripts/ types/ && node scripts/linter/lintGrammar.js && node scripts/linter/lintTests.js test3/ && node scripts/linter/lintMessages.js && node scripts/linter/lintMessageIdCoverage.js lib/ && markdownlint README.md CHANGELOG.md doc/ internalDoc/ && cd share/messages && markdownlint .",
     "tslint": "tsc --pretty -p .",
     "updateVocs": "node scripts/odataAnnotations/generateDictMain.js && npm run generateAllRefs",
