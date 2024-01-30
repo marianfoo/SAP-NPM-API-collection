@@ -33,7 +33,7 @@
     "@sap/adp-abap": "1.1.52",
     "@sap/adp-cf": "1.1.52",
     "@sap/adp-cli": "1.1.52",
-    "@sap/adp-common": "1.1.52",
+    "@sap/adp-common": "1.1.53",
     "@sap/adp-ve-bas-ext": "1.1.52",
     "@sap/ams": "1.14.1",
     "@sap/ams-dev": "0.8.2",
