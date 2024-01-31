@@ -1,6 +1,6 @@
 {
   "name": "@sap/cds-dk",
-  "version": "7.5.1",
+  "version": "7.6.0",
   "description": "Command line client and development toolkit for the SAP Cloud Application Programming Model",
   "homepage": "https://cap.cloud.sap/",
   "keywords": [

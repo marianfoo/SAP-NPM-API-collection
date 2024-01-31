@@ -3,7 +3,7 @@
 	"displayName": "SAPUI5 Visual Editor",
 	"description": "Add changes to SAPUI5 Adaptation Project",
 	"repository": "plana/adaptation-project",
-	"version": "1.1.52",
+	"version": "1.1.54",
 	"publisher": "SAP",
 	"scripts": {
 		"vscode:prepublish": "npm run build",
@@ -182,9 +182,9 @@
 		 
 		"@sap/approuter": "14.4.2",
 		"@sap/cf-tools": "0.8.1",
-		"@sap/adp-cf": "1.1.52",
-		"@sap/adp-abap": "1.1.52",
-		"@sap/adp-common": "1.1.52",
+		"@sap/adp-cf": "1.1.54",
+		"@sap/adp-abap": "1.1.54",
+		"@sap/adp-common": "1.1.54",
 		"axios": "1.6.3",
 		"js-yaml": "4.1.0",
 		"findit2": "2.2.3",
