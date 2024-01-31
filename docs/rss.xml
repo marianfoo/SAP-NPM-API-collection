@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 31 Jan 2024 14:02:35 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 31 Jan 2024 16:02:57 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 31 Jan 2024 14:02:31 GMT</pubDate>
+        <pubDate>Wed, 31 Jan 2024 16:02:53 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -1892,7 +1892,7 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 </ul>
 ]]></description>
             <link>http://example.com/cds/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds/CHANGELOG.md</guid>
             <pubDate>Wed, 31 Jan 2024 14:02:31 GMT</pubDate>
         </item>
         <item>
@@ -1901,8 +1901,142 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 
 ]]></description>
             <link>http://example.com/cds-dk/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-dk/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-dk/CHANGELOG.md</guid>
             <pubDate>Wed, 31 Jan 2024 14:02:31 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.5.3 to version 7.6.1
+
+<p>-- a/apis/cds/CHANGELOG.md
+++ b/apis/cds/CHANGELOG.md</p>
+<h2>Version 7.6.1 - 2024-01-30</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Garbage collection of draft is configured with <code>cds.fiori.draft_deletion_timeout</code></li>
+</ul>
+<h2>Version 7.6.0 - 2024-01-29</h2>
+<h3>Added</h3>
+<ul>
+<li><code>cds.upsert</code> as shortcut for <code>cds.db.upsert</code></li>
+<li>Automatic deletion of stale drafts. Feature is enabled if <code>cds.env.fiori.deletionTimeout</code> is set to a value of <code>true</code>; <code>true</code> uses the default timeout of <code>30d</code> (30 days).</li>
+<li>Support for default exports (ESM/TS) in custom authentication</li>
+<li>Support for executing SAP HANA procedures from SYS schema</li>
+<li>Support for more complex on-conditions in case of READ requests</li>
+<li>Best effort mechanism for supporting lambda expressions targeting remote odata-v2 services</li>
+<li>Support for actions and functions which are bound to singletons</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Draft: Standard Sorting Behavior for SAP Fiori List Report Floorplan</li>
+<li>Use new CDS schema for validation and code completion in <code>package.json</code> and <code>.cdsrc.json</code> files</li>
+<li>Media Data Streaming</li>
+</ul>
+<ul>
+<li>OData: Large binaries without <code>@Core.MediaType</code> annotation were previously returned as base64-encoded buffer. Starting from this <code>@sap/cds</code> version also not-annotated large binaries are ignored by OData. It is strongly recommended to annotate all large binary properties with <code>@Core.MediaType</code> and use it according to streaming scenarios.</li>
+<li>Custom Handlers: <code>SELECT</code> with explicitely listed <code>SELECT.columns</code> of type <code>cds.LargeBinary</code> returns them as Readable streams. Large binary columns requested implicitely by <code>SELECT</code> (for example, with <code>.columns(&#39;*&#39;)</code>) are ignored.</li>
+<li>Streaming API: <code>cds.stream()</code> and <code>srv.stream()</code> are deprecated and will be removed with the next major release. Use <code>SELECT</code> with a single <code>cds.LargeBinary</code> column instead. The resulting object will contain the name of the column and a stream value. For example, <code>SELECT.one.from(E).columns([&#39;image&#39;]).where(...)</code> returns <code>{ image: &lt;media stream&gt; }</code>.</li>
+<li>Backward Compatibility: To restore previous behavior use <code>stream_compat</code>.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><code>cds.minify</code> returned a shallow clone. When callers like 2sql <code>cds.linked</code> that subsequently, this left the passed-in csn in a broken, partially linked state. Now, <code>cds.minify</code> doesn&#39;t clone anymore, but modifies the passed in csn.</li>
+<li>Handling of read-only fields in drafts</li>
+<li>Event Mesh: Better error message for incoming messages without a topic</li>
+<li><code>cds build</code> now logs a better error message if an incompatible <code>@sap/cds</code> version is used.</li>
+<li>Better error message for runtime requests to non-existing tenants in extensibility scenario.</li>
+<li>Do not generate UUIDs for association key during <code>CREATE</code> operation.</li>
+<li>OData aggregation with lean draft</li>
+<li>Sorting in new odata parser with nested select statements. The default sort order is now added to the outer select statement.</li>
+<li>Server crash in case of misformatted <code>groupby</code> transformation in <code>$apply</code></li>
+<li>Switched EM webhook endpoints to also use new authentication implementation</li>
+<li><code>odata_new_parser</code>: better error message and code for expand on non-existing elements</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li><p>Experimental <code>STREAM</code> CQN is removed and cannot be used anymore</p>
+</li>
+<li><p>Example: <code>@(restrict : [{ grant : [&#39;*&#39;], where : (NAME = $user) }])</code></p>
+</li>
+</ul>
+<ul>
+<li>Example: <code>@(restrict : [{ grant : [&#39;*&#39;], where : (NAME = $user) }])</code></li>
+</ul>
+<ul>
+<li>Example: <code>LOG.info(&#39;foo&#39;, { query: &#39;SELECT * FROM DUMMY&#39; }, &#39;bar&#39;, { categories: [&#39;baz&#39;] })</code></li>
+</ul>
+<ul>
+<li>Example: <code>LOG.info(&#39;foo&#39;, { query: &#39;SELECT * FROM DUMMY&#39; }, &#39;bar&#39;, { categories: [&#39;baz&#39;] })</code></li>
+</ul>
+<ul>
+<li>Default: <code>[&#39;/authorization/i&#39;, &#39;/cookie/i&#39;]</code></li>
+</ul>
+<ul>
+<li>Default: <code>[&#39;/authorization/i&#39;, &#39;/cookie/i&#39;]</code></li>
+</ul>
+<ul>
+<li>Auth kind <code>ias</code>: same SAML attr api as auth kind <code>xsuaa</code> for easier migration</li>
+<li>Auth kind <code>ias</code>: same SAML attr API as auth kind <code>xsuaa</code> for easier migration</li>
+</ul>
+<ul>
+<li>If built-in JSON formatter is used:</li>
+</ul>
+<ul>
+<li>Field <code>tenant_subdomain</code> is filled if running on CF and information is available through authentication</li>
+<li>Additional CF-related fields are filled if running on CF</li>
+<li>Custom fields (<code>cds.env.log.als_custom_fields</code>) are filled if bound to an instance of Application Logging Service</li>
+<li>Field <code>categories</code> is filled if bound to an instance of Application Logging Service</li>
+</ul>
+<ul>
+<li>Config <code>cds.env.log.kibana_custom_fields</code> changed to <code>cds.env.log.als_custom_fields</code> (ALS = Application Logging Service) with compatibility until next major</li>
+<li>If a built-in JSON formatter is used:</li>
+<li>Field <code>tenant_subdomain</code> is filled if running on CF and information is available through authentication</li>
+<li>Additional CF-related fields are filled if running on CF</li>
+<li>Custom fields (<code>cds.env.log.als_custom_fields</code>) are filled if bound to an instance of Application Logging Service</li>
+<li>Field <code>categories</code> is filled if bound to an instance of Application Logging Service</li>
+<li>Config <code>cds.env.log.kibana_custom_fields</code> changed to <code>cds.env.log.als_custom_fields</code> (ALS = Application Logging Service) with compatibility until the next major</li>
+</ul>
+<ul>
+<li>If you used one of the types <code>CSN</code>, <code>Definitions</code>, <code>entity</code> of <em>@sap/cds/apis/reflect</em>, use the <code>Linked</code> counterparts instead.</li>
+<li>If you used the type <code>CQNQuery</code> of <em>@sap/cds/apis/cqn</em>, use <code>SELECT</code> or a union type instead.</li>
+<li>This also includes various fixes to Typings for</li>
+<li><code>req.subject</code> like <code>SELECT.from(req.subject)</code></li>
+<li><code>SELECT.columns([...])</code></li>
+<li><code>cds.db</code></li>
+<li><code>cds.util</code></li>
+<li><code>cds.context.features</code></li>
+</ul>
+<ul>
+<li>If you used one of the types <code>CSN</code>, <code>Definitions</code>, <code>entity</code> of <em>@sap/cds/apis/reflect</em>, use the <code>Linked</code> counterparts instead.</li>
+<li>If you used the type <code>CQNQuery</code> of <em>@sap/cds/apis/cqn</em>, use <code>SELECT</code> or a union type instead.</li>
+<li>This also includes various fixes to Typings for</li>
+<li><code>req.subject</code> like <code>SELECT.from(req.subject)</code></li>
+<li><code>SELECT.columns([...])</code></li>
+<li><code>cds.db</code></li>
+<li><code>cds.util</code></li>
+<li><code>cds.context.features</code></li>
+</ul>
+<ul>
+<li>Loading <code>cds-plugins</code> now offers a hook to add more flexible plugin loader, e.g. for corrupt <code>package.json</code> files.</li>
+<li>Loading <code>cds-plugins</code> now offers a hook to add a more flexible plugin loader, e.g., for corrupt <code>package.json</code> files.</li>
+<li>Collection bound actions/functions called via navigation</li>
+<li>Collection-bound actions/functions called via navigation
+Instead, please use <code>csrf</code> and <code>csrfInBatch</code> in the configuration of your remote services.
+Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure your remote services.</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds/CHANGELOG.md</guid>
+            <pubDate>Wed, 31 Jan 2024 16:02:53 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-dk - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.5.1 to version 7.6.0
+
+]]></description>
+            <link>http://example.com/cds-dk/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-dk/CHANGELOG.md</guid>
+            <pubDate>Wed, 31 Jan 2024 16:02:53 GMT</pubDate>
         </item>
     </channel>
 </rss>

@@ -1,7 +1,0 @@
-@sap/adp-abap
-@sap/adp-cf
-@sap/adp-cli
-@sap/adp-common
-@sap/adp-ve-bas-ext
-@sap/cds
-@sap/cds-dk
