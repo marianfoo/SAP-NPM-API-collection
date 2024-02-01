@@ -1,6 +1,6 @@
 {
   "name": "@sap/cli-core",
-  "version": "2024.2.0",
+  "version": "2024.3.0",
   "description": "Command-Line Interface (CLI) Core Module",
   "license": "SEE LICENSE IN LICENSE",
   "author": "SAP SE",
@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "ajv": "8.12.0",
-    "axios": "1.6.2",
+    "axios": "1.6.4",
     "commander": "11.1.0",
     "compare-versions": "6.1.0",
     "config": "3.3.9",
