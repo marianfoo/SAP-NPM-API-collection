@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 02 Feb 2024 14:02:28 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 02 Feb 2024 16:02:33 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 02 Feb 2024 14:02:24 GMT</pubDate>
+        <pubDate>Fri, 02 Feb 2024 16:02:28 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2358,8 +2358,25 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 </ul>
 ]]></description>
             <link>http://example.com/cds-compiler/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-compiler/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-compiler/CHANGELOG.md</guid>
             <pubDate>Fri, 02 Feb 2024 14:02:24 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-compiler - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.6.0 to version 4.6.2
+
+<p>-- a/apis/cds-compiler/CHANGELOG.md
+++ b/apis/cds-compiler/CHANGELOG.md</p>
+<h2>Version 4.6.2 - 2024-02-02</h2>
+<h3>Fixed</h3>
+<ul>
+<li>compiler: Fix incorrect error about type properties if deprecated flag <code>ignoreSpecifiedQueryElements</code> is set.</li>
+<li>Update OData vocabularies: &#39;Authorization&#39;, &#39;Common&#39;.</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds-compiler/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-compiler/CHANGELOG.md</guid>
+            <pubDate>Fri, 02 Feb 2024 16:02:29 GMT</pubDate>
         </item>
     </channel>
 </rss>
