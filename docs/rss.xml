@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 02 Feb 2024 10:02:52 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 02 Feb 2024 12:02:56 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 02 Feb 2024 10:02:47 GMT</pubDate>
+        <pubDate>Fri, 02 Feb 2024 12:02:51 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2106,7 +2106,7 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 </ul>
 ]]></description>
             <link>http://example.com/generator-fiori/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/generator-fiori/CHANGELOG.md</guid>
             <pubDate>Fri, 02 Feb 2024 10:02:50 GMT</pubDate>
         </item>
         <item>
@@ -2115,7 +2115,7 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 
 ]]></description>
             <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 02 Feb 2024 10:02:51 GMT</pubDate>
         </item>
         <item>
@@ -2142,7 +2142,7 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 </ul>
 ]]></description>
             <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 02 Feb 2024 10:02:51 GMT</pubDate>
         </item>
         <item>
@@ -2151,7 +2151,7 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 
 ]]></description>
             <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
             <pubDate>Fri, 02 Feb 2024 10:02:51 GMT</pubDate>
         </item>
         <item>
@@ -2184,7 +2184,7 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 <h2>[1.12.2] - 2023-01-10</h2>
 ]]></description>
             <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 02 Feb 2024 10:02:51 GMT</pubDate>
         </item>
         <item>
@@ -2193,7 +2193,7 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 
 ]]></description>
             <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 02 Feb 2024 10:02:51 GMT</pubDate>
         </item>
         <item>
@@ -2213,8 +2213,136 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 </ul>
 ]]></description>
             <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
             <pubDate>Fri, 02 Feb 2024 10:02:51 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/generator-fiori - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.2 to version 1.12.3
+
+<p>-- a/apis/generator-fiori/CHANGELOG.md
+++ b/apis/generator-fiori/CHANGELOG.md</p>
+<h2>[1.12.3] - 2024-01-31</h2>
+<h3>Added</h3>
+<ul>
+<li>Added a warning message when choosing to use a service from the SAP Business Accelerator Hub, as these services were not intented for use with SAP Fiori UI development.</li>
+<li>Added the abillity to launch the SAP Fiori generator directly from an SAP saved system.  When viewing an SAP saved system, a new link <code>Create SAP Fiori applicaton</code> will launch the generator and use the selected SAP saved system.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where an incorrect error message would be returned to the user if there were no transport requests available when adding deployment configuration.</li>
+</ul>
+]]></description>
+            <link>http://example.com/generator-fiori/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <pubDate>Fri, 02 Feb 2024 12:02:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-annotation-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.2 to version 1.12.3
+
+]]></description>
+            <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 02 Feb 2024 12:02:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-application-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.2 to version 1.12.3
+
+<p>-- a/apis/ux-application-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-application-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.3] - 2024-01-25</h2>
+<h3>Added</h3>
+<ul>
+<li>Enabled setting the criticality for actions based on <code>UI.DataFieldForAnnotations</code> in List Report table rows and the Object Page header and footer</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Improved the error handling when <code>i18n</code> bundles can&#39;t be resolved</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where the focus in the property panel was not correctly set after moving a node in the outline view</li>
+<li>Fixed an issue where the custom page schema generation resulted in the Page Editor showing an error</li>
+<li>Fixed an issue where the application modeler tree view was showing only the first part of an application&#39;s name if it contained a period (<code>.</code>)</li>
+<li>Fixed an issue with the Page Editor outline showing wrong content if the annotation path to a table view doesn&#39;t exit</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 02 Feb 2024 12:02:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-cds-odata-language-server-extension - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.2 to version 1.12.3
+
+]]></description>
+            <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <pubDate>Fri, 02 Feb 2024 12:02:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-help-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.2 to version 1.12.3
+
+<p>-- a/apis/ux-help-bas-ext/CHANGELOG.md
+++ b/apis/ux-help-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.1] - 2023-01-10</h2>
+<h2>[1.12.3] - 2023-01-25</h2>
+<h3>Added</h3>
+<ul>
+<li>Added an inline warning to the Entity Type parameter for missing function import in the <em>Add an Action Button</em> guide</li>
+<li>Added a CAP CDS variant for the <em>Add Multiple Fields to a Column in Responsive Tables</em> guide</li>
+<li>Added a feature that values of parameters are reset when they are deactivated</li>
+<li>Added a new input field validation that checks the correctness of the URL and also considers SAP-specific image URLs</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Removed the <em>Reorder columns in a table</em> guide as the functionality is already covered by the <em>Add and edit table columns</em> guide</li>
+<li>The Page Name parameter is now marked as mandatory</li>
+<li>The EntityType and Entity Type Property parameters are now marked as mandatory in the <em>Enable semantic Date range on smart filter bar</em> guide</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue with Guided Development not opening directly for an app in case an SAP CAP project contained multiple apps</li>
+<li>Fixed an issue where an invalid page type error was shown when clicking the insert snippet in the <em>Configure multiple views for table</em> guide</li>
+<li>Fixed an issue where an error was shown when inserting a snippet for the CDS Variant of the <em>Add semantic highlights to line items in a table</em> guide</li>
+</ul>
+<h2>[1.12.2] - 2023-01-10</h2>
+]]></description>
+            <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 02 Feb 2024 12:02:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-service-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.2 to version 1.12.3
+
+]]></description>
+            <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 02 Feb 2024 12:02:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-ui5-tooling - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.2 to version 1.12.3
+
+<p>-- a/apis/ux-ui5-tooling/CHANGELOG.md
+++ b/apis/ux-ui5-tooling/CHANGELOG.md</p>
+<h2>[1.12.3] - 2024-01-25</h2>
+<h3>Changed</h3>
+<ul>
+<li>Switched to using Bearer Token for connecting to ABAP Cloud systems.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue with the fallback version of SAPUI5 when a custom source path is specified: the check will now only be performed if the SAPUI5 source is CDN</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <pubDate>Fri, 02 Feb 2024 12:02:55 GMT</pubDate>
         </item>
     </channel>
 </rss>
