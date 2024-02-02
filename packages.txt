@@ -1,1 +1,1 @@
-@sap/ams-dev
+@sap/ux-specification
