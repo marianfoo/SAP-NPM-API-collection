@@ -4,7 +4,7 @@
   "description": "Allows you to access resources that help to define annotations in the code editor thus improving the application development by reducing effort and ensuring code consistency. The following is a subset of features that are part of this extension: code completion, micro-snippets, diagnostics, and internationalization support.",
   "publisher": "SAPSE",
   "license": "SEE LICENSE IN LICENSE",
-  "version": "1.12.2",
+  "version": "1.12.3",
   "main": "index.js",
   "categories": [
     "Programming Languages"

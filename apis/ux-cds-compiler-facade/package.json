@@ -1,6 +1,6 @@
 {
   "name": "@sap/ux-cds-compiler-facade",
-  "version": "1.12.2",
+  "version": "1.12.3",
   "description": "SAP Fiori tools - CDS compiler facade",
   "publisher": "SAPSE",
   "main": "dist/index.js",
@@ -34,10 +34,10 @@
     "@sap-ux/odata-annotation-core-types": "0.3.0"
   },
   "devDependencies": {
-    "@sap-ux/cds-annotation-parser": "0.1.2",
+    "@sap-ux/cds-annotation-parser": "0.1.7",
     "@sap/cds": "7.4.1",
-    "@sap/ux-cds-compiler-types": "1.12.2",
-    "@sap/ux-project-access": "1.12.2",
+    "@sap/ux-cds-compiler-types": "1.12.3",
+    "@sap/ux-project-access": "1.12.3",
     "madge": "4.0.2",
     "typescript": "5.2.2"
   },
