@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 04 Feb 2024 14:02:29 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 04 Feb 2024 16:02:48 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 04 Feb 2024 14:02:25 GMT</pubDate>
+        <pubDate>Sun, 04 Feb 2024 16:02:44 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2494,8 +2494,31 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
 </ul>
 ]]></description>
             <link>http://example.com/approuter/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/approuter/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/approuter/CHANGELOG.md</guid>
             <pubDate>Sun, 04 Feb 2024 14:02:25 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/approuter - Recent Update]]></title>
+            <description><![CDATA[Updated from version 16.0.2 to version 16.1.0
+
+<p>-- a/apis/approuter/CHANGELOG.md
+++ b/apis/approuter/CHANGELOG.md</p>
+<h2>16.1.0 - 2024-02-04</h2>
+<h3>Added</h3>
+<ul>
+<li>IAS/XSUAA hybrid support for business services</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Root ca corruption when using destination with private link proxy type</li>
+<li>Fix for working with HTML5 repo - regenerate token if needed</li>
+<li>Debug logs for backend requests</li>
+<li>Fixed case sensitivity for headers defined in the xs-app.json file</li>
+</ul>
+]]></description>
+            <link>http://example.com/approuter/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/approuter/CHANGELOG.md</guid>
+            <pubDate>Sun, 04 Feb 2024 16:02:44 GMT</pubDate>
         </item>
     </channel>
 </rss>
