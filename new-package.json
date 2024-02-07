@@ -72,6 +72,7 @@
     "@sap/create-hana-database-artifact": "1.10.0",
     "@sap/datasphere-cli": "2024.3.0",
     "@sap/destination-instance-service-provider": "1.2.35",
+    "@sap/dev-cap-tools": "1.31.0",
     "@sap/di.code-validation.core": "1.0.17",
     "@sap/di.code-validation.grunt": "1.0.9",
     "@sap/di.code-validation.js": "2.0.0",
