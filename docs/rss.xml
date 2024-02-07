@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 07 Feb 2024 18:02:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Feb 2024 20:02:33 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 07 Feb 2024 18:02:36 GMT</pubDate>
+        <pubDate>Wed, 07 Feb 2024 20:02:29 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2519,6 +2519,81 @@ Instead, please use <code>csrf</code> and <code>csrfInBatch</code> to configure 
             <link>http://example.com/approuter/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/approuter/CHANGELOG.md</guid>
             <pubDate>Sun, 04 Feb 2024 16:02:44 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-lsp - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.5.0 to version 7.6.0
+
+<p>-- a/apis/cds-lsp/CHANGELOG.md
+++ b/apis/cds-lsp/CHANGELOG.md</p>
+<h2>7.6.0 - tbd</h2>
+<h3>Added</h3>
+<ul>
+<li><code>format-cds</code> CLI now supports <code>--check</code> which tests given CDS sources if formatted according settings and fails otherwise (for CI/CD).
+For some erroneous CDS sources which cannot be formatted the exit code is <code>2</code>.</li>
+<li>hover over import path of <code>using</code> statement shows <code>README.md</code> or <code>package.json#description</code> if absolute (i.e. module) import</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>formatting option <code>alignAfterKey</code> option now applies to views and projections as well</li>
+<li>supportability: snapshot versions are now shown in log already with <code>verbose</code> level</li>
+<li>cds-lsp is now using <code>es2022</code></li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>removed padding after unary plus, minus or parameter colon</li>
+<li>artifact-elements snippet in <code>annotate</code> statement now appears regardless of cursor position between braces (or logs reason for not appearing)</li>
+<li>highlighting after semicolon in certain contexts</li>
+<li>on Windows editor potentially no longer updated diagnostics for sources with annotations</li>
+<li>wrong diagnostics about unused imports</li>
+<li>first code completion could have been slow as workspace was scanned unnessarily</li>
+<li>code completion for annotations was not shown in certain cases</li>
+<li><code>untitled</code> i.e. new not yet saved files no longer worked in VSCode</li>
+</ul>
+<h3>Also see</h3>
+<ul>
+<li><code>@sap/cds-compiler</code> 4.6.2</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds-lsp/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-lsp/CHANGELOG.md</guid>
+            <pubDate>Wed, 07 Feb 2024 20:02:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/vscode-cds - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.5.1 to version 7.6.0
+
+<p>-- a/apis/vscode-cds/CHANGELOG.md
+++ b/apis/vscode-cds/CHANGELOG.md</p>
+<h2>Version 7.6.0 - 2024-02-07</h2>
+<h3>Added</h3>
+<ul>
+<li>hover over import path of <code>using</code> statement shows <code>README.md</code> or <code>package.json#description</code> if absolute (i.e. module) import</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>formatting option <code>alignAfterKey</code> option now applies to views and projections as well</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>removed padding after unary plus, minus or parameter colon</li>
+<li>artifact-elements snippet in <code>annotate</code> statement now appears regardless of cursor position between braces (or logs reason for not appearing)</li>
+<li>highlighting after semicolon in certain contexts</li>
+<li>on Windows editor potentially no longer updated diagnostics for sources with annotations</li>
+<li>wrong diagnostics about unused imports</li>
+<li>first code completion could have been slow as workspace was scanned unnessarily</li>
+<li>code completion for annotations was not shown in certain cases</li>
+<li><code>untitled</code> i.e. new not yet saved files no longer worked in VSCode</li>
+</ul>
+<h3>Also see</h3>
+<ul>
+<li><code>@sap/cds-lsp</code> 7.6.0</li>
+<li><code>@sap/cds-compiler</code> 4.6.2</li>
+</ul>
+]]></description>
+            <link>http://example.com/vscode-cds/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/vscode-cds/CHANGELOG.md</guid>
+            <pubDate>Wed, 07 Feb 2024 20:02:33 GMT</pubDate>
         </item>
     </channel>
 </rss>
