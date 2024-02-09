@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 09 Feb 2024 14:02:33 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Feb 2024 16:02:59 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 09 Feb 2024 14:02:28 GMT</pubDate>
+        <pubDate>Fri, 09 Feb 2024 16:02:54 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2721,8 +2721,30 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 </ul>
 ]]></description>
             <link>http://example.com/cds/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds/CHANGELOG.md</guid>
             <pubDate>Fri, 09 Feb 2024 14:02:29 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.6.1 to version 7.6.2
+
+<p>-- a/apis/cds/CHANGELOG.md
+++ b/apis/cds/CHANGELOG.md</p>
+<h2>Version 7.6.2 - 2024-02-09</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Introduce i18n <code>BATCH_TOO_MANY_REQ</code> key for error message: &quot;Batch request contains too many requests&quot;</li>
+<li>Properly handle <code>$orderby</code> in lean draft</li>
+<li>View resolving in combination with <code>@cap-js/cds-db</code></li>
+<li>Allow <code>cds.requires.someService.outbox</code> to be a string</li>
+<li><code>cds.log</code>: errors, when not the first argument, were considered objects carrying custom fields</li>
+<li><code>accept</code> header parsing for OData requests if quality factor <code>q</code> is included</li>
+<li>Broken links on index page if multiple protocols are configured</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds/CHANGELOG.md</guid>
+            <pubDate>Fri, 09 Feb 2024 16:02:54 GMT</pubDate>
         </item>
     </channel>
 </rss>
