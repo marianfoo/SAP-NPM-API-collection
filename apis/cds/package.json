@@ -1,6 +1,6 @@
 {
   "name": "@sap/cds",
-  "version": "7.6.1",
+  "version": "7.6.2",
   "description": "SAP Cloud Application Programming Model - CDS for Node.js",
   "homepage": "https://cap.cloud.sap/",
   "keywords": [
