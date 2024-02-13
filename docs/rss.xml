@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 12 Feb 2024 22:02:54 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Feb 2024 00:06:48 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 12 Feb 2024 22:02:50 GMT</pubDate>
+        <pubDate>Tue, 13 Feb 2024 00:06:44 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2761,7 +2761,7 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 
 ]]></description>
             <link>http://example.com/cds-mtx/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-mtx/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-mtx/CHANGELOG.md</guid>
             <pubDate>Mon, 12 Feb 2024 22:02:50 GMT</pubDate>
         </item>
     </channel>
