@@ -4,6 +4,13 @@
 - The format is based on [Keep a Changelog](http://keepachangelog.com/).
 - This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Version 7.6.3 - 2024-02-13
+
+### Fixed
+
+- Event Mesh webhooks now add standard `before` middlewares in case of custom authorization
+- `compile.to.serviceinfo` no longer fails for services marked with `@protocol:'none'`. Such internal services are not shown in the output.
+
 ## Version 7.6.2 - 2024-02-09
 
 ### Fixed
