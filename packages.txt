@@ -1,2 +1,0 @@
-@sap/cds-dk
-@sap/generator-cap-project
