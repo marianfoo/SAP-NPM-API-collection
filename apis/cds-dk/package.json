@@ -1,6 +1,6 @@
 {
   "name": "@sap/cds-dk",
-  "version": "7.6.0",
+  "version": "7.6.1",
   "description": "Command line client and development toolkit for the SAP Cloud Application Programming Model",
   "homepage": "https://cap.cloud.sap/",
   "keywords": [
@@ -40,14 +40,5 @@
     "npm-shrinkwrap.json",
     "LICENSE"
   ],
-  "overrides": {
-    "sqlite3": {
-      "@mapbox/node-pre-gyp": {
-        "make-dir": {
-          "semver": "^7"
-        }
-      }
-    }
-  },
   "_hasShrinkwrap": true
 }
