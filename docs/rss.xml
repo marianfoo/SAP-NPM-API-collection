@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 14 Feb 2024 10:02:36 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Feb 2024 12:03:18 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 14 Feb 2024 10:02:32 GMT</pubDate>
+        <pubDate>Wed, 14 Feb 2024 12:03:14 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2797,6 +2797,23 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
             <link>http://example.com/cds/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/cds/CHANGELOG.md</guid>
             <pubDate>Tue, 13 Feb 2024 18:03:04 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/e2e-trace - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.1.0 to version 5.0.0
+
+<p>-- a/apis/e2e-trace/CHANGELOG.md
+++ b/apis/e2e-trace/CHANGELOG.md</p>
+<h2>5.0.0 - 2024-02-14</h2>
+<h3>Removed</h3>
+<ul>
+<li>Support for Node.js 12.x, Node.js 14.x and Node.js 16.x</li>
+<li>updated dependencies</li>
+</ul>
+]]></description>
+            <link>http://example.com/e2e-trace/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/e2e-trace/CHANGELOG.md</guid>
+            <pubDate>Wed, 14 Feb 2024 12:03:17 GMT</pubDate>
         </item>
     </channel>
 </rss>
