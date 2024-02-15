@@ -1,5 +1,9 @@
-@sap/adp-abap
-@sap/adp-cf
-@sap/adp-cli
-@sap/adp-common
-@sap/cds-fiori
+@sap/adp-ve-bas-ext
+@sap/generator-fiori
+@sap/ux-annotation-modeler-bas-ext
+@sap/ux-application-modeler-bas-ext
+@sap/ux-cds-compiler-facade
+@sap/ux-cds-odata-language-server-extension
+@sap/ux-help-bas-ext
+@sap/ux-service-modeler-bas-ext
+@sap/ux-ui5-tooling
