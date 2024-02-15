@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 15 Feb 2024 18:03:27 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Feb 2024 20:02:41 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 15 Feb 2024 18:03:22 GMT</pubDate>
+        <pubDate>Thu, 15 Feb 2024 20:02:37 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2927,7 +2927,7 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 </ul>
 ]]></description>
             <link>http://example.com/cds-fiori/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-fiori/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-fiori/CHANGELOG.md</guid>
             <pubDate>Thu, 15 Feb 2024 18:03:22 GMT</pubDate>
         </item>
         <item>
@@ -2949,7 +2949,7 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 </ul>
 ]]></description>
             <link>http://example.com/generator-fiori/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/generator-fiori/CHANGELOG.md</guid>
             <pubDate>Thu, 15 Feb 2024 18:03:26 GMT</pubDate>
         </item>
         <item>
@@ -2958,7 +2958,7 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 
 ]]></description>
             <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Thu, 15 Feb 2024 18:03:27 GMT</pubDate>
         </item>
         <item>
@@ -2988,7 +2988,7 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 </ul>
 ]]></description>
             <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Thu, 15 Feb 2024 18:03:27 GMT</pubDate>
         </item>
         <item>
@@ -2997,7 +2997,7 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 
 ]]></description>
             <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
             <pubDate>Thu, 15 Feb 2024 18:03:27 GMT</pubDate>
         </item>
         <item>
@@ -3025,7 +3025,7 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 <h2>[1.12.2] - 2024-01-10</h2>
 ]]></description>
             <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
             <pubDate>Thu, 15 Feb 2024 18:03:27 GMT</pubDate>
         </item>
         <item>
@@ -3042,7 +3042,7 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 </ul>
 ]]></description>
             <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Thu, 15 Feb 2024 18:03:27 GMT</pubDate>
         </item>
         <item>
@@ -3058,8 +3058,139 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
 </ul>
 ]]></description>
             <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
             <pubDate>Thu, 15 Feb 2024 18:03:27 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/generator-fiori - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.3 to version 1.12.4
+
+<p>-- a/apis/generator-fiori/CHANGELOG.md
+++ b/apis/generator-fiori/CHANGELOG.md</p>
+<h2>[1.12.4] - 2024-02-14</h2>
+<h3>Added</h3>
+<ul>
+<li>Added a validation message when trying to use a service from the SAP Business Accelerator Hub with an SAP Fiori template that does not support the service OData version.</li>
+<li>Added a message after successful deployment if the deploy URL needs to be updated with an internal host reference.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue when migrating an Extensibility project that did not contain a manifest.json file.</li>
+<li>Fixed an issue where an invalid deployment yaml file was not being correctly detected as being invalid.</li>
+</ul>
+]]></description>
+            <link>http://example.com/generator-fiori/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <pubDate>Thu, 15 Feb 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-annotation-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.3 to version 1.12.4
+
+]]></description>
+            <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Thu, 15 Feb 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-application-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.3 to version 1.12.4
+
+<p>-- a/apis/ux-application-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-application-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.4] - 2024-02-08</h2>
+<h3>Added</h3>
+<ul>
+<li>Added the capability to quickly navigate through content groups via keyboard to the Application Info page, the Page Map, and the Page Editor webviews</li>
+<li>Added an indication to the Page Editor when the annotation API returns an error</li>
+<li>Added support for custom actions referencing extension controllers with the prefix &#39;.extension&#39; in the &#39;press&#39; property</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Enhanced the error message in case the minimum SAPUI5 version can&#39;t be changed to indicate the reason</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue with an empty <code>NavigationPropertyPath</code> annotation leading to a parsing error in the Page Map</li>
+<li>Fixed an issue with the application modeler tree view not showing the warning message when something is wrong with the project</li>
+<li>Fixed an issue with application type detection resulting in an &quot;Invalid application ID&quot; error shown when adding a custom section</li>
+<li>Fixed multiple issues with <code>i18n</code> mass generation</li>
+<li>Fixed an issue where a warning message was shown about the Variant Management property when adding a table building block in the Page Editor</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Thu, 15 Feb 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-cds-odata-language-server-extension - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.3 to version 1.12.4
+
+]]></description>
+            <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <pubDate>Thu, 15 Feb 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-help-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.3 to version 1.12.4
+
+<p>-- a/apis/ux-help-bas-ext/CHANGELOG.md
+++ b/apis/ux-help-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.3] - 2023-01-25</h2>
+<h2>[1.12.4] - 2024-02-08</h2>
+<h3>Added</h3>
+<ul>
+<li>Added support for additional table types in the <em>Configure table type</em> guide based on the SAPUI5 version and project type</li>
+<li>Added a feature in the <em>Configure table type</em> guide to reflect the table type defined in the project</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where existing UI.DataFieldForAnnotation was not considered but duplicated on click of the Insert Snippet button in the <em>Add a micro chart column to a table</em> guide</li>
+<li>Fixed an issue where the <em>Related Facets Annotation Term</em> parameter was disabled in the <em>Add a custom section to an object page using extensions</em> guide</li>
+<li>Fixed multiple issues on Step 5 on the <em>Add a table card to an overview page</em> guide to ensure that code snippet is correctly applied</li>
+<li>Fixed an issue where an incorrect reference to Common Vocabulary was created in the annotations if it didn’t already exist</li>
+</ul>
+<h2>[1.12.3] - 2024-01-25</h2>
+<h2>[1.12.2] - 2023-01-10</h2>
+<h2>[1.12.2] - 2024-01-10</h2>
+]]></description>
+            <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Thu, 15 Feb 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-service-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.3 to version 1.12.4
+
+<p>-- a/apis/ux-service-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-service-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.4] - 2024-02-08</h2>
+<h3>Added</h3>
+<ul>
+<li>Added the ability for one-click expand and collapse of all the nodes in the tree list to view/hide service metadata</li>
+<li>Added the capability to the webview to restore content when the development environment is reloaded</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Thu, 15 Feb 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-ui5-tooling - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.3 to version 1.12.4
+
+<p>-- a/apis/ux-ui5-tooling/CHANGELOG.md
+++ b/apis/ux-ui5-tooling/CHANGELOG.md</p>
+<h2>[1.12.4] - 2024-02-08</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue with CSRF token validation when previewing</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <pubDate>Thu, 15 Feb 2024 20:02:41 GMT</pubDate>
         </item>
     </channel>
 </rss>
