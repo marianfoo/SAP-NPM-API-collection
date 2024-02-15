@@ -1,6 +1,6 @@
 {
   "name": "@sap/cds-fiori",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "SAP Cloud Application Programming Model - Services for SAP Fiori Elements",
   "homepage": "https://cap.cloud.sap/",
   "keywords": [
@@ -18,14 +18,14 @@
     "LICENSE"
   ],
   "peerDependencies": {
-    "@sap/cds": ">=7",
+    "@sap/cds": ">=7.1",
     "express": ">=4"
   },
   "cds": {
     "fiori": {
       "preview": {
         "ui5": {
-          "version": "1.120.0"
+          "version": "1.120.6"
         }
       },
       "routes": true,

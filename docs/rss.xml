@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 15 Feb 2024 14:02:37 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Feb 2024 16:02:50 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 15 Feb 2024 14:02:33 GMT</pubDate>
+        <pubDate>Thu, 15 Feb 2024 16:02:46 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -2889,6 +2889,26 @@ For some erroneous CDS sources which cannot be formatted the exit code is <code>
             <link>http://example.com/generator-cap-project/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/generator-cap-project/CHANGELOG.md</guid>
             <pubDate>Wed, 14 Feb 2024 18:02:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-fiori - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.2.2 to version 1.2.3
+
+<p>-- a/apis/cds-fiori/CHANGELOG.md
+++ b/apis/cds-fiori/CHANGELOG.md</p>
+<h2>Version 1.2.3 - 2024-02-15</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Handle services with multiple/no/wrong endpoints. Only show the preview link for OData endpoints.  Also fail with a proper error message if a wrong preview URL is directly called (w/o the link).</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Use UI5 version 1.120.6 by default</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds-fiori/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-fiori/CHANGELOG.md</guid>
+            <pubDate>Thu, 15 Feb 2024 16:02:46 GMT</pubDate>
         </item>
     </channel>
 </rss>
