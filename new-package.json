@@ -160,7 +160,7 @@
     "@sap/ux-cds-odata-language-server-extension": "1.12.4",
     "@sap/ux-help-bas-ext": "1.12.4",
     "@sap/ux-service-modeler-bas-ext": "1.12.4",
-    "@sap/ux-specification": "1.120.3",
+    "@sap/ux-specification": "1.120.4",
     "@sap/ux-ui5-fe-mockserver-middleware": "1.6.5",
     "@sap/ux-ui5-tooling": "1.12.4",
     "@sap/vscode-cds": "7.6.0",
