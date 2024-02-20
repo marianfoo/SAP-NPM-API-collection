@@ -146,7 +146,7 @@
     "@sap/site-content-deployer": "1.9.21",
     "@sap/site-entry": "1.9.48",
     "@sap/subaccount-destination-service-provider": "1.8.2",
-    "@sap/swa-for-sapbas-vsx": "2.0.1",
+    "@sap/swa-for-sapbas-vsx": "2.0.2",
     "@sap/textanalysis": "1.1.0",
     "@sap/textbundle": "4.3.0",
     "@sap/textmining": "1.1.6",
