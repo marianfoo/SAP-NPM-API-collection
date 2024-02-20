@@ -1,0 +1,1 @@
+@sap/swa-for-sapbas-vsx

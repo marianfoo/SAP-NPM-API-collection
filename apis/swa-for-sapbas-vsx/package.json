@@ -1,11 +1,16 @@
 {
   "name": "@sap/swa-for-sapbas-vsx",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Typescript module for Azure Application Insights to be consumed by VSCode extensions",
   "keywords": [],
   "license": "SEE LICENSE IN LICENSE",
   "author": "SAP SE",
-  "main": "dist/src/index.js",
+  "main": "dist/src/index",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/",
+    "!dist/**/test/"
+  ],
   "scripts": {
     "build": "tsc --build",
     "ci": "npm run clean && npm run format:validate && npm run lint:validate && npm run build && npm run test",
