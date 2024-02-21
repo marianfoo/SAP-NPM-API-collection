@@ -1,6 +1,6 @@
 {
   "name": "@sap/swa-for-sapbas-vsx",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Typescript module for Azure Application Insights to be consumed by VSCode extensions",
   "keywords": [],
   "license": "SEE LICENSE IN LICENSE",
@@ -12,7 +12,9 @@
     "!dist/**/test/"
   ],
   "scripts": {
+    "xmake_hack": "shx rm -rf node_modules && npm install && npm run ci:artifacts_only",
     "build": "tsc --build",
+    "ci:artifacts_only": "npm-run-all clean build",
     "ci": "npm-run-all clean format:validate lint:validate build test",
     "clean": "shx rm -rf dist coverage",
     "example": "ts-node example/reporter.ts",
