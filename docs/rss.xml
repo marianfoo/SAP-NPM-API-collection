@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 21 Feb 2024 10:02:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Feb 2024 12:03:06 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 21 Feb 2024 10:02:39 GMT</pubDate>
+        <pubDate>Wed, 21 Feb 2024 12:03:02 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -3471,6 +3471,36 @@ console.log(response);
             <link>http://example.com/approuter/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/approuter/CHANGELOG.md</guid>
             <pubDate>Mon, 19 Feb 2024 22:02:58 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/hdi-deploy - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.9.2 to version 5.0.1
+
+<p>-- a/apis/hdi-deploy/CHANGELOG.md
+++ b/apis/hdi-deploy/CHANGELOG.md</p>
+<h2>5.0.1</h2>
+<p>Fixes:</p>
+<ul>
+<li>hana-client dependency issue while using hdb</li>
+</ul>
+<h2>5.0.0</h2>
+<p>Features:</p>
+<ul>
+<li>Moved hana-client and hdb from dependencies to peerDependencies to allow choice of using either hana-client or hdb.</li>
+<li>hana-client ^2 &gt;= 2.6 support</li>
+<li>hdb ^0 support</li>
+<li>use dotenv@16.3.1</li>
+<li>use handlebars@4.7.8</li>
+<li>use micromatch@4.0.5</li>
+</ul>
+<p>Removed:</p>
+<ul>
+<li>Node 12.x, 14.x, and 16.x support</li>
+</ul>
+]]></description>
+            <link>http://example.com/hdi-deploy/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/hdi-deploy/CHANGELOG.md</guid>
+            <pubDate>Wed, 21 Feb 2024 12:03:06 GMT</pubDate>
         </item>
     </channel>
 </rss>
