@@ -1,7 +1,7 @@
 {
   "name": "@sap/cds-lsp",
   "description": "Language server for CDS",
-  "version": "7.6.0",
+  "version": "7.6.1",
   "homepage": "https://cap.cloud.sap/",
   "author": "SAP SE (https://www.sap.com)",
   "license": "SEE LICENSE IN LICENSE",

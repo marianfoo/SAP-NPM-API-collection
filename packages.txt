@@ -1,0 +1,2 @@
+@sap/cds-lsp
+@sap/vscode-cds
