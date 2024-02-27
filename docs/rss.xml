@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 27 Feb 2024 14:02:39 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Feb 2024 16:03:04 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 27 Feb 2024 14:02:35 GMT</pubDate>
+        <pubDate>Tue, 27 Feb 2024 16:03:00 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -3838,7 +3838,7 @@ with generated <code>hdbcds</code>.</li>
 </ul>
 ]]></description>
             <link>http://example.com/cds-compiler/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-compiler/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-compiler/CHANGELOG.md</guid>
             <pubDate>Tue, 27 Feb 2024 14:02:35 GMT</pubDate>
         </item>
         <item>
@@ -3867,8 +3867,55 @@ with generated <code>hdbcds</code>.</li>
 </code></pre>
 ]]></description>
             <link>http://example.com/cds-mtxs/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-mtxs/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-mtxs/CHANGELOG.md</guid>
             <pubDate>Tue, 27 Feb 2024 14:02:35 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.6.4 to version 7.7.0
+
+<p>-- a/apis/cds/CHANGELOG.md
+++ b/apis/cds/CHANGELOG.md</p>
+<h2>Version 7.7.0 - 2024-02-26</h2>
+<h3>Added</h3>
+<ul>
+<li>Improved trace output for bootstrap phase. For example try that:</li>
+</ul>
+<pre><code class="language-js">DEBUG=trace cds w bookshop | grep trace
+</code></pre>
+<ul>
+<li>Support for <code>@odata.draft.bypass</code> to allow direct modifications of active instances.</li>
+<li><code>req.user.tokenInfo</code> for <code>@sap/xssec</code>-based authentication (<code>ias</code>, <code>jwt</code>, <code>xsuaa</code>)</li>
+<li><code>cds.fiori.draft_lock_timeout</code> as successor of <code>cds.drafts.cancellationTimeout</code>.</li>
+</ul>
+<ul>
+<li>Possible values are /^([0-9]+)(h|hrs|min)$/ or a number in milliseconds.</li>
+</ul>
+<ul>
+<li>There is a new <code>sap.common.Timezones</code> entity with a basic time zone definition. There will be accompanying data in package <code>@sap/cds-common-content</code>.</li>
+<li>Deprecation warnings for configuration options <code>cds.drafts.cancellationTimeout</code>, <code>cds.features.serve_on_root</code>, <code>cds.features.stream_compat</code>, <code>cds.fiori.lean_draft</code> and <code>cds.requires.middlewares</code>, as well as for the properties <code>req.user.locale</code> and <code>req.user.tenant</code>. The deprecation warnings can be turned off by setting <code>cds.features.deprecated</code> to <code>off</code>.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>The index page now lists all service endpoints, which is important for services that are exposed through multiple protocols.</li>
+<li><code>cds.deploy</code> improves error diagnostics with deeper <code>Query</code> object inspection.</li>
+<li>Slightly changed the default export for ESM compatibility. This fixed failing ESM imports in Vitest tests.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Persistent outbox must not be used for <code>t0</code> tenant.</li>
+<li>Second <code>await cds.connect.to(&#39;X&#39;)</code>, where initialization of <code>X</code> results in an error, did not return.</li>
+<li>Support additional draft requests.</li>
+<li><code>cds.log</code> with <code>null</code> as argument.</li>
+</ul>
+<ul>
+<li>Custom Handlers: <code>SELECT</code> with explicitely listed <code>SELECT.columns</code> of type <code>cds.LargeBinary</code> returns them as Readable streams. Large binary columns requested implicitely by <code>SELECT</code> (for example, with <code>.columns(&#39;*&#39;)</code>) are ignored.</li>
+<li>Custom Handlers: <code>SELECT</code> with explicitly listed <code>SELECT.columns</code> of type <code>cds.LargeBinary</code> returns them as Readable streams. Large binary columns requested implicitly by <code>SELECT</code> (for example, with <code>.columns(&#39;*&#39;)</code>) are ignored.</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds/CHANGELOG.md</guid>
+            <pubDate>Tue, 27 Feb 2024 16:03:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
