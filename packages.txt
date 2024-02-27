@@ -1,1 +1,2 @@
-@sap/cds
+@sap/cds-common-content
+@sap/cds-dk
