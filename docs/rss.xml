@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 27 Feb 2024 20:02:53 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Feb 2024 22:02:44 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 27 Feb 2024 20:02:49 GMT</pubDate>
+        <pubDate>Tue, 27 Feb 2024 22:02:40 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -4010,7 +4010,7 @@ with generated <code>hdbcds</code>.</li>
 </ul>
 ]]></description>
             <link>http://example.com/cds-common-content/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-common-content/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-common-content/CHANGELOG.md</guid>
             <pubDate>Tue, 27 Feb 2024 20:02:49 GMT</pubDate>
         </item>
         <item>
@@ -4019,7 +4019,7 @@ with generated <code>hdbcds</code>.</li>
 
 ]]></description>
             <link>http://example.com/cds-dk/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-dk/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-dk/CHANGELOG.md</guid>
             <pubDate>Tue, 27 Feb 2024 20:02:49 GMT</pubDate>
         </item>
     </channel>
