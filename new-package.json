@@ -36,7 +36,7 @@
     "@sap/adp-common": "1.1.55",
     "@sap/adp-ve-bas-ext": "1.1.55",
     "@sap/ams": "1.15.0",
-    "@sap/ams-dev": "0.8.3",
+    "@sap/ams-dev": "0.8.4",
     "@sap/apihub-enterprise-service-provider": "0.4.2",
     "@sap/apihub-service-provider": "1.9.3",
     "@sap/approuter": "16.1.1",
