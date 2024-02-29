@@ -7,6 +7,15 @@
 Note: `beta` fixes, changes and features are usually not listed in this ChangeLog but [here](doc/CHANGELOG_BETA.md).
 The compiler behavior concerning `beta` features can change at any time without notice.
 
+
+## Version 4.7.6 - 2024-02-29
+
+### Fixed
+
+- OData: Restored compatibility with the Java runtime.
+  Drafts generation was applied twice.
+
+
 ## Version 4.7.4 - 2024-02-27
 
 ### Fixed
@@ -19,6 +28,7 @@ The compiler behavior concerning `beta` features can change at any time without 
 ### Fixed
 
 - Restored compatibility with `@sap/cds-dk` for Java runtime
+
 
 ## Version 4.7.0 - 2024-02-23
 

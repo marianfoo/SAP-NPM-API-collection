@@ -1,6 +1,6 @@
 {
   "name": "@sap/cds-compiler",
-  "version": "4.7.4",
+  "version": "4.7.6",
   "description": "CDS (Core Data Services) compiler and backends",
   "homepage": "https://cap.cloud.sap/",
   "author": "SAP SE (https://www.sap.com)",

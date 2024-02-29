@@ -56,7 +56,7 @@
     "@sap/bas-sdk-cf-utils": "1.2.0",
     "@sap/cds": "7.7.0",
     "@sap/cds-common-content": "1.4.0",
-    "@sap/cds-compiler": "4.7.4",
+    "@sap/cds-compiler": "4.7.6",
     "@sap/cds-dk": "7.7.0",
     "@sap/cds-fiori": "1.2.3",
     "@sap/cds-foss": "5.0.0",
