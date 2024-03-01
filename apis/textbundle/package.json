@@ -1,6 +1,6 @@
 {
   "name": "@sap/textbundle",
-  "version": "4.3.0",
+  "version": "5.0.0",
   "description": "Utility for texts internationalization.",
   "license": "SEE LICENSE IN LICENSE file",
   "main": "index.js",
@@ -38,7 +38,7 @@
     "LICENSE"
   ],
   "engines": {
-    "node": "^8.0.0 || ^10.0.0 || ^12.0.0 || ^14.0.0 || ^16.0.0 || ^18.0.0 || ^20.0.0"
+    "node": "^18.0.0 || ^20.0.0"
   },
   "scripts": {
     "test": "node make dist",

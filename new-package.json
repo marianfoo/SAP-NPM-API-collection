@@ -148,7 +148,7 @@
     "@sap/subaccount-destination-service-provider": "1.8.2",
     "@sap/swa-for-sapbas-vsx": "2.0.4",
     "@sap/textanalysis": "1.1.0",
-    "@sap/textbundle": "4.3.0",
+    "@sap/textbundle": "5.0.0",
     "@sap/textmining": "1.1.6",
     "@sap/ucl-provider": "0.4.3",
     "@sap/ui-annotations": "2.0.5",
