@@ -1,6 +1,6 @@
 {
 	"name": "@sap/open.fe",
-	"version": "1.120.0",
+	"version": "1.121.0",
 	"description": "SAP open.fe Library containing packages sap.fe.template, sap.fe.macros, sap.fe.core, sap.fe.navigation",
 	"keywords": [
 		"sapui5",
