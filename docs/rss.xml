@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 01 Mar 2024 20:02:37 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Mar 2024 22:02:22 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 01 Mar 2024 20:02:33 GMT</pubDate>
+        <pubDate>Fri, 01 Mar 2024 22:02:18 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -4272,7 +4272,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/generator-fiori/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/generator-fiori/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:36 GMT</pubDate>
         </item>
         <item>
@@ -4281,7 +4281,7 @@ Drafts generation was applied twice.</li>
 
 ]]></description>
             <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:37 GMT</pubDate>
         </item>
         <item>
@@ -4309,7 +4309,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:37 GMT</pubDate>
         </item>
         <item>
@@ -4318,7 +4318,7 @@ Drafts generation was applied twice.</li>
 
 ]]></description>
             <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:37 GMT</pubDate>
         </item>
         <item>
@@ -4345,7 +4345,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:37 GMT</pubDate>
         </item>
         <item>
@@ -4369,7 +4369,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:37 GMT</pubDate>
         </item>
         <item>
@@ -4408,7 +4408,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/ux-specification/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-specification/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-specification/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:37 GMT</pubDate>
         </item>
         <item>
@@ -4417,7 +4417,7 @@ Drafts generation was applied twice.</li>
 
 ]]></description>
             <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:37 GMT</pubDate>
         </item>
     </channel>
