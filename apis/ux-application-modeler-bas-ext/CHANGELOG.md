@@ -5,6 +5,20 @@ Items marked as [experimental] are subject to change.
 
 This project adheres to [Semantic Versioning](http://semver.org/) and the changelog is formatted based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.12.5] - 2024-02-22
+### Added
+- Enabled hiding the Edit and Delete buttons in an application UI statically, or based on the Boolean property
+- Added support for header sections for OData V2-based applications
+
+### Changed
+- Enhanced the logging information with better visualization and the connection to the log level setting in VS Code
+
+### Fixed
+- Fixed an issue where SAPUI5 flexibility change files created by other means were overwritten or deleted when property changes were made in the Page Editor
+- Fixed an issue with false positive warnings shown in the Page Map for valid navigations to custom pages
+- Fixed an issue with wrong routings being written to the manifest when adding an object page or custom page following a custom page (also needs `@sap/ux-specification` versions 1.96.57, 1.108.24, 1.120.5 or higher)
+- Fixed an issue with the deletion of custom views in the Page Editor
+
 ## [1.12.4] - 2024-02-08
 ### Added
 - Added the capability to quickly navigate through content groups via keyboard to the Application Info page, the Page Map, and the Page Editor webviews

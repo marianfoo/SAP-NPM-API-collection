@@ -3,6 +3,14 @@ All notable changes to this project are documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/) and the changelog is formatted based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [1.12.5] - 2024-02-28
+### Changed
+- Updated deploy error response that returns an xml document to now show the content of the error for easier reading.
+
+### Fixed
+- Fixed an issue where deployment could fail with an invalid http 415 response.
+- Fixed an issue where users could select the group separator in a dropdown in the application wizard.
+
 ## [1.12.4] - 2024-02-14
 ### Added
 - Added a validation message when trying to use a service from the SAP Business Accelerator Hub with an SAP Fiori template that does not support the service OData version.

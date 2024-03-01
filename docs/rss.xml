@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 01 Mar 2024 16:03:20 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Mar 2024 18:03:10 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 01 Mar 2024 16:03:16 GMT</pubDate>
+        <pubDate>Fri, 01 Mar 2024 18:03:05 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -4087,6 +4087,172 @@ Drafts generation was applied twice.</li>
             <link>http://example.com/textbundle/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/textbundle/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 12:03:02 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/generator-fiori - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.4 to version 1.12.5
+
+<p>-- a/apis/generator-fiori/CHANGELOG.md
+++ b/apis/generator-fiori/CHANGELOG.md</p>
+<h2>[1.12.5] - 2024-02-28</h2>
+<h3>Changed</h3>
+<ul>
+<li>Updated deploy error response that returns an xml document to now show the content of the error for easier reading.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where deployment could fail with an invalid http 415 response.</li>
+<li>Fixed an issue where users could select the group separator in a dropdown in the application wizard.</li>
+</ul>
+]]></description>
+            <link>http://example.com/generator-fiori/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <pubDate>Fri, 01 Mar 2024 18:03:09 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-annotation-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.4 to version 1.12.5
+
+]]></description>
+            <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 01 Mar 2024 18:03:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-application-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.4 to version 1.12.5
+
+<p>-- a/apis/ux-application-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-application-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.5] - 2024-02-22</h2>
+<h3>Added</h3>
+<ul>
+<li>Enabled hiding the Edit and Delete buttons in an application UI statically, or based on the Boolean property</li>
+<li>Added support for header sections for OData V2-based applications</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Enhanced the logging information with better visualization and the connection to the log level setting in VS Code</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where SAPUI5 flexibility change files created by other means were overwritten or deleted when property changes were made in the Page Editor</li>
+<li>Fixed an issue with false positive warnings shown in the Page Map for valid navigations to custom pages</li>
+<li>Fixed an issue with wrong routings being written to the manifest when adding an object page or custom page following a custom page (also needs <code>@sap/ux-specification</code> versions 1.96.57, 1.108.24, 1.120.5 or higher)</li>
+<li>Fixed an issue with the deletion of custom views in the Page Editor</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 01 Mar 2024 18:03:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-cds-odata-language-server-extension - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.4 to version 1.12.5
+
+]]></description>
+            <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <pubDate>Fri, 01 Mar 2024 18:03:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-help-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.4 to version 1.12.5
+
+<p>-- a/apis/ux-help-bas-ext/CHANGELOG.md
+++ b/apis/ux-help-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.5] - 2024-02-22</h2>
+<h3>Added</h3>
+<ul>
+<li>Added support for the UI.DataFieldForAction annotation in the <em>Add and edit table columns</em> guide</li>
+<li>Added OData V2 and OData V4 variants for the <em>Configure multiple views for tables</em> guide</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Changed guide variant name from CDS Annotation to <em>CAP CDS Annotation</em></li>
+<li>Replaced the Target path with the Chart Annotation Path parameter which lists annotations supported on OData V2 and OData V4 in the <em>Add a smart chart facet to an object page</em> guide</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where the hierarchyQualifier parameter was not based on the table’s entity in the <em>Configure table type</em> guide</li>
+<li>Fixed an issue where UI.LineItem annotations with a qualifier were not considered</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 01 Mar 2024 18:03:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-service-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.4 to version 1.12.5
+
+<p>-- a/apis/ux-service-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-service-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.12.5] - 2024-02-22</h2>
+<h3>Added</h3>
+<ul>
+<li>Added the ability to show/hide metadata namespaces which are hidden by default on webview load</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Moved the annotations filter toggle to the new settings popup</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue with the tile &quot;Manage Service Models&quot; not working on Application Info Page</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Fri, 01 Mar 2024 18:03:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-specification - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.120.4 to version 1.120.5
+
+<p>-- a/apis/ux-specification/CHANGELOG.md
+++ b/apis/ux-specification/CHANGELOG.md</p>
+<h2>[1.120.5] - 2024-02-21</h2>
+<h3>Added</h3>
+<ul>
+<li>OData V2:</li>
+<li>Support of Header facets on Object Page</li>
+<li>UX adjustments of inplace documentation:</li>
+<li>Support for Screen Readers and Arrow Navigation</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Increased <code>fe-fpm-writer</code> api version</li>
+</ul>
+<h3>Removed</h3>
+<h3>Deprecated</h3>
+<h3>Fixed</h3>
+<h3>Quality</h3>
+<ul>
+<li>Update transitive dependencies</li>
+</ul>
+<p>Upgrades</p>
+<ul>
+<li>@sapui5/ts-types-esm to v1.120.6</li>
+<li>@sap-ux/fe-fpm-writer to v0.24.7</li>
+<li>@sap-ux/vocabularies-types to 0.10.5</li>
+<li>@sap-ux/annotation-converter to 0.8.6</li>
+<li>@types/semver to v7.5.7</li>
+<li>@ui5/manifest to v1.62.1</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-specification/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-specification/CHANGELOG.md</guid>
+            <pubDate>Fri, 01 Mar 2024 18:03:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-ui5-tooling - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.4 to version 1.12.5
+
+]]></description>
+            <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <pubDate>Fri, 01 Mar 2024 18:03:10 GMT</pubDate>
         </item>
     </channel>
 </rss>

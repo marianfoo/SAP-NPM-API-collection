@@ -8,6 +8,38 @@ This project adheres to [Semantic Versioning](http://semver.org/) and the change
 
 [NodeJS](https://nodejs.org/en/download/) Version `18.18.0` or higher
 
+## [1.120.5] - 2024-02-21
+
+### Added
+
+- OData V2:
+  - Support of Header facets on Object Page
+- UX adjustments of inplace documentation:
+  - Support for Screen Readers and Arrow Navigation
+
+### Changed
+
+- Increased `fe-fpm-writer` api version
+
+### Removed
+
+### Deprecated
+
+### Fixed
+
+### Quality
+
+- Update transitive dependencies
+
+Upgrades
+
+- @sapui5/ts-types-esm to v1.120.6
+- @sap-ux/fe-fpm-writer to v0.24.7
+- @sap-ux/vocabularies-types to 0.10.5
+- @sap-ux/annotation-converter to 0.8.6
+- @types/semver to v7.5.7
+- @ui5/manifest to v1.62.1
+
 ## [1.120.4] - 2024-02-08
 
 ### Added
