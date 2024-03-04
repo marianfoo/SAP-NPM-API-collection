@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 04 Mar 2024 12:07:49 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Mar 2024 14:03:27 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 04 Mar 2024 12:07:45 GMT</pubDate>
+        <pubDate>Mon, 04 Mar 2024 14:03:23 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -4419,6 +4419,15 @@ Drafts generation was applied twice.</li>
             <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
             <pubDate>Fri, 01 Mar 2024 20:02:37 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-dk - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.7.0 to version 7.7.1
+
+]]></description>
+            <link>http://example.com/cds-dk/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-dk/CHANGELOG.md</guid>
+            <pubDate>Mon, 04 Mar 2024 14:03:23 GMT</pubDate>
         </item>
     </channel>
 </rss>
