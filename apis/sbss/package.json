@@ -1,6 +1,6 @@
 {
   "name": "@sap/sbss",
-  "version": "6.2.0",
+  "version": "7.0.0",
   "description": "Node.js client library for SBSS",
   "license": "SEE LICENSE IN LICENSE file",
   "main": "lib/",
@@ -27,7 +27,7 @@
     "sinon": "7.5.0"
   },
   "engines": {
-    "node": "^12 || ^14 || ^16 || ^18 || ^20"
+    "node": "^18 || ^20"
   },
   "files": [
     "lib",

@@ -138,7 +138,7 @@
     "@sap/pdms-sdk": "1.0.0",
     "@sap/portal-cf-content-deployer": "4.20.0-20220206072628",
     "@sap/sbf": "6.6.7",
-    "@sap/sbss": "6.2.0",
+    "@sap/sbss": "7.0.0",
     "@sap/sds-deploy": "2.0.5",
     "@sap/service-provider-apis": "2.0.1",
     "@sap/service-providers": "0.3.12",
