@@ -1,12 +1,12 @@
 {
   "name": "@sap/logging",
   "description": "Provides logging and tracing functionalities for Node.js applications",
-  "version": "7.1.0",
+  "version": "8.0.0",
   "repository": {},
   "license": "SEE LICENSE IN LICENSE file",
   "main": "index.js",
   "engines": {
-    "node": "^12.0.0 || ^14.0.0 || ^16.0.0 || ^18.0.0 || ^20.0.0"
+    "node": "^18.0.0 || ^20.0.0"
   },
   "scripts": {
     "lint": "eslint -f stylish --ignore-path .gitignore .",
