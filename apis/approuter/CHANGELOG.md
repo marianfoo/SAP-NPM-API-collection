@@ -5,6 +5,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 
+## 16.2.0 - 2024-03-05
+
+### Added
+- Support new destination service API for Portal subaccount destinations
+- Support "Partitioned" cookie attributes.
+
+### Fixed
+- Fix handling of invalid http additional header name
+- Fix App2app navigation in service2approuter with IAS token
+
 ## 16.1.1 - 2024-02-14
 
 ### Fixed
