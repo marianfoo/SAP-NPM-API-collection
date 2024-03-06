@@ -1,6 +1,6 @@
 {
     "name": "@sap/dev-cap-tools",
-    "version": "1.31.0",
+    "version": "1.32.0",
     "files": [
       "dist/projectapi.js",
       "dist/templates"
@@ -21,8 +21,8 @@
       "dev-cap-tools": "dist/projectapi.js"
     },
     "devDependencies": {
-      "@sap/artifact-management-base": "1.31.0",
-      "@sap/artifact-management": "1.31.0",
+      "@sap/artifact-management-base": "1.32.0",
+      "@sap/artifact-management": "1.32.0",
       "@istanbuljs/nyc-config-typescript": "1.0.1",
       "@types/js-yaml": "3.12.5",
       "@types/lodash": "4.14.170",

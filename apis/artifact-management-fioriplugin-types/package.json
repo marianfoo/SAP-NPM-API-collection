@@ -1,6 +1,6 @@
 {
   "name": "@sap/artifact-management-fioriplugin-types",
-  "version": "1.30.1",
+  "version": "1.32.0",
   "description": "Type signatures for artifact management",
   "types": "./src/index.d.ts",
   "main": "./src/index.d.ts",
