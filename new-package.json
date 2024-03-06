@@ -94,7 +94,7 @@
     "@sap/fibrous": "0.5.0-6",
     "@sap/fiori-json-services": "1.0.1",
     "@sap/generator-adaptation-project": "1.1.40",
-    "@sap/generator-add-hdb-module": "1.10.1",
+    "@sap/generator-add-hdb-module": "1.11.0",
     "@sap/generator-aicore": "2.3.8",
     "@sap/generator-base-mta-module": "2.0.0",
     "@sap/generator-cap-project": "1.7.9",
