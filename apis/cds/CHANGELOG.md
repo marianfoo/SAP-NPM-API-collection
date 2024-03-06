@@ -4,6 +4,16 @@
 - The format is based on [Keep a Changelog](http://keepachangelog.com/).
 - This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Version 7.7.1 - 2024-03-06
+
+### Fixed
+
+- JWT authentication for Event Mesh endpoints
+- `cds.log`'s json formatter: ensure `type` is set (required on kubernetes until CLS defaults this)
+- Erroneously generated foreign keys in `req.data` for UPDATE using path expressions
+- `INSERT.columns.rows` for multiple nested composition of aspects
+- Paths passed to `tar` on Windows are now normalized to use forward slashes.
+
 ## Version 7.7.0 - 2024-02-26
 
 ### Added

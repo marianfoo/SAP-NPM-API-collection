@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 06 Mar 2024 14:02:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Mar 2024 16:03:20 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 06 Mar 2024 14:02:25 GMT</pubDate>
+        <pubDate>Wed, 06 Mar 2024 16:03:16 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -4630,7 +4630,7 @@ Drafts generation was applied twice.</li>
 
 ]]></description>
             <link>http://example.com/artifact-management/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/artifact-management/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/artifact-management/CHANGELOG.md</guid>
             <pubDate>Wed, 06 Mar 2024 14:02:25 GMT</pubDate>
         </item>
         <item>
@@ -4639,7 +4639,7 @@ Drafts generation was applied twice.</li>
 
 ]]></description>
             <link>http://example.com/artifact-management-base/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/artifact-management-base/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/artifact-management-base/CHANGELOG.md</guid>
             <pubDate>Wed, 06 Mar 2024 14:02:25 GMT</pubDate>
         </item>
         <item>
@@ -4655,7 +4655,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/generator-hdb-project/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/generator-hdb-project/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/generator-hdb-project/CHANGELOG.md</guid>
             <pubDate>Wed, 06 Mar 2024 14:02:28 GMT</pubDate>
         </item>
         <item>
@@ -4671,8 +4671,44 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/xss-secure/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/xss-secure/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/xss-secure/CHANGELOG.md</guid>
             <pubDate>Wed, 06 Mar 2024 14:02:29 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.7.0 to version 7.7.1
+
+<p>-- a/apis/cds/CHANGELOG.md
+++ b/apis/cds/CHANGELOG.md</p>
+<h2>Version 7.7.1 - 2024-03-06</h2>
+<h3>Fixed</h3>
+<ul>
+<li>JWT authentication for Event Mesh endpoints</li>
+<li><code>cds.log</code>&#39;s json formatter: ensure <code>type</code> is set (required on kubernetes until CLS defaults this)</li>
+<li>Erroneously generated foreign keys in <code>req.data</code> for UPDATE using path expressions</li>
+<li><code>INSERT.columns.rows</code> for multiple nested composition of aspects</li>
+<li>Paths passed to <code>tar</code> on Windows are now normalized to use forward slashes.</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds/CHANGELOG.md</guid>
+            <pubDate>Wed, 06 Mar 2024 16:03:16 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/xss-secure - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.3.0 to version 5.0.0
+
+<p>-- a/apis/xss-secure/CHANGELOG.md
+++ b/apis/xss-secure/CHANGELOG.md</p>
+<h2>5.0.0 - 2024-02-29</h2>
+<h3>Removed</h3>
+<ul>
+<li>Node.js 12.x, 14.x and 16.x support and tests</li>
+</ul>
+]]></description>
+            <link>http://example.com/xss-secure/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/xss-secure/CHANGELOG.md</guid>
+            <pubDate>Wed, 06 Mar 2024 16:03:20 GMT</pubDate>
         </item>
     </channel>
 </rss>

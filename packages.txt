@@ -1,1 +1,1 @@
-@sap/xss-secure
+@sap/cds
