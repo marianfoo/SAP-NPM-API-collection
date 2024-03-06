@@ -1,11 +1,1 @@
-@sap/artifact-management
-@sap/artifact-management-base
-@sap/artifact-management-base-types
-@sap/artifact-management-fioriplugin
-@sap/artifact-management-fioriplugin-types
-@sap/artifact-management-hanaplugin
-@sap/artifact-management-mdkplugin
-@sap/artifact-management-mdkplugin-types
-@sap/artifact-management-types
-@sap/dev-cap-tools
-@sap/generator-hdb-project
+@sap/xss-secure

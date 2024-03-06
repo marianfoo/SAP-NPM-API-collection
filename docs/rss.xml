@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 06 Mar 2024 12:03:14 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 06 Mar 2024 14:02:29 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 06 Mar 2024 12:03:10 GMT</pubDate>
+        <pubDate>Wed, 06 Mar 2024 14:02:25 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -4576,7 +4576,7 @@ Drafts generation was applied twice.</li>
 
 ]]></description>
             <link>http://example.com/artifact-management/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/artifact-management/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/artifact-management/CHANGELOG.md</guid>
             <pubDate>Wed, 06 Mar 2024 12:03:10 GMT</pubDate>
         </item>
         <item>
@@ -4585,7 +4585,7 @@ Drafts generation was applied twice.</li>
 
 ]]></description>
             <link>http://example.com/artifact-management-base/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/artifact-management-base/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/artifact-management-base/CHANGELOG.md</guid>
             <pubDate>Wed, 06 Mar 2024 12:03:10 GMT</pubDate>
         </item>
         <item>
@@ -4605,7 +4605,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/generator-add-hdb-module/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/generator-add-hdb-module/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/generator-add-hdb-module/CHANGELOG.md</guid>
             <pubDate>Wed, 06 Mar 2024 12:03:13 GMT</pubDate>
         </item>
         <item>
@@ -4621,8 +4621,58 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/generator-hdb-project/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/generator-hdb-project/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/generator-hdb-project/CHANGELOG.md</guid>
             <pubDate>Wed, 06 Mar 2024 12:03:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/artifact-management - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.30.1 to version 1.32.0
+
+]]></description>
+            <link>http://example.com/artifact-management/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/artifact-management/CHANGELOG.md</guid>
+            <pubDate>Wed, 06 Mar 2024 14:02:25 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/artifact-management-base - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.30.1 to version 1.32.0
+
+]]></description>
+            <link>http://example.com/artifact-management-base/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/artifact-management-base/CHANGELOG.md</guid>
+            <pubDate>Wed, 06 Mar 2024 14:02:25 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/generator-hdb-project - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.10.1 to version 1.11.0
+
+<p>-- a/apis/generator-hdb-project/CHANGELOG.md
+++ b/apis/generator-hdb-project/CHANGELOG.md</p>
+<h2>1.11.0</h2>
+<h3>Fixes</h3>
+<ul>
+<li>Update @sap/generator-add-hdb-module to version 1.11.0</li>
+</ul>
+]]></description>
+            <link>http://example.com/generator-hdb-project/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/generator-hdb-project/CHANGELOG.md</guid>
+            <pubDate>Wed, 06 Mar 2024 14:02:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/xss-secure - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.3.0 to version 5.0.0
+
+<p>-- a/apis/xss-secure/CHANGELOG.md
+++ b/apis/xss-secure/CHANGELOG.md</p>
+<h2>5.0.0 - 2024-02-29</h2>
+<h3>Removed</h3>
+<ul>
+<li>Node.js 12.x, 14.x and 16.x support and tests</li>
+</ul>
+]]></description>
+            <link>http://example.com/xss-secure/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/xss-secure/CHANGELOG.md</guid>
+            <pubDate>Wed, 06 Mar 2024 14:02:29 GMT</pubDate>
         </item>
     </channel>
 </rss>
