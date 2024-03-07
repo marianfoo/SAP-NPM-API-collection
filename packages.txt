@@ -1,1 +1,4 @@
-@sap/adp-common
+@sap/adp-abap
+@sap/adp-cf
+@sap/adp-cli
+@sap/adp-ve-bas-ext
