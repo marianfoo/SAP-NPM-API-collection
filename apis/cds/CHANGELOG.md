@@ -4,6 +4,13 @@
 - The format is based on [Keep a Changelog](http://keepachangelog.com/).
 - This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Version 7.7.2 - 2024-03-11
+
+### Fixed
+
+- Requests to actions/functions on entities in draft state via navigation.
+- PUT/PATCH with if-none-match: * forces insert
+
 ## Version 7.7.1 - 2024-03-06
 
 ### Fixed
