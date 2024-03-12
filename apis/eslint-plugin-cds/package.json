@@ -1,6 +1,6 @@
 {
   "name": "@sap/eslint-plugin-cds",
-  "version": "2.6.5",
+  "version": "2.6.7",
   "description": "ESLint plugin including recommended SAP Cloud Application Programming model and environment rules",
   "homepage": "https://cap.cloud.sap/",
   "keywords": [

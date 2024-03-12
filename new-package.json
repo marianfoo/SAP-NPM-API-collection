@@ -85,7 +85,7 @@
     "@sap/dwf-generator": "2.2.1",
     "@sap/dwf-ndso-backend": "2.3.3",
     "@sap/e2e-trace": "5.0.0",
-    "@sap/eslint-plugin-cds": "2.6.5",
+    "@sap/eslint-plugin-cds": "2.6.7",
     "@sap/eslint-plugin-ui5-jsdocs": "2.0.8",
     "@sap/eslint-plugin-webide-feature": "1.3.22",
     "@sap/external-service-mashup": "1.2.2",
