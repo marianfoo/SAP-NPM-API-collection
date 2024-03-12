@@ -1,1 +1,1 @@
-@sap/eslint-plugin-cds
+@sap/cds-dk

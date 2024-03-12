@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 12 Mar 2024 10:02:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 12 Mar 2024 12:03:03 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 12 Mar 2024 10:02:28 GMT</pubDate>
+        <pubDate>Tue, 12 Mar 2024 12:02:59 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -4782,8 +4782,38 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/eslint-plugin-cds/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/eslint-plugin-cds/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/eslint-plugin-cds/CHANGELOG.md</guid>
             <pubDate>Tue, 12 Mar 2024 10:02:31 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-dk - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.7.1 to version 7.7.2
+
+]]></description>
+            <link>http://example.com/cds-dk/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-dk/CHANGELOG.md</guid>
+            <pubDate>Tue, 12 Mar 2024 12:02:59 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/eslint-plugin-cds - Recent Update]]></title>
+            <description><![CDATA[Updated from version 2.6.5 to version 2.6.7
+
+<p>-- a/apis/eslint-plugin-cds/CHANGELOG.md
+++ b/apis/eslint-plugin-cds/CHANGELOG.md</p>
+<h2>[2.6.7] - 2024-03-11</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Removed loading of previously removed rule.</li>
+</ul>
+<h2>[2.6.6] - 2024-03-11</h2>
+<h3>Changed</h3>
+<ul>
+<li>Removed <code>require-2many-oncond</code> rule, as it is now covered by the compiler.</li>
+</ul>
+]]></description>
+            <link>http://example.com/eslint-plugin-cds/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/eslint-plugin-cds/CHANGELOG.md</guid>
+            <pubDate>Tue, 12 Mar 2024 12:03:03 GMT</pubDate>
         </item>
     </channel>
 </rss>
