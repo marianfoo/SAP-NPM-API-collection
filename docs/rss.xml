@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 13 Mar 2024 18:02:55 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Mar 2024 20:02:41 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 13 Mar 2024 18:02:51 GMT</pubDate>
+        <pubDate>Wed, 13 Mar 2024 20:02:37 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -4848,7 +4848,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/hana-database-explorer/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/hana-database-explorer/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/hana-database-explorer/CHANGELOG.md</guid>
             <pubDate>Wed, 13 Mar 2024 18:02:54 GMT</pubDate>
         </item>
         <item>
@@ -4870,7 +4870,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/hana-project-explorer/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/hana-project-explorer/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/hana-project-explorer/CHANGELOG.md</guid>
             <pubDate>Wed, 13 Mar 2024 18:02:54 GMT</pubDate>
         </item>
         <item>
@@ -4886,7 +4886,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/hana-sqlscript-lsp/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/hana-sqlscript-lsp/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/hana-sqlscript-lsp/CHANGELOG.md</guid>
             <pubDate>Wed, 13 Mar 2024 18:02:54 GMT</pubDate>
         </item>
         <item>
@@ -4904,7 +4904,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/hrtt-core-vscode/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/hrtt-core-vscode/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/hrtt-core-vscode/CHANGELOG.md</guid>
             <pubDate>Wed, 13 Mar 2024 18:02:55 GMT</pubDate>
         </item>
         <item>
@@ -4926,7 +4926,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</guid>
             <pubDate>Wed, 13 Mar 2024 18:02:55 GMT</pubDate>
         </item>
         <item>
@@ -4954,8 +4954,160 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
             <pubDate>Wed, 13 Mar 2024 18:02:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/approuter - Recent Update]]></title>
+            <description><![CDATA[Updated from version 16.2.0 to version 16.2.1
+
+<p>-- a/apis/approuter/CHANGELOG.md
+++ b/apis/approuter/CHANGELOG.md</p>
+<h2>16.2.1 - 2024-03-13</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Fix for CSP Headers cache - cache the CSP headers for the same tenant in memory</li>
+<li>Support &quot;.cert.&quot;  &quot;.internal.&quot;  &quot;.mesh.&quot; domains  in subscription via IAS &amp; SMS</li>
+<li>Fix for instance level destination with IASDependencyName</li>
+<li>html5-apps-repo-rt property is null in app.services</li>
+</ul>
+]]></description>
+            <link>http://example.com/approuter/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/approuter/CHANGELOG.md</guid>
+            <pubDate>Wed, 13 Mar 2024 20:02:37 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/hana-database-explorer - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.20.0 to version 1.21.0
+
+<p>-- a/apis/hana-database-explorer/CHANGELOG.md
+++ b/apis/hana-database-explorer/CHANGELOG.md</p>
+<h2>1.21.0</h2>
+<h3>New Features</h3>
+<ul>
+<li>The maximum graph depth can be set for the dependency viewer.</li>
+<li>The dependency viewer indicates how many objects are shown based on settings like filters and graph depth.</li>
+<li>The dependency viewer allows saving graph snapshots as an SVG image.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>The mini map was not showing after graph size is changed in the dependency viewer.</li>
+<li>User name and password can be saved after entering the credentials for a SQL console or database connection.</li>
+<li>User name and password will be read from the settings if present and stored in the secure store.</li>
+<li>The statement execution time was calculated incorrectly in some situations.</li>
+<li>Improved error messages when loading SAP HANA Database Explorer connections.</li>
+<li>Empty query parameters were handled incorrectly in some situations.</li>
+</ul>
+]]></description>
+            <link>http://example.com/hana-database-explorer/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/hana-database-explorer/CHANGELOG.md</guid>
+            <pubDate>Wed, 13 Mar 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/hana-project-explorer - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.19.0 to version 1.20.0
+
+<p>-- a/apis/hana-project-explorer/CHANGELOG.md
+++ b/apis/hana-project-explorer/CHANGELOG.md</p>
+<h2>1.20.0</h2>
+<h3>New Features</h3>
+<ul>
+<li>A SQL console can be opened for database modules</li>
+<li>Roles on a bound HDI container can be granted via a graphical wizard</li>
+<li>An SAP HANA-specific welcome page with useful information about SAP HANA development is displayed on startup</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Changes saved during deployment are not considered</li>
+</ul>
+]]></description>
+            <link>http://example.com/hana-project-explorer/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/hana-project-explorer/CHANGELOG.md</guid>
+            <pubDate>Wed, 13 Mar 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/hana-sqlscript-lsp - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.0 to version 1.13.0
+
+<p>-- a/apis/hana-sqlscript-lsp/CHANGELOG.md
+++ b/apis/hana-sqlscript-lsp/CHANGELOG.md</p>
+<h2>1.13.0</h2>
+<h3>Fixes</h3>
+<ul>
+<li>Fixed an incorrect warning about the &quot;target_table&quot; property in hdbtabledata files</li>
+</ul>
+]]></description>
+            <link>http://example.com/hana-sqlscript-lsp/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/hana-sqlscript-lsp/CHANGELOG.md</guid>
+            <pubDate>Wed, 13 Mar 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/hrtt-core-vscode - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.28.0 to version 1.29.0
+
+<p>-- a/apis/hrtt-core-vscode/CHANGELOG.md
+++ b/apis/hrtt-core-vscode/CHANGELOG.md</p>
+<h2>1.29.0</h2>
+<h3>Fixes</h3>
+<ul>
+<li>Updated HRTT to version 231207-1704382648-a542e12</li>
+<li>Add data source requires synonym also for local tables on XS Advanced</li>
+<li>The role editor did not work correctly on XS Advanced</li>
+</ul>
+]]></description>
+            <link>http://example.com/hrtt-core-vscode/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/hrtt-core-vscode/CHANGELOG.md</guid>
+            <pubDate>Wed, 13 Mar 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/webide-hdi-base-feature-vscode - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.26.1 to version 1.27.0
+
+<p>-- a/apis/webide-hdi-base-feature-vscode/CHANGELOG.md
+++ b/apis/webide-hdi-base-feature-vscode/CHANGELOG.md</p>
+<h2>1.27.0</h2>
+<h3>New Features</h3>
+<ul>
+<li>The impact of columns is shown across external analytic privileges</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>The &quot;find data sources&quot; dialog filter does not work reliably</li>
+<li>Rechecking the &quot;generate grants files&quot; option removes the roles assignment while creating synonym during cross container access</li>
+<li>Not able to select user-defined functions without input parameters in the calculated column expression editor of a calculation view</li>
+</ul>
+]]></description>
+            <link>http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/webide-hdi-base-feature-vscode/CHANGELOG.md</guid>
+            <pubDate>Wed, 13 Mar 2024 20:02:41 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/webide-hdi-feature-vscode - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.28.1 to version 1.29.0
+
+<p>-- a/apis/webide-hdi-feature-vscode/CHANGELOG.md
+++ b/apis/webide-hdi-feature-vscode/CHANGELOG.md</p>
+<h2>1.29.0</h2>
+<h3>New Features</h3>
+<ul>
+<li>Propose pre and post fix to make column names unique</li>
+<li>New option &quot;deprecate and block queries&quot;</li>
+<li>The impact of columns is shown across external analytic privileges</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>&#39;Add to output&#39; option does not work if the source name contains &#39;/&#39;</li>
+<li>Fix descriptions of execution hint buttons</li>
+<li>Scale values of decimal datatype is not propagated while mapping input parameters from a user-defined function in a calculation view</li>
+<li>Refreshing metadata doesn&#39;t work in the target view when the changes are made via recursive propagation to the consuming view.</li>
+<li>The &quot;Where Used&quot; dialog cannot be opened anymore when closed via escape key</li>
+<li>Fix aggregation attributes hint text</li>
+<li>Fix some issues deleting nodes in calc view editor</li>
+</ul>
+]]></description>
+            <link>http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
+            <pubDate>Wed, 13 Mar 2024 20:02:41 GMT</pubDate>
         </item>
     </channel>
 </rss>

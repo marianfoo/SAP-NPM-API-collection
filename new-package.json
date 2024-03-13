@@ -39,7 +39,7 @@
     "@sap/ams-dev": "0.8.4",
     "@sap/apihub-enterprise-service-provider": "0.4.2",
     "@sap/apihub-service-provider": "1.9.3",
-    "@sap/approuter": "16.2.0",
+    "@sap/approuter": "16.2.1",
     "@sap/artifact-management": "1.32.0",
     "@sap/artifact-management-base": "1.32.0",
     "@sap/artifact-management-base-types": "1.32.0",

@@ -5,6 +5,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 
+
+## 16.2.1 - 2024-03-13
+
+### Fixed
+- Fix for CSP Headers cache - cache the CSP headers for the same tenant in memory
+- Support ".cert."  ".internal."  ".mesh." domains  in subscription via IAS & SMS
+- Fix for instance level destination with IASDependencyName
+- html5-apps-repo-rt property is null in app.services
+
 ## 16.2.0 - 2024-03-05
 
 ### Added

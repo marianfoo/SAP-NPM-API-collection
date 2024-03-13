@@ -1,6 +1,1 @@
-@sap/hana-database-explorer
-@sap/hana-project-explorer
-@sap/hana-sqlscript-lsp
-@sap/hrtt-core-vscode
-@sap/webide-hdi-base-feature-vscode
-@sap/webide-hdi-feature-vscode
+@sap/approuter

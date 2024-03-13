@@ -232,6 +232,7 @@ Store CSRF token in external session | SVC2AR_STORE_CSRF_IN_EXTERNAL_SESSION | I
 Cache service credentials | CACHE_SERVICE_CREDENTIALS             | If `true`, services credentials are cached in the application router memory
 Enable x-forwarded-host header validation | ENABLE_X_FORWARDED_HOST_VALIDATION | If `true`, x-forwarded-host validation will be performed, allowing letters, digits, hypens (-), underscores (_) and dots (.). As well as it validates hostname length.  
 Add the content security policy headers to the response |ENABLE_FRAME_ANCESTORS_CSP_HEADERS | If `true`,  Approuter will include the content security policy (CSP) header using subaccount trusted domains with frame-ancestors policy.
+Time cache value for frame ancestors CSP header | FRAME_ANCESTORS_CSP_HEADER_CACHE_TIME | Time in seconds for the frame ancestors CSP header to be cached. The default value is 300 seconds.
 **Note:** all those environment variables are optional.
 
 
