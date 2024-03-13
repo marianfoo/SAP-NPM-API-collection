@@ -1,26 +1,26 @@
 {
   "name": "@sap/hrtt-core-vscode",
   "displayName": "SAP HANA Runtime Tools Front End",
-  "version": "1.28.0",
+  "version": "1.29.0",
   "description": "SAP HANA Runtime Tools VS Code extension including base services and editors (virtual table, role)",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
     "hana-tooling"
   ],
   "dependencies": {
-    "@sap_oss/node-socketio-stream": "1.0.3",
+    "@sap_oss/node-socketio-stream": "1.0.7",
     "handsontable": "6.2.2",
-    "leaflet": "1.9.3",
+    "leaflet": "1.9.4",
     "lzutf8": "0.6.3",
     "moment": "2.29.4",
     "papaparse": "5.3.2",
-    "proj4": "2.9.0",
+    "proj4": "2.9.2",
     "sigma": "1.2.2",
     "socket.io-client": "4.6.1",
     "wkx": "0.5.0",
     "dotenv": "16.3.1",
     "command-exists": "1.2.9",
-    "@sap/xs-tools": "1.1.0",
+    "@sap/xs-tools": "1.2.0",
     "axios": "1.6.2"
   },
   "files": [
@@ -30,11 +30,6 @@
     "CHANGELOG.md",
     "features.json",
     "README.md",
-    "hana-runtime-tools-1.28.0.vsix"
-  ],
-  "overrides": {
-    "@sap/xs-tools": {
-      "axios": "1.6.2"
-    }
-  }
+    "hana-runtime-tools-1.29.0.vsix"
+  ]
 }
