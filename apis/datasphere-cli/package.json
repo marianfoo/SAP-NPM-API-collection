@@ -1,6 +1,6 @@
 {
   "name": "@sap/datasphere-cli",
-  "version": "2024.4.0",
+  "version": "2024.6.0",
   "description": "Command-Line Interface for SAP Datasphere.",
   "license": "SEE LICENSE IN LICENSE",
   "author": "SAP SE",
@@ -10,8 +10,8 @@
     "datasphere": "terminal.js"
   },
   "engines": {
-    "node": "^20",
-    "npm": "^10"
+    "node": "^18 || ^19 || ^20 || ^21",
+    "npm": "^9 || ^10"
   },
   "keywords": [
     "cli",
@@ -19,6 +19,6 @@
     "datasphere-cli"
   ],
   "dependencies": {
-    "@sap/cli-core": "2024.3.0"
+    "@sap/cli-core": "2024.5.0"
   }
 }

@@ -1,1 +1,3 @@
 @sap/cli-core
+@sap/datasphere-cli
+@sap/html5-app-deployer
