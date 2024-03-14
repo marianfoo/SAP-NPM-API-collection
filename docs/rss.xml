@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 14 Mar 2024 18:02:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 14 Mar 2024 20:02:50 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 14 Mar 2024 18:02:51 GMT</pubDate>
+        <pubDate>Thu, 14 Mar 2024 20:02:46 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -5360,7 +5360,7 @@ Usage: datasphere login [options]</p>
 
 ]]></description>
             <link>http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
             <pubDate>Thu, 14 Mar 2024 18:02:55 GMT</pubDate>
         </item>
     </channel>
