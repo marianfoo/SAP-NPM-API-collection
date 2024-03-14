@@ -165,7 +165,7 @@
     "@sap/ux-ui5-tooling": "1.12.5",
     "@sap/vscode-cds": "7.6.1",
     "@sap/webide-hdi-base-feature-vscode": "1.27.0",
-    "@sap/webide-hdi-feature-vscode": "1.29.0",
+    "@sap/webide-hdi-feature-vscode": "1.29.1",
     "@sap/wing-run-config-types": "4.2.0",
     "@sap/wing-service-binding": "1.10.2",
     "@sap/wing-service-explorer": "1.8.0",

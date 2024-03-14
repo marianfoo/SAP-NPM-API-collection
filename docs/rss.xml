@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 14 Mar 2024 14:02:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 14 Mar 2024 16:02:59 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 14 Mar 2024 14:02:29 GMT</pubDate>
+        <pubDate>Thu, 14 Mar 2024 16:02:55 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -5157,7 +5157,7 @@ Drafts generation was applied twice.</li>
 </ul>
 ]]></description>
             <link>http://example.com/cli-core/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cli-core/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cli-core/CHANGELOG.md</guid>
             <pubDate>Thu, 14 Mar 2024 14:02:29 GMT</pubDate>
         </item>
         <item>
@@ -5224,7 +5224,7 @@ datasphere login --help
 Usage: datasphere login [options]</p>
 ]]></description>
             <link>http://example.com/datasphere-cli/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/datasphere-cli/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/datasphere-cli/CHANGELOG.md</guid>
             <pubDate>Thu, 14 Mar 2024 14:02:32 GMT</pubDate>
         </item>
         <item>
@@ -5245,8 +5245,114 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/html5-app-deployer/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/html5-app-deployer/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/html5-app-deployer/CHANGELOG.md</guid>
             <pubDate>Thu, 14 Mar 2024 14:02:33 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cli-core - Recent Update]]></title>
+            <description><![CDATA[Updated from version 2024.5.0 to version 2024.6.0
+
+]]></description>
+            <link>http://example.com/cli-core/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cli-core/CHANGELOG.md</guid>
+            <pubDate>Thu, 14 Mar 2024 16:02:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/datasphere-cli - Recent Update]]></title>
+            <description><![CDATA[Updated from version 2024.4.0 to version 2024.6.0
+
+<p>-- a/apis/datasphere-cli/CHANGELOG.md
+++ b/apis/datasphere-cli/CHANGELOG.md</p>
+<h2>2024.5.0</h2>
+<h3>Added</h3>
+<ul>
+<li><p>Support for Node versions <code>18</code>, <code>19</code>, <code>20</code>, <code>21</code>.</p>
+</li>
+<li><p>When using the CLI as a As a Node.js module dependency and running a command which creates an entity where the CLI would print the command to retrieve the result when running the command to create the entity in the terminal, for example:</p>
+</li>
+</ul>
+<pre><code class="language-bash">datasphere spaces create -H https://mytenant.eu10.hcs.cloud.sap/ -f ./MY_SPACE.json
+Use datasphere spaces read --space-id MY_SPACE to retrieve the entity you just created
+</code></pre>
+<p>the CLI now returns the command to execute as an object:</p>
+<pre><code class="language-bash">const retrieveCommand = await commands[&quot;spaces create&quot;]({
+&quot;--file-path&quot;: &quot;MY_SPACE.json&quot;,
+&quot;--host&quot;: &quot;https://mytenant.eu10.hcs.cloud.sap/&quot;,
+});
+
+console.log(retrieveCommand);
+// {
+//   command: &quot;spaces read&quot;,
+//   options: {
+//     &quot;--space-id&quot;: &quot;MY_SPACE&quot;
+//   },
+// }
+</code></pre>
+<p>You can use the returned response to immediately issue the command to read the entity:</p>
+<pre><code class="language-bash">const retrieveCommand = await commands[&quot;spaces create&quot;]({
+&quot;--file-path&quot;: &quot;MY_SPACE.json&quot;,
+&quot;--host&quot;: &quot;https://mytenant.eu10.hcs.cloud.sap/&quot;,
+});
+
+const response = await commands[retrieveCommand.command]({
+...retrieveCommand.options,
+&quot;--host&quot;: &quot;https://mytenant.eu10.hcs.cloud.sap/&quot;,
+});
+
+console.log(response);
+// {
+//   MY_SPACE: {
+//     version: &quot;1.0.4&quot;,
+//     ...
+//   }
+// }
+</code></pre>
+<h3>Fixed</h3>
+<ul>
+<li>When the host is globally configured via the command <code>datasphere config host set &lt;host&gt;</code>, any other host specified via option <code>-H, --host</code> was ignored when running a command. This often led to confusion when users specify the host explicitly via option <code>-H, --host</code>, but are not aware that the host was globally configured, too. Now, option <code>-H, --host</code> always takes precedence over the globally configured host.</li>
+</ul>
+<p><CLI> login --help
+Usage: <CLI> login [options]
+datasphere login --help
+Usage: datasphere login [options]
+<CLI> login --help
+Usage: <CLI> login [options]
+datasphere login --help
+Usage: datasphere login [options]</p>
+]]></description>
+            <link>http://example.com/datasphere-cli/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/datasphere-cli/CHANGELOG.md</guid>
+            <pubDate>Thu, 14 Mar 2024 16:02:58 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/html5-app-deployer - Recent Update]]></title>
+            <description><![CDATA[Updated from version 6.0.0 to version 6.1.0
+
+<p>-- a/apis/html5-app-deployer/CHANGELOG.md
+++ b/apis/html5-app-deployer/CHANGELOG.md</p>
+<h2>6.1.0 - 2024-03-14</h2>
+<h3>Added</h3>
+<ul>
+<li><p>App2App navigation support</p>
+</li>
+<li><p>deps: xssec@3.6.1</p>
+</li>
+<li><p>deps: axios@1.6.5</p>
+</li>
+</ul>
+]]></description>
+            <link>http://example.com/html5-app-deployer/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/html5-app-deployer/CHANGELOG.md</guid>
+            <pubDate>Thu, 14 Mar 2024 16:02:58 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/webide-hdi-feature-vscode - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.29.0 to version 1.29.1
+
+]]></description>
+            <link>http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/webide-hdi-feature-vscode/CHANGELOG.md</guid>
+            <pubDate>Thu, 14 Mar 2024 16:02:59 GMT</pubDate>
         </item>
     </channel>
 </rss>
