@@ -66,7 +66,7 @@
     "@sap/cds-mtxs": "1.16.0",
     "@sap/cds-odata-v2-adapter-proxy": "1.9.21",
     "@sap/cf-tools": "3.2.0",
-    "@sap/cli-core": "2024.4.0",
+    "@sap/cli-core": "2024.5.0",
     "@sap/consume-services": "1.7.14",
     "@sap/consume-services-types": "0.3.11",
     "@sap/create-hana-database-artifact": "1.10.0",
