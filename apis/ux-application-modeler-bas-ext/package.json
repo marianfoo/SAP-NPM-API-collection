@@ -4,7 +4,7 @@
   "description": "Allows you to access a visualization of the application's pages, navigation, and service entities. You can add new navigation and pages, delete pages, and navigate to corresponding editing tools. The following features are part of this extension:Page Editor, and Page Map.",
   "publisher": "SAPSE",
   "license": "SEE LICENSE IN LICENSE",
-  "version": "1.12.5",
+  "version": "1.13.0",
   "main": "index.js",
   "categories": [
     "Programming Languages"

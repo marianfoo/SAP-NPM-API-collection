@@ -4,7 +4,7 @@
   "description": "Allows you to access how-to guides and tutorials to implement SAP Fiori elements features using a guided approach.",
   "publisher": "SAPSE",
   "license": "SEE LICENSE IN LICENSE",
-  "version": "1.12.5",
+  "version": "1.13.0",
   "main": "index.js",
   "categories": [
     "Programming Languages"
