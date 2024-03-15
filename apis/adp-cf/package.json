@@ -1,0 +1,65 @@
+{
+	"name": "@sap/adp-cf",
+	"version": "1.1.57",
+	"description": "cf service logic for all yeoman generators",
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"main": "dist/index.js",
+	"types": "dist/index.d.js",
+	"keywords": [
+		"adp",
+		"cf"
+	],
+	"author": "SAP SE",
+	"homepage": "https://help.sap.com/viewer/584e0bcbfd4a4aff91c815cefa0bce2d/Cloud/en-US/ada9567b767941aba8d49fdb4fdedea7.html/packages/common",
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@types/chai": "4.3.4",
+		"@types/mocha": "10.0.1",
+		"@types/node": "14.17.9",
+		"@types/sinon": "9.0.4",
+		"@types/yeoman-assert": "3.1.1",
+		"@types/yeoman-test": "4.0.3",
+		"chai": "4.3.7",
+		"js-yaml": "4.1.0",
+		"mocha": "10.1.0",
+		"nyc": "15.1.0",
+		"sinon": "9.0.2",
+		"ts-node": "10.9.1",
+		"typescript": "4.7.4",
+		"yeoman-assert": "3.1.1",
+		"yeoman-environment": "3.12.1",
+		"yeoman-test": "6.0.0",
+		"@types/vscode": "1.44.0",
+		"@types/proxyquire": "1.3.28",
+		"proxyquire": "2.1.3"
+	},
+	"engines": {
+		"npm": ">= 8.0.0"
+	},
+	"dependencies": {
+		"@sap-ux/axios-extension": "1.7.3",
+		"@sap/cf-tools": "0.8.1",
+		"@sap/adp-common": "1.1.57",
+		"adm-zip": "0.5.9",
+		"axios": "1.6.3",
+		"fast-xml-parser": "4.2.5",
+		"js-yaml": "4.1.0",
+		"lodash": "4.17.21"
+	},
+	"scripts": {
+		"build": "tsc -p . ",
+		"postbuild": "shx cp -r ./src/templates ./dist/templates",
+		"watch": "tsc --watch -p . ",
+		"lint": "eslint src --ext ts",
+		"lint:report": "eslint src -f json -o ../../reports/eslintResults/adp-cf.json",
+		"lint:fix": "eslint src --ext ts --fix",
+		"test": "mocha './test/**/*.spec.ts' --exit",
+		"test:report": "mocha './test/**/*.spec.ts' --exit -R mocha-junit-reporter --reporter-options mochaFile=../../reports/testResults/adp-cf-report-test.xml",
+		"coverage": "nyc mocha './test/**/*.spec.ts' --exit",
+		"debug-test": "node --nolazy --inspect-brk=9229 /home/user/projects/generator-adaptationproject-creation/node_modules/mocha/bin/_mocha -r ts-node/register test/**/*.spec.ts",
+		"debug": "node --inspect-brk /home/user/.node_modules_global/bin/yo @adaptation-project/adaptation-project",
+		"format": "prettier 'src/**/*.ts' --write && prettier 'test/**/*.ts' --write"
+	}
+}

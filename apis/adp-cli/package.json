@@ -1,9 +1,9 @@
 {
 	"name": "@sap/adp-cli",
-	"version": "1.1.56",
+	"version": "1.1.57",
 	"description": "Adaptation Project CLI",
 	"main": "./dist/index.js",
-	"license": "SEE LICENSE IN LICENSE",
+	"license": "SEE LICENSE IN LICENSE.txt",
 	"author": "SAP SE",
 	"bin": {
 		"adp": "./dist/index.js"
@@ -21,8 +21,8 @@
 		"lint:report": "eslint src -f json -o ../../reports/eslintResults/adp-cli.json"
 	},
 	"dependencies": {
-		"@sap/adp-common": "1.1.56",
-		"@sap/adp-abap": "1.1.56",
+		"@sap/adp-common": "1.1.57",
+		"@sap/adp-abap": "1.1.57",
 		"commander": "9.4.1",
 		"chalk": "4.1.2"
 	},
