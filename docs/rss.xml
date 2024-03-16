@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 15 Mar 2024 22:03:04 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Mar 2024 00:05:47 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 15 Mar 2024 22:02:58 GMT</pubDate>
+        <pubDate>Sat, 16 Mar 2024 00:05:43 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -5383,7 +5383,7 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/generator-fiori/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/generator-fiori/CHANGELOG.md</guid>
             <pubDate>Fri, 15 Mar 2024 22:03:03 GMT</pubDate>
         </item>
         <item>
@@ -5392,7 +5392,7 @@ Usage: datasphere login [options]</p>
 
 ]]></description>
             <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 15 Mar 2024 22:03:04 GMT</pubDate>
         </item>
         <item>
@@ -5413,7 +5413,7 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 15 Mar 2024 22:03:04 GMT</pubDate>
         </item>
         <item>
@@ -5422,7 +5422,7 @@ Usage: datasphere login [options]</p>
 
 ]]></description>
             <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
             <pubDate>Fri, 15 Mar 2024 22:03:04 GMT</pubDate>
         </item>
         <item>
@@ -5451,7 +5451,7 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 15 Mar 2024 22:03:04 GMT</pubDate>
         </item>
         <item>
@@ -5460,7 +5460,7 @@ Usage: datasphere login [options]</p>
 
 ]]></description>
             <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
             <pubDate>Fri, 15 Mar 2024 22:03:04 GMT</pubDate>
         </item>
         <item>
@@ -5498,7 +5498,7 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/ux-specification/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-specification/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-specification/CHANGELOG.md</guid>
             <pubDate>Fri, 15 Mar 2024 22:03:04 GMT</pubDate>
         </item>
         <item>
@@ -5518,8 +5518,166 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
             <pubDate>Fri, 15 Mar 2024 22:03:04 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/generator-fiori - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.5 to version 1.13.0
+
+<p>-- a/apis/generator-fiori/CHANGELOG.md
+++ b/apis/generator-fiori/CHANGELOG.md</p>
+<h2>[1.13.0] - 2024-03-13</h2>
+<h3>Changed</h3>
+<ul>
+<li>SAP Fiori applications generated as part of a full stack application in SAP Build Code will now always launch the page map after generation.</li>
+<li>Updated the default minimum UI5 version used when generating an SAP Fiori application in non-interactive mode when no minimum UI5 version is supplied in the input.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where an SAP Fiori application could have a linting error after migrating to support SAP Fiori tools.</li>
+<li>Fixed an issue where a selected service chosen during generation could incorrectly warn that it is not suitable for UI development.</li>
+<li>Fixed an issue where the SAP Fiori generator could crash if an invalid OData V4 service url was provided.</li>
+</ul>
+]]></description>
+            <link>http://example.com/generator-fiori/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/generator-fiori/CHANGELOG.md</guid>
+            <pubDate>Sat, 16 Mar 2024 00:05:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-annotation-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.5 to version 1.13.0
+
+]]></description>
+            <link>http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-annotation-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Sat, 16 Mar 2024 00:05:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-application-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.5 to version 1.13.0
+
+<p>-- a/apis/ux-application-modeler-bas-ext/CHANGELOG.md
+++ b/apis/ux-application-modeler-bas-ext/CHANGELOG.md</p>
+<h2>[1.13.0] - 2024-03-07</h2>
+<h3>Added</h3>
+<ul>
+<li>Added support to the Application Info page for SAPUI5 library projects that do not have a <code>manifest.json</code> file but have their configuration stored in a <code>.library</code> file</li>
+<li>Added an additional documentation link to the properties in the Page Map and Page Editor, where available, showing information delivered with the <code>@sap/ux-specification</code> node module</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue with the loading of <code>@sap/ux-specification</code> after application generation, which resulted in the Page Map, Page Editor, and Guided Development not starting without a reload</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-application-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Sat, 16 Mar 2024 00:05:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-cds-odata-language-server-extension - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.5 to version 1.13.0
+
+]]></description>
+            <link>http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-cds-odata-language-server-extension/CHANGELOG.md</guid>
+            <pubDate>Sat, 16 Mar 2024 00:05:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-help-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.5 to version 1.13.0
+
+<p>-- a/apis/ux-help-bas-ext/CHANGELOG.md
+++ b/apis/ux-help-bas-ext/CHANGELOG.md</p>
+<h2>[1.13.0] - 2024-03-07</h2>
+<h3>Added</h3>
+<ul>
+<li>Added support for the UI.DataFieldForAction annotation in CAP variant of the <em>Add and edit table columns</em> guide</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Changed Inline and Determining parameters from required to optional</li>
+<li>Reference information links now point to https://ui5.sap.com/ and https://sdk.openui5.org/ instead of https://sapui5.hana.ondemand.com/  and https://openui5.hana.ondemand.com/</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue where duplicate annotations were created even though the annotations already existed</li>
+<li>Fixed an issue where using <strong>Insert Snippet</strong> led to an error in the case of CAP projects</li>
+<li>Fixed an issue where the placeholder value was getting inserted into the code in the <em>Add a custom action to a page using extensions</em> guide</li>
+<li>Fixed an issue in the building block guides where the <strong>View or Fragment File</strong> parameter was filled only after the <strong>Entity</strong> parameter was selected</li>
+<li>Fixed an issue where annotations defined in the associated entity were not considered in the <em>Add a filter bar building block</em> guide</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-help-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-help-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Sat, 16 Mar 2024 00:05:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-service-modeler-bas-ext - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.5 to version 1.13.0
+
+]]></description>
+            <link>http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-service-modeler-bas-ext/CHANGELOG.md</guid>
+            <pubDate>Sat, 16 Mar 2024 00:05:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-specification - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.120.5 to version 1.120.6
+
+<p>-- a/apis/ux-specification/CHANGELOG.md
+++ b/apis/ux-specification/CHANGELOG.md</p>
+<h2>[1.120.6] - 2024-03-07</h2>
+<h3>Added</h3>
+<ul>
+<li>New API functions exportConfigEntityByPath and deleteConfigEntityByPath have been added that allow a selective export or deletion of a single property or section from a config.json. The additional parameter entityPath must be applied. The new functions are released for List Report, Object Page and Analytical List Page of OData V2 and V4.</li>
+<li>In the API result a change indicator is added that shows if the manifest was changed. In case of the new functions exportConfigEntityByPath and deleteConfigEntityByPath, only updated fragment files are returned (V2 flexibility changes are still returned completely due to compatibility, deletion is indicated by newValue = null).</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Increased <code>fe-fpm-writer</code> api version to include fix for controller extension namespace</li>
+<li>Actualization of the README file.</li>
+</ul>
+<h3>Removed</h3>
+<h3>Deprecated</h3>
+<h3>Fixed</h3>
+<ul>
+<li>An invalid app schema had been generated before, in case of table custom columns</li>
+</ul>
+<h3>Quality</h3>
+<ul>
+<li>Update transitive dependencies</li>
+</ul>
+<p>Upgrades</p>
+<ul>
+<li>eslint to v8.57.0</li>
+<li>@types/semver: obsolete dependency deleted</li>
+<li>esbuild to v0.20.1</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-specification/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-specification/CHANGELOG.md</guid>
+            <pubDate>Sat, 16 Mar 2024 00:05:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/ux-ui5-tooling - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.12.5 to version 1.13.0
+
+<p>-- a/apis/ux-ui5-tooling/CHANGELOG.md
+++ b/apis/ux-ui5-tooling/CHANGELOG.md</p>
+<h2>[1.13.0] - 2024-03-07</h2>
+<h3>Changed</h3>
+<ul>
+<li>The <code>fiori-tools-servestatic</code> middleware now uses @sap-ux/serve-static-middleware</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed an issue with self-signed certificates and the preview of adaptation projects</li>
+</ul>
+]]></description>
+            <link>http://example.com/ux-ui5-tooling/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/ux-ui5-tooling/CHANGELOG.md</guid>
+            <pubDate>Sat, 16 Mar 2024 00:05:47 GMT</pubDate>
         </item>
     </channel>
 </rss>
