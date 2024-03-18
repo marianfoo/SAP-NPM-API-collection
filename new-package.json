@@ -150,7 +150,7 @@
     "@sap/textanalysis": "1.1.0",
     "@sap/textbundle": "5.0.0",
     "@sap/textmining": "1.1.6",
-    "@sap/ucl-provider": "0.4.3",
+    "@sap/ucl-provider": "2.0.0",
     "@sap/ui-annotations": "2.0.5",
     "@sap/ui5-builder-webide-extension": "1.1.9",
     "@sap/ui5-webcomponents-vscode-css-mapping": "1.0.1",

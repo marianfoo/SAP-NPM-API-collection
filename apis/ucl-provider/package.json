@@ -1,6 +1,6 @@
 {
   "name": "@sap/ucl-provider",
-  "version": "0.4.3",
+  "version": "2.0.0",
   "description": "ucl-provider",
   "main": "out/src/index.js",
   "license": "LICENSE.txt",
@@ -23,7 +23,7 @@
     "contributer"
   ],
   "dependencies": {
-    "@sap/service-provider-apis": "1.12.2",
+    "@sap/service-provider-apis": "2.0.1",
     "lodash": "4.17.21"
   },
   "devDependencies": {
