@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 18 Mar 2024 18:02:57 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Mar 2024 20:02:52 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 18 Mar 2024 18:02:53 GMT</pubDate>
+        <pubDate>Mon, 18 Mar 2024 20:02:48 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -5694,8 +5694,26 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/cds/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds/CHANGELOG.md</guid>
             <pubDate>Mon, 18 Mar 2024 18:02:53 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds - Recent Update]]></title>
+            <description><![CDATA[Updated from version 7.7.2 to version 7.7.3
+
+<p>-- a/apis/cds/CHANGELOG.md
+++ b/apis/cds/CHANGELOG.md</p>
+<h2>Version 7.7.3 - 2024-03-18</h2>
+<h3>Fixed</h3>
+<ul>
+<li><code>cds.log</code>: preserve message property of details through stringification (it&#39;s non-enumerable if the detail entry is an error)</li>
+<li>Auto-exposed child entities with multiple restrictions</li>
+<li>Calculation of read-only values in custom code during creation of new drafts</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds/CHANGELOG.md</guid>
+            <pubDate>Mon, 18 Mar 2024 20:02:48 GMT</pubDate>
         </item>
     </channel>
 </rss>
