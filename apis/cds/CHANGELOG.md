@@ -4,6 +4,14 @@
 - The format is based on [Keep a Changelog](http://keepachangelog.com/).
 - This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Version 7.7.3 - 2024-03-18
+
+### Fixed
+
+- `cds.log`: preserve message property of details through stringification (it's non-enumerable if the detail entry is an error)
+- Auto-exposed child entities with multiple restrictions
+- Calculation of read-only values in custom code during creation of new drafts
+
 ## Version 7.7.2 - 2024-03-11
 
 ### Fixed
