@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 19 Mar 2024 20:02:29 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 19 Mar 2024 22:02:28 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 19 Mar 2024 20:02:24 GMT</pubDate>
+        <pubDate>Tue, 19 Mar 2024 22:02:25 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -5809,7 +5809,7 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/hana-client/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/hana-client/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/hana-client/CHANGELOG.md</guid>
             <pubDate>Tue, 19 Mar 2024 20:02:28 GMT</pubDate>
         </item>
         <item>
@@ -5822,7 +5822,7 @@ Usage: datasphere login [options]</p>
 </ul>
 ]]></description>
             <link>http://example.com/iq-client/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/iq-client/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/iq-client/CHANGELOG.md</guid>
             <pubDate>Tue, 19 Mar 2024 20:02:28 GMT</pubDate>
         </item>
     </channel>
