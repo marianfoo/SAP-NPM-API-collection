@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 19 Mar 2024 16:02:36 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 19 Mar 2024 18:02:44 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 19 Mar 2024 16:02:32 GMT</pubDate>
+        <pubDate>Tue, 19 Mar 2024 18:02:39 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -5746,6 +5746,45 @@ Usage: datasphere login [options]</p>
             <link>http://example.com/html5-app-deployer/CHANGELOG.md</link>
             <guid isPermaLink="false">http://example.com/html5-app-deployer/CHANGELOG.md</guid>
             <pubDate>Tue, 19 Mar 2024 12:03:23 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Unknown - Recent Update]]></title>
+            <description><![CDATA[<p>-- a/apis/hana-client/CHANGELOG.md
+++ b/apis/hana-client/CHANGELOG.md</p>
+<h1>Hana Client 2.20.x Drivers</h1>
+<p>Please see the &quot;What’s new in the SAP HANA Client&quot; section in the official HANA client 2.20 documentation:</p>
+<p>https://help.sap.com/viewer/product/SAP_HANA_CLIENT/2.20/en-US</p>
+<p>For the latest updates please see SAP Note 3427733 - SAP HANA Client 2.20 Release Notes</p>
+<p>https://me.sap.com/notes/3427733</p>
+<h2>Version 2.20.15</h2>
+<h3>Changes:</h3>
+<ul>
+<li>Issue Number 318725: Calling server KPI functions could have caused the application to block temporarily.</li>
+<li>Issue Number 317039: A small memory leak would have occurred when Connection.onTrace was called.</li>
+</ul>
+<h3>Underlying SQLDBC changes:</h3>
+<ul>
+<li>Issue Number 319386: Unexpected -10901 error could have occurred.</li>
+<li>Issue Number 317050: Some trace messages could have been missing from a connection trace.</li>
+<li>Issue Number 304335: Unnecessary &quot;too many session variables&quot; errors could have occurred.</li>
+</ul>
+]]></description>
+            <link>http://example.com/hana-client/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/hana-client/CHANGELOG.md</guid>
+            <pubDate>Tue, 19 Mar 2024 18:02:43 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Unknown - Recent Update]]></title>
+            <description><![CDATA[<p>-- a/apis/iq-client/CHANGELOG.md
+++ b/apis/iq-client/CHANGELOG.md</p>
+<h2>Version 2.20.15</h2>
+<ul>
+<li>Updated driver code to Client 2.20.15</li>
+</ul>
+]]></description>
+            <link>http://example.com/iq-client/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/iq-client/CHANGELOG.md</guid>
+            <pubDate>Tue, 19 Mar 2024 18:02:43 GMT</pubDate>
         </item>
     </channel>
 </rss>
