@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 6.2.0 - 2024-03-19
+### Added
+- Services bindings can be created with certificate
+
 ## 6.1.0 - 2024-03-14
 
 ### Added
