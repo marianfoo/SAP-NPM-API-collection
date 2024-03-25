@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 25 Mar 2024 20:02:36 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Mar 2024 22:02:56 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 25 Mar 2024 20:02:32 GMT</pubDate>
+        <pubDate>Mon, 25 Mar 2024 22:02:52 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -6097,7 +6097,7 @@ if it wasn&#39;t an association before and vice versa.</li>
 </ul>
 ]]></description>
             <link>http://example.com/cds-lsp/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-lsp/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-lsp/CHANGELOG.md</guid>
             <pubDate>Mon, 25 Mar 2024 20:02:32 GMT</pubDate>
         </item>
         <item>
@@ -6126,7 +6126,7 @@ if it wasn&#39;t an association before and vice versa.</li>
 <h2>Version 7.6.1 - 2024-02-26</h2>
 ]]></description>
             <link>http://example.com/vscode-cds/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/vscode-cds/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/vscode-cds/CHANGELOG.md</guid>
             <pubDate>Mon, 25 Mar 2024 20:02:36 GMT</pubDate>
         </item>
     </channel>
