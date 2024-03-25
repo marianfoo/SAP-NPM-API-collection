@@ -1,7 +1,7 @@
 {
   "name": "@sap/cds-lsp",
   "description": "Language server for CDS",
-  "version": "7.6.1",
+  "version": "7.8.0",
   "homepage": "https://cap.cloud.sap/",
   "author": "SAP SE (https://www.sap.com)",
   "license": "SEE LICENSE IN LICENSE",
@@ -35,10 +35,10 @@
     "node": ">=18.15.0"
   },
   "dependencies": {
-    "@sap/cds-compiler": "4.6.2",
+    "@sap/cds-compiler": "4.8.0",
     "ignore": "5.3.1",
     "json-source-map": "0.6.1",
-    "marked": "12.0.0",
+    "marked": "12.0.1",
     "tiny-typed-emitter": "2.1.0",
     "vscode-languageserver": "9.0.1",
     "vscode-languageserver-protocol": "3.17.5",

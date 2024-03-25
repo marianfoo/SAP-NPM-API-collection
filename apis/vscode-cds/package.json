@@ -1,6 +1,6 @@
 {
     "name": "@sap/vscode-cds",
-    "version": "7.6.1",
+    "version": "7.8.0",
     "description": "SAP CDS language support as npm library.",
     "homepage": "https://cap.cloud.sap/",
     "author": "SAP SE (https://www.sap.com)",
@@ -21,10 +21,10 @@
         "cap-logo.png",
         "README.md",
         "LICENSE",
-        "vscode-cds-7.6.1.vsix"
+        "vscode-cds-7.8.0.vsix"
     ],
     "engines": {
-        "vscode": "^1.83.0",
-        "node": ">=18.15.0"
+        "vscode": "^1.86.0",
+        "node": ">=18.17.1"
     }
 }
