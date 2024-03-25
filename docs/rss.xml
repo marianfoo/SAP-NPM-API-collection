@@ -4,9 +4,9 @@
         <description><![CDATA[List of recent updates to APIs]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 25 Mar 2024 14:02:36 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Mar 2024 16:02:46 GMT</lastBuildDate>
         <atom:link href="./docs/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 25 Mar 2024 14:02:32 GMT</pubDate>
+        <pubDate>Mon, 25 Mar 2024 16:02:42 GMT</pubDate>
         <language><![CDATA[en]]></language>
         <item>
             <title><![CDATA[@sap/approuter - Recent Update]]></title>
@@ -5888,7 +5888,7 @@ if it wasn&#39;t an association before and vice versa.</li>
 </ul>
 ]]></description>
             <link>http://example.com/cds-compiler/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-compiler/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-compiler/CHANGELOG.md</guid>
             <pubDate>Mon, 25 Mar 2024 14:02:32 GMT</pubDate>
         </item>
         <item>
@@ -5916,8 +5916,102 @@ if it wasn&#39;t an association before and vice versa.</li>
 </ul>
 ]]></description>
             <link>http://example.com/cds-mtxs/CHANGELOG.md</link>
-            <guid isPermaLink="true">http://example.com/cds-mtxs/CHANGELOG.md</guid>
+            <guid isPermaLink="false">http://example.com/cds-mtxs/CHANGELOG.md</guid>
             <pubDate>Mon, 25 Mar 2024 14:02:32 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-compiler - Recent Update]]></title>
+            <description><![CDATA[Updated from version 4.7.6 to version 4.8.0
+
+<p>-- a/apis/cds-compiler/CHANGELOG.md
+++ b/apis/cds-compiler/CHANGELOG.md</p>
+<h2>Version 4.8.0 - 2024-03-21</h2>
+<h3>Added</h3>
+<ul>
+<li>compiler: Type <code>cds.Vector</code> was added.  It is mapped to <code>REAL_VECTOR</code> on SAP HANA.</li>
+<li>Support associations to/from entities with parameters for SAP HANA SQL (hdi/direct).</li>
+<li>to.sql/to.hdi:</li>
+</ul>
+<ul>
+<li>SAP HANA keywords <code>ABSOLUTE</code>, <code>REAL_VECTOR</code>, and <code>ST_ASESRIJSON</code> are now included for smart quoting.
++PostgreSQL keyword <code>SYSTEM_USER</code> is now included for smart quoting.</li>
+</ul>
+<ul>
+<li>API: Added <code>to.sql.postgres.keywords</code> and <code>to.sql.h2.keywords</code>.
+They contain keywords for the respective SQL dialect.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>compiler: Overriding an included element must not change the type to an association
+if it wasn&#39;t an association before and vice versa.</li>
+<li>Update OData vocabularies: &#39;Authorization&#39;, &#39;Common&#39;, &#39;UI&#39;.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>compiler: <code>cast()</code>s to structured types and associations are now rejected. They could lead to crashes before.</li>
+<li>to.edm(x):</li>
+</ul>
+<ul>
+<li>Reject action/function return types that are declared <code>many of many</code>.</li>
+<li>Render user defined annotation type <code>cds.Integer</code> as <code>Edm.Int</code>.</li>
+</ul>
+<ul>
+<li>to.sql|hdi|hdbcds:</li>
+</ul>
+<ul>
+<li>Correctly handle <code>.list</code> during flattening.</li>
+<li>Improve handling of <code>.items</code>.</li>
+</ul>
+<ul>
+<li>to.sql|hdi.migration:</li>
+</ul>
+<ul>
+<li>Turn types and aspects into dummies to reduce CSN size.</li>
+<li>Correctly detect a removed <code>.default</code> and forcefully set the default to <code>null</code>.</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li><p>Restored compatibility with <code>@sap/cds-dk</code> for Java runtime</p>
+</li>
+<li><p>Restored compatibility with <code>@sap/cds-dk</code> for Java runtime.</p>
+</li>
+<li><p>compiler: Virtual elements can now be referenced in expressions in annotation</p>
+</li>
+<li><p>compiler: Virtual elements can now be referenced in expressions in annotation.</p>
+</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds-compiler/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-compiler/CHANGELOG.md</guid>
+            <pubDate>Mon, 25 Mar 2024 16:02:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[@sap/cds-mtxs - Recent Update]]></title>
+            <description><![CDATA[Updated from version 1.16.0 to version 1.17.0
+
+<p>-- a/apis/cds-mtxs/CHANGELOG.md
+++ b/apis/cds-mtxs/CHANGELOG.md</p>
+<h2>Version 1.17.0 - 2024-03-25</h2>
+<h3>Added</h3>
+<ul>
+<li>Ignore non-existing container if running upgrade <code>*</code> by setting <code>cds.requires[&#39;cds.xt.SaasProvisioning&#39;].upgrade.ignoreNonExistingContainers: true</code>.</li>
+<li><code>cds-mtx-migrate &#39;*&#39;|&lt;tenant&gt;[,&lt;tenant&gt;] --init-tenant-list [--force] [--dry]</code> now allows to fill the internal tenant list (e. g. for migration of Dynamic Deployer base applications).</li>
+<li><code>cds-mtx-migrate &#39;*&#39;|&lt;tenant&gt;[,&lt;tenant&gt;] --sync-tenant-list [--force] [--dry]</code> now allows to sync the internal tenant list with existing containers. Entries without a corresponding HDI container will be removed.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><code>/-/cds/saas-provisioning/upgrade</code> sent as an async request with payload <code>&quot;tenants&quot;: [&quot;*&quot;]</code> will now return job information even if no tenants are found.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>The <code>dataEncryption</code> provisioning parameter is disabled for <code>t0</code> when using HANA native tenants.</li>
+<li>Ignore non-existing container if running upgrade <code>*</code> by setting <code>cds.requires[&#39;cds.xt.SaasProvisioning&#39;].upgrade.ignoreNonExistingContainers: true</code>.</li>
+<li>The built-in Service Manager client filters bindings by <code>ready = true</code>.</li>
+</ul>
+]]></description>
+            <link>http://example.com/cds-mtxs/CHANGELOG.md</link>
+            <guid isPermaLink="true">http://example.com/cds-mtxs/CHANGELOG.md</guid>
+            <pubDate>Mon, 25 Mar 2024 16:02:42 GMT</pubDate>
         </item>
     </channel>
 </rss>
