@@ -1,1 +1,1 @@
-@sap/cds
+@sap/cds-dk
