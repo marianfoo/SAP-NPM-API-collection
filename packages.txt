@@ -1,1 +1,10 @@
-@sap/sbf
+@sap/e2e-trace
+@sap/generator-fiori
+@sap/ux-annotation-modeler-bas-ext
+@sap/ux-application-modeler-bas-ext
+@sap/ux-cds-compiler-facade
+@sap/ux-cds-odata-language-server-extension
+@sap/ux-help-bas-ext
+@sap/ux-service-modeler-bas-ext
+@sap/ux-ui5-tooling
+@sap/xsenv
